@@ -6,6 +6,7 @@
 #include <stddef.h>
 #include <stdbool.h>
 
+#include "stm_eeprom.h"
 
 
 #ifdef __cplusplus
@@ -19,14 +20,17 @@ typedef struct {
     uint32_t item32B;
 
     uint8_t  item8[10];
-   // uint8_t  item8B;
-   // uint8_t  itemcc;
-   // char     item232;
+    uint8_t  item8B;
+    uint8_t  itemcc;
+    char     item232;
 } app_cfg_t;
 
-// the EEPROM is accessed as 16 bit half words...
-#define EE_NUM_VARS ((sizeof(app_cfg_t)/2))
 
+// IMPORTANT - this needs to be sized big enough for the app_cfg storage 
+//  256 equals 512 bytes of configuration storage
+#define EE_NUM_VARS (256)    // number of (16 bit) virtual storage addresses
+
+// Virtual address defined by the user: 0xFFFF value is prohibited 
 extern uint16_t VirtAddVarTab[EE_NUM_VARS];
 
 void cfg_storage_init(void);

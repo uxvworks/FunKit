@@ -123,7 +123,6 @@ void cmd_func_reset(void)
     usbStop(&USBD1);
 #endif
 
-    //chSysDisable();
     osalSysDisable();
 
     palClearLine(LINE_LED1);
@@ -132,29 +131,30 @@ void cmd_func_reset(void)
     NVIC_SystemReset();
 }
 
-void cmd_func_goto_exec(uint32_t base_sector)
+void cmd_func_goto_exec(uint32_t base_address)
 {
     static void (*pResetHandler)(void);
 
-    // TODO first check if app is OK by verifying the checksum */
+    // TODO first check if app is OK by verifying the address/checksum */
+    
 #if (HAL_USE_SERIAL_USB == true)
     usbDisconnectBus(serusbcfg.usbp);
     usbStop(&USBD1);
 #endif
 
-    //chSysDisable();
     osalSysDisable();
 
     palClearLine(LINE_LED1);
     palClearLine(LINE_LED2);
 
+    
     // set the vector table offset
     // SCB_VTOR = CPU_USER_PROGRAM_VECTABLE_OFFSET & (uint32_t)0x1FFFFF80;
     // SCB->VTOR = flash_addr[APP_BASE];
-    SCB->VTOR = flash_addr[base_sector];
+    SCB->VTOR = base_address;  //flash_addr[base_sector];
 
     // pResetHandler = (void (*)(void))(*((uint32_t*)PROGRAM_STARTADDR_PTR));
-    pResetHandler = (void (*)(void))(*((uint32_t*)((uint32_t)(flash_addr[base_sector] + 0x00000004))));
+    pResetHandler = (void (*)(void))(*((uint32_t*)((uint32_t)(base_address + 0x00000004))));
 
     // Set stack pointer ?
     //__set_MSP((uint32_t) (flash_addr[base_sector]));

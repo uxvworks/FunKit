@@ -26,7 +26,7 @@ extern uint8_t* cmd_func_otp_get_name(void);
 extern void cmd_func_uid(uint32_t* uid);
 
 extern void     cmd_func_reset(void);
-extern void     cmd_func_goto_exec(uint32_t base_sector);
+extern void     cmd_func_goto_exec(uint32_t base_address);
 
 #ifdef __cplusplus
 }

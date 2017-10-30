@@ -94,7 +94,7 @@ uint16_t EE_Init(void)
     PageStatus1 = (*(__IO uint16_t*)PAGE1_BASE_ADDRESS);
 
     pEraseInit.TypeErase = TYPEERASE_SECTORS;
-    pEraseInit.Sector = PAGE0_ID;
+    pEraseInit.Sector = EEPROM_PAGE0_ID;
     pEraseInit.NbSectors = 1;
     pEraseInit.VoltageRange = VOLTAGE_RANGE;
 
@@ -162,7 +162,7 @@ uint16_t EE_Init(void)
             if (FlashStatus != HAL_OK) {
                 return FlashStatus;
             }
-            pEraseInit.Sector = PAGE1_ID;
+            pEraseInit.Sector = EEPROM_PAGE1_ID;
             pEraseInit.NbSectors = 1;
             pEraseInit.VoltageRange = VOLTAGE_RANGE;
             /* Erase Page1 */
@@ -174,7 +174,7 @@ uint16_t EE_Init(void)
                 }
             }
         } else if (PageStatus1 == ERASED) { /* Page0 receive, Page1 erased */
-            pEraseInit.Sector = PAGE1_ID;
+            pEraseInit.Sector = EEPROM_PAGE1_ID;
             pEraseInit.NbSectors = 1;
             pEraseInit.VoltageRange = VOLTAGE_RANGE;
             /* Erase Page1 */
@@ -210,7 +210,7 @@ uint16_t EE_Init(void)
                 return FlashStatus;
             }
         } else if (PageStatus1 == ERASED) { /* Page0 valid, Page1 erased */
-            pEraseInit.Sector = PAGE1_ID;
+            pEraseInit.Sector = EEPROM_PAGE1_ID;
             pEraseInit.NbSectors = 1;
             pEraseInit.VoltageRange = VOLTAGE_RANGE;
             /* Erase Page1 */
@@ -247,7 +247,7 @@ uint16_t EE_Init(void)
             if (FlashStatus != HAL_OK) {
                 return FlashStatus;
             }
-            pEraseInit.Sector = PAGE0_ID;
+            pEraseInit.Sector = EEPROM_PAGE0_ID;
             pEraseInit.NbSectors = 1;
             pEraseInit.VoltageRange = VOLTAGE_RANGE;
             /* Erase Page0 */
@@ -335,10 +335,10 @@ uint16_t EE_ReadVariable(uint16_t VirtAddress, uint16_t* Data)
     }
 
     /* Get the valid Page start Address */
-    PageStartAddress = (uint32_t)(EEPROM_START_ADDRESS + (uint32_t)(ValidPage * PAGE_SIZE));
+    PageStartAddress = (uint32_t)(EEPROM_START_ADDRESS + (uint32_t)(ValidPage * EEPROM_PAGE_SIZE));
 
     /* Get the valid Page end Address */
-    Address = (uint32_t)((EEPROM_START_ADDRESS - 2) + (uint32_t)((1 + ValidPage) * PAGE_SIZE));
+    Address = (uint32_t)((EEPROM_START_ADDRESS - 2) + (uint32_t)((1 + ValidPage) * EEPROM_PAGE_SIZE));
 
     /* Check each active page address starting from end */
     while (Address > (PageStartAddress + 2)) {
@@ -404,7 +404,7 @@ static HAL_StatusTypeDef EE_Format(void)
     FLASH_EraseInitTypeDef pEraseInit;
 
     pEraseInit.TypeErase = FLASH_TYPEERASE_SECTORS;
-    pEraseInit.Sector = PAGE0_ID;
+    pEraseInit.Sector = EEPROM_PAGE0_ID;
     pEraseInit.NbSectors = 1;
     pEraseInit.VoltageRange = VOLTAGE_RANGE;
     /* Erase Page0 */
@@ -422,7 +422,7 @@ static HAL_StatusTypeDef EE_Format(void)
         return FlashStatus;
     }
 
-    pEraseInit.Sector = PAGE1_ID;
+    pEraseInit.Sector = EEPROM_PAGE1_ID;
     /* Erase Page1 */
     if(!EE_VerifyPageFullyErased(PAGE1_BASE_ADDRESS)) {
         FlashStatus = HAL_FLASHEx_Erase(&pEraseInit, &SectorError);
@@ -503,7 +503,7 @@ static uint16_t EE_VerifyPageFullWriteVariable(uint16_t VirtAddress, uint16_t Da
 {
     HAL_StatusTypeDef FlashStatus = HAL_OK;
     uint16_t ValidPage = PAGE0;
-    uint32_t Address = EEPROM_START_ADDRESS, PageEndAddress = EEPROM_START_ADDRESS+PAGE_SIZE;
+    uint32_t Address = EEPROM_START_ADDRESS, PageEndAddress = EEPROM_START_ADDRESS+EEPROM_PAGE_SIZE;
 
     /* Get valid Page for write operation */
     ValidPage = EE_FindValidPage(WRITE_IN_VALID_PAGE);
@@ -514,10 +514,10 @@ static uint16_t EE_VerifyPageFullWriteVariable(uint16_t VirtAddress, uint16_t Da
     }
 
     /* Get the valid Page start Address */
-    Address = (uint32_t)(EEPROM_START_ADDRESS + (uint32_t)(ValidPage * PAGE_SIZE));
+    Address = (uint32_t)(EEPROM_START_ADDRESS + (uint32_t)(ValidPage * EEPROM_PAGE_SIZE));
 
     /* Get the valid Page end Address */
-    PageEndAddress = (uint32_t)((EEPROM_START_ADDRESS - 1) + (uint32_t)((ValidPage + 1) * PAGE_SIZE));
+    PageEndAddress = (uint32_t)((EEPROM_START_ADDRESS - 1) + (uint32_t)((ValidPage + 1) * EEPROM_PAGE_SIZE));
 
     /* Check each active page address starting from begining */
     while (Address < PageEndAddress) {
@@ -572,13 +572,13 @@ static uint16_t EE_PageTransfer(uint16_t VirtAddress, uint16_t Data)
         NewPageAddress = PAGE0_BASE_ADDRESS;
 
         /* Old page ID where variable will be taken from */
-        OldPageId = PAGE1_ID;
+        OldPageId = EEPROM_PAGE1_ID;
     } else if (ValidPage == PAGE0) { /* Page0 valid */
         /* New page address  where variable will be moved to */
         NewPageAddress = PAGE1_BASE_ADDRESS;
 
         /* Old page ID where variable will be taken from */
-        OldPageId = PAGE0_ID;
+        OldPageId = EEPROM_PAGE0_ID;
     } else {
         return NO_VALID_PAGE;       /* No valid Page */
     }

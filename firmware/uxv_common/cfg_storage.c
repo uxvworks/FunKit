@@ -1,9 +1,6 @@
 
 #include <string.h>
 
-//#include "hal.h"
-//#include "chprintf.h"
-
 #include "cfg_storage.h"
 #include "stm_eeprom.h"
 
@@ -19,6 +16,11 @@ void cfg_storage_init(void)
 {
     memset(VirtAddVarTab, 0, sizeof(VirtAddVarTab));
 
+    // the EEPROM is accessed as 16 bit half words...
+    if (EE_NUM_VARS < (sizeof(app_cfg_t)/2)) {
+         ///#error  "EEPROM NUM_VARS configured too small for app_cfg storage!"
+    }
+
     uint32_t index = 0;
 
     for (uint32_t i = 0; i < (sizeof(app_cfg_t) / 2); i++) {
@@ -29,7 +31,6 @@ void cfg_storage_init(void)
     //FLASH_ClearFlag(FLASH_FLAG_OPERR | FLASH_FLAG_WRPERR | FLASH_FLAG_PGAERR |
     //                FLASH_FLAG_PGPERR | FLASH_FLAG_PGSERR);
     EE_Init();
-    
 }
 
 

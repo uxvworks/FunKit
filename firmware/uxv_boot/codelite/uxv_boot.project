@@ -22,6 +22,7 @@
     <File Name="../../uxv_common/cfg_storage.h"/>
     <File Name="../../uxv_common/stm_eeprom.c"/>
     <File Name="../../uxv_common/stm_eeprom.h"/>
+    <File Name="../../uxv_common/flash_defines.h"/>
   </VirtualDirectory>
   <Description/>
   <Dependencies/>

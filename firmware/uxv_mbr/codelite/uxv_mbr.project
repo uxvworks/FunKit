@@ -16,6 +16,7 @@
     <File Name="../../uxv_common/uart_func.h"/>
     <File Name="../../uxv_common/thread_func.cpp"/>
     <File Name="../../uxv_common/thread_func.h"/>
+    <File Name="../../uxv_common/flash_defines.h"/>
   </VirtualDirectory>
   <Description/>
   <Dependencies/>

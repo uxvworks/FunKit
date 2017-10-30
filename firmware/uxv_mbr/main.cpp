@@ -3,6 +3,7 @@
 
 #include "hal.h"
 
+#include "flash_defines.h"
 #include "usbcfg.h"
 #include "flash_util.h"
 #include "cmd_func.h"
@@ -64,9 +65,9 @@ int main(void)
     osalThreadSleepMilliseconds(500);
 
     if(palReadLine(LINE_BUT2) == LINE_BUT2_PRESSED) {
-        cmd_func_goto_exec(BOOT_BASE);
+        cmd_func_goto_exec(BOOT_BASE_ADDR);
     } else {
-        cmd_func_goto_exec(APP1_BASE);
+        cmd_func_goto_exec(APP1_BASE_ADDR);
     }
 
 }

@@ -2,7 +2,10 @@
 #include <stdint.h>
 #include "hal.h"
 #include "flash_util.h"
-#include "chprintf.h"
+#include "board.h"  
+#include "stm32f4xx_hal_flash.h"
+#include "flash_defines.h"
+
 
 void HAL_Delay(__IO uint32_t Delay)
 {
@@ -11,20 +14,9 @@ void HAL_Delay(__IO uint32_t Delay)
 
 uint32_t HAL_GetTick(void)
 {
-   // return (ST2MS(chVTGetSystemTime()));
     return (OSAL_ST2MS(osalOsGetSystemTimeX()));
 }
 
-
-const uint32_t flash_addr[FLASH_SECTORS] = { ADDR_FLASH_SECTOR_0, ADDR_FLASH_SECTOR_1,  ADDR_FLASH_SECTOR_2,
-                                             ADDR_FLASH_SECTOR_3, ADDR_FLASH_SECTOR_4,  ADDR_FLASH_SECTOR_5,
-                                             ADDR_FLASH_SECTOR_6, ADDR_FLASH_SECTOR_7,  ADDR_FLASH_SECTOR_8,
-                                             ADDR_FLASH_SECTOR_9, ADDR_FLASH_SECTOR_10, ADDR_FLASH_SECTOR_11
-                                           };
-
-
-#define FLASH_USER_START_ADDR   ADDR_FLASH_SECTOR_4   /* Start @ of user Flash area */
-#define FLASH_USER_END_ADDR     (ADDR_FLASH_SECTOR_4  +  GetSectorSize(FLASH_SECTOR_4) -1) /* End @ of user Flash area : sector start address + sector size -1 */
 
 
 /* Private macro -------------------------------------------------------------*/
@@ -38,12 +30,11 @@ uint32_t MemoryProgramStatus = 0;
 static FLASH_EraseInitTypeDef EraseInitStruct;
 
 /* Private function prototypes -----------------------------------------------*/
-//static void SystemClock_Config(void);
 //static void Error_Handler(void);
 static uint32_t GetSector(uint32_t Address);
-static uint32_t GetSectorSize(uint32_t Sector);
 
-void flash_erase_user_data(BaseSequentialStream* chp)
+
+void flash_erase_user_data(void)
 {
     /* Unlock the Flash to enable the flash control register access *************/
     HAL_FLASH_Unlock();
@@ -61,8 +52,6 @@ void flash_erase_user_data(BaseSequentialStream* chp)
     EraseInitStruct.VoltageRange = FLASH_VOLTAGE_RANGE_3;
     EraseInitStruct.Sector = FirstSector;
     EraseInitStruct.NbSectors = NbOfSectors;
-
-    chprintf(chp, "Erasing flash sector %u:%08X:%08X  num=%u\r\n", FirstSector, FLASH_USER_START_ADDR, FLASH_USER_END_ADDR, NbOfSectors);
 
     if(HAL_FLASHEx_Erase(&EraseInitStruct, &SectorError) != HAL_OK) {
         /*
@@ -196,24 +185,3 @@ static uint32_t GetSector(uint32_t Address)
     return sector;
 }
 
-
-
-
-/**
-  * @brief  Gets sector Size
-  * @param  None
-  * @retval The size of a given sector
-  */
-static uint32_t GetSectorSize(uint32_t Sector)
-{
-    uint32_t sectorsize = 0x00;
-
-    if((Sector == FLASH_SECTOR_0) || (Sector == FLASH_SECTOR_1) || (Sector == FLASH_SECTOR_2) || (Sector == FLASH_SECTOR_3)) {
-        sectorsize = 16 * 1024;
-    } else if(Sector == FLASH_SECTOR_4) {
-        sectorsize = 64 * 1024;
-    } else {
-        sectorsize = 128 * 1024;
-    }
-    return sectorsize;
-}

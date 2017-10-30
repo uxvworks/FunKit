@@ -12,6 +12,7 @@
 
 #include "usbcfg.h"
 #include "cmd_func.h"
+#include "flash_defines.h"
 #include "flash_util.h"
 #include "uart_func.h"
 #include "cfg_storage.h"
@@ -79,7 +80,6 @@ void sh_cmd_eeprom(BaseSequentialStream* chp, int argc, char* argv[])
         return;
     }
 
-    //chprintf(chp, "flash verify for %08X, errors = %08X\r\n", value, flash_verify_user_data(value));
     chprintf(chp, "Cfg_Store size:%d  NUM_VARS:%d\r\n", sizeof(app_cfg_t), EE_NUM_VARS);
 }
 
@@ -100,8 +100,8 @@ void sh_cmd_flash(BaseSequentialStream* chp, int argc, char* argv[])
         chprintf(chp, usage);
         return;
     } else if (streq(argv[0], "e")) {
-        chprintf(chp, "Erasing flash...\r\n");
-        flash_erase_user_data(chp);
+        chprintf(chp, "Erasing flash %08X to %08X\r\n", FLASH_USER_START_ADDR, FLASH_USER_END_ADDR);
+        flash_erase_user_data();
     }   else if (streq(argv[0], "r") && (argc == 2)) {
         value = (uint32_t)strtoul(argv[1], &endptr, base);
         if (argv[1] == endptr) {
@@ -227,7 +227,7 @@ void sh_cmd_startapp1(BaseSequentialStream* chp, int argc, char* argv[])
     chprintf(chp, "Will start app1 in 1 second\r\n");
     osalThreadSleepMilliseconds(1000);  //chThdSleepMilliseconds(1000);
 
-    cmd_func_goto_exec(APP1_BASE);
+    cmd_func_goto_exec(APP1_BASE_ADDR);
 }
 
 void sh_cmd_startboot(BaseSequentialStream* chp, int argc, char* argv[])
@@ -240,7 +240,7 @@ void sh_cmd_startboot(BaseSequentialStream* chp, int argc, char* argv[])
     chprintf(chp, "Will start bootloader in 1 second\r\n");
     osalThreadSleepMilliseconds(1000);  //chThdSleepMilliseconds(1000);
 
-    cmd_func_goto_exec(BOOT_BASE);
+    cmd_func_goto_exec(BOOT_BASE_ADDR);
 }
 
 void sh_cmd_reset(BaseSequentialStream* chp, int argc, char* argv[])
