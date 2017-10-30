@@ -1,0 +1,3167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="chibios_codelite" Version="10.0.0" InternalType="Library">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00010001N0007Release000000000000]]>
+    </Plugin>
+  </Plugins>
+  <VirtualDirectory Name="testhal">
+    <VirtualDirectory Name="STM32">
+      <VirtualDirectory Name="STM32L4xx">
+        <VirtualDirectory Name="EXT">
+          <File Name="../testhal/STM32/STM32L4xx/EXT/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L4xx/EXT/main.c"/>
+          <File Name="../testhal/STM32/STM32L4xx/EXT/Makefile"/>
+          <File Name="../testhal/STM32/STM32L4xx/EXT/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L4xx/EXT/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="USB_CDC">
+          <File Name="../testhal/STM32/STM32L4xx/USB_CDC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L4xx/USB_CDC/main.c"/>
+          <File Name="../testhal/STM32/STM32L4xx/USB_CDC/Makefile"/>
+          <File Name="../testhal/STM32/STM32L4xx/USB_CDC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L4xx/USB_CDC/usbcfg.h"/>
+          <File Name="../testhal/STM32/STM32L4xx/USB_CDC/usbcfg.c"/>
+          <File Name="../testhal/STM32/STM32L4xx/USB_CDC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ADC">
+          <File Name="../testhal/STM32/STM32L4xx/ADC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L4xx/ADC/main.c"/>
+          <File Name="../testhal/STM32/STM32L4xx/ADC/Makefile"/>
+          <File Name="../testhal/STM32/STM32L4xx/ADC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L4xx/ADC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="GPT-ADC">
+          <File Name="../testhal/STM32/STM32L4xx/GPT-ADC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L4xx/GPT-ADC/main.c"/>
+          <File Name="../testhal/STM32/STM32L4xx/GPT-ADC/Makefile"/>
+          <File Name="../testhal/STM32/STM32L4xx/GPT-ADC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L4xx/GPT-ADC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="IRQ_STORM">
+          <File Name="../testhal/STM32/STM32L4xx/IRQ_STORM/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L4xx/IRQ_STORM/main.c"/>
+          <File Name="../testhal/STM32/STM32L4xx/IRQ_STORM/Makefile"/>
+          <File Name="../testhal/STM32/STM32L4xx/IRQ_STORM/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L4xx/IRQ_STORM/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="CAN">
+          <File Name="../testhal/STM32/STM32L4xx/CAN/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L4xx/CAN/main.c"/>
+          <File Name="../testhal/STM32/STM32L4xx/CAN/Makefile"/>
+          <File Name="../testhal/STM32/STM32L4xx/CAN/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L4xx/CAN/mcuconf.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="STM32F3xx">
+        <VirtualDirectory Name="EXT">
+          <File Name="../testhal/STM32/STM32F3xx/EXT/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/EXT/main.c"/>
+          <File Name="../testhal/STM32/STM32F3xx/EXT/Makefile"/>
+          <File Name="../testhal/STM32/STM32F3xx/EXT/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/EXT/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SPI">
+          <File Name="../testhal/STM32/STM32F3xx/SPI/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/SPI/main.c"/>
+          <File Name="../testhal/STM32/STM32F3xx/SPI/Makefile"/>
+          <File Name="../testhal/STM32/STM32F3xx/SPI/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/SPI/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="UART">
+          <File Name="../testhal/STM32/STM32F3xx/UART/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/UART/main.c"/>
+          <File Name="../testhal/STM32/STM32F3xx/UART/Makefile"/>
+          <File Name="../testhal/STM32/STM32F3xx/UART/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/UART/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="USB_CDC">
+          <File Name="../testhal/STM32/STM32F3xx/USB_CDC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/USB_CDC/main.c"/>
+          <File Name="../testhal/STM32/STM32F3xx/USB_CDC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F3xx/USB_CDC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/USB_CDC/usbcfg.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/USB_CDC/usbcfg.c"/>
+          <File Name="../testhal/STM32/STM32F3xx/USB_CDC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ADC">
+          <File Name="../testhal/STM32/STM32F3xx/ADC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/ADC/main.c"/>
+          <File Name="../testhal/STM32/STM32F3xx/ADC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F3xx/ADC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/ADC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="WDG">
+          <File Name="../testhal/STM32/STM32F3xx/WDG/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/WDG/main.c"/>
+          <File Name="../testhal/STM32/STM32F3xx/WDG/Makefile"/>
+          <File Name="../testhal/STM32/STM32F3xx/WDG/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/WDG/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="IRQ_STORM">
+          <File Name="../testhal/STM32/STM32F3xx/IRQ_STORM/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/IRQ_STORM/main.c"/>
+          <File Name="../testhal/STM32/STM32F3xx/IRQ_STORM/Makefile"/>
+          <File Name="../testhal/STM32/STM32F3xx/IRQ_STORM/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/IRQ_STORM/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="USB_CDC_IAD">
+          <File Name="../testhal/STM32/STM32F3xx/USB_CDC_IAD/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/USB_CDC_IAD/main.c"/>
+          <File Name="../testhal/STM32/STM32F3xx/USB_CDC_IAD/Makefile"/>
+          <File Name="../testhal/STM32/STM32F3xx/USB_CDC_IAD/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/USB_CDC_IAD/usbcfg.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/USB_CDC_IAD/usbcfg.c"/>
+          <File Name="../testhal/STM32/STM32F3xx/USB_CDC_IAD/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="CAN">
+          <File Name="../testhal/STM32/STM32F3xx/CAN/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/CAN/main.c"/>
+          <File Name="../testhal/STM32/STM32F3xx/CAN/Makefile"/>
+          <File Name="../testhal/STM32/STM32F3xx/CAN/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/CAN/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="DAC">
+          <File Name="../testhal/STM32/STM32F3xx/DAC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/DAC/main.c"/>
+          <File Name="../testhal/STM32/STM32F3xx/DAC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F3xx/DAC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/DAC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ADC_DUAL">
+          <File Name="../testhal/STM32/STM32F3xx/ADC_DUAL/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/ADC_DUAL/main.c"/>
+          <File Name="../testhal/STM32/STM32F3xx/ADC_DUAL/Makefile"/>
+          <File Name="../testhal/STM32/STM32F3xx/ADC_DUAL/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/ADC_DUAL/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="PWM-ICU">
+          <File Name="../testhal/STM32/STM32F3xx/PWM-ICU/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/PWM-ICU/main.c"/>
+          <File Name="../testhal/STM32/STM32F3xx/PWM-ICU/Makefile"/>
+          <File Name="../testhal/STM32/STM32F3xx/PWM-ICU/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F3xx/PWM-ICU/mcuconf.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="STM32L1xx">
+        <VirtualDirectory Name="EXT">
+          <File Name="../testhal/STM32/STM32L1xx/EXT/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L1xx/EXT/main.c"/>
+          <File Name="../testhal/STM32/STM32L1xx/EXT/Makefile"/>
+          <File Name="../testhal/STM32/STM32L1xx/EXT/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L1xx/EXT/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SPI">
+          <File Name="../testhal/STM32/STM32L1xx/SPI/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L1xx/SPI/main.c"/>
+          <File Name="../testhal/STM32/STM32L1xx/SPI/Makefile"/>
+          <File Name="../testhal/STM32/STM32L1xx/SPI/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L1xx/SPI/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="UART">
+          <File Name="../testhal/STM32/STM32L1xx/UART/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L1xx/UART/main.c"/>
+          <File Name="../testhal/STM32/STM32L1xx/UART/Makefile"/>
+          <File Name="../testhal/STM32/STM32L1xx/UART/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L1xx/UART/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ADC">
+          <File Name="../testhal/STM32/STM32L1xx/ADC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L1xx/ADC/main.c"/>
+          <File Name="../testhal/STM32/STM32L1xx/ADC/Makefile"/>
+          <File Name="../testhal/STM32/STM32L1xx/ADC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L1xx/ADC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="IRQ_STORM">
+          <File Name="../testhal/STM32/STM32L1xx/IRQ_STORM/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L1xx/IRQ_STORM/main.c"/>
+          <File Name="../testhal/STM32/STM32L1xx/IRQ_STORM/Makefile"/>
+          <File Name="../testhal/STM32/STM32L1xx/IRQ_STORM/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L1xx/IRQ_STORM/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="DAC">
+          <File Name="../testhal/STM32/STM32L1xx/DAC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L1xx/DAC/main.c"/>
+          <File Name="../testhal/STM32/STM32L1xx/DAC/Makefile"/>
+          <File Name="../testhal/STM32/STM32L1xx/DAC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L1xx/DAC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="PWM-ICU">
+          <File Name="../testhal/STM32/STM32L1xx/PWM-ICU/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L1xx/PWM-ICU/main.c"/>
+          <File Name="../testhal/STM32/STM32L1xx/PWM-ICU/Makefile"/>
+          <File Name="../testhal/STM32/STM32L1xx/PWM-ICU/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L1xx/PWM-ICU/mcuconf.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="STM32F7xx">
+        <VirtualDirectory Name="SPI">
+          <File Name="../testhal/STM32/STM32F7xx/SPI/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F7xx/SPI/main.c"/>
+          <File Name="../testhal/STM32/STM32F7xx/SPI/Makefile"/>
+          <File Name="../testhal/STM32/STM32F7xx/SPI/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F7xx/SPI/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="USB_CDC">
+          <File Name="../testhal/STM32/STM32F7xx/USB_CDC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F7xx/USB_CDC/main.c"/>
+          <File Name="../testhal/STM32/STM32F7xx/USB_CDC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F7xx/USB_CDC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F7xx/USB_CDC/usbcfg.h"/>
+          <File Name="../testhal/STM32/STM32F7xx/USB_CDC/usbcfg.c"/>
+          <File Name="../testhal/STM32/STM32F7xx/USB_CDC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="GPT-ADC">
+          <File Name="../testhal/STM32/STM32F7xx/GPT-ADC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F7xx/GPT-ADC/main.c"/>
+          <File Name="../testhal/STM32/STM32F7xx/GPT-ADC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F7xx/GPT-ADC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F7xx/GPT-ADC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="IRQ_STORM">
+          <File Name="../testhal/STM32/STM32F7xx/IRQ_STORM/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F7xx/IRQ_STORM/main.c"/>
+          <File Name="../testhal/STM32/STM32F7xx/IRQ_STORM/Makefile"/>
+          <File Name="../testhal/STM32/STM32F7xx/IRQ_STORM/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F7xx/IRQ_STORM/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="PWM-ICU">
+          <File Name="../testhal/STM32/STM32F7xx/PWM-ICU/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F7xx/PWM-ICU/main.c"/>
+          <File Name="../testhal/STM32/STM32F7xx/PWM-ICU/Makefile"/>
+          <File Name="../testhal/STM32/STM32F7xx/PWM-ICU/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F7xx/PWM-ICU/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="USB_RAW">
+          <File Name="../testhal/STM32/STM32F7xx/USB_RAW/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F7xx/USB_RAW/main.c"/>
+          <File Name="../testhal/STM32/STM32F7xx/USB_RAW/Makefile"/>
+          <File Name="../testhal/STM32/STM32F7xx/USB_RAW/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F7xx/USB_RAW/usbcfg.h"/>
+          <File Name="../testhal/STM32/STM32F7xx/USB_RAW/usbcfg.c"/>
+          <File Name="../testhal/STM32/STM32F7xx/USB_RAW/mcuconf.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="STM32F37x">
+        <VirtualDirectory Name="I2C">
+          <File Name="../testhal/STM32/STM32F37x/I2C/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/I2C/main.c"/>
+          <File Name="../testhal/STM32/STM32F37x/I2C/Makefile"/>
+          <File Name="../testhal/STM32/STM32F37x/I2C/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/I2C/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="EXT">
+          <File Name="../testhal/STM32/STM32F37x/EXT/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/EXT/main.c"/>
+          <File Name="../testhal/STM32/STM32F37x/EXT/Makefile"/>
+          <File Name="../testhal/STM32/STM32F37x/EXT/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/EXT/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SPI">
+          <File Name="../testhal/STM32/STM32F37x/SPI/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/SPI/main.c"/>
+          <File Name="../testhal/STM32/STM32F37x/SPI/Makefile"/>
+          <File Name="../testhal/STM32/STM32F37x/SPI/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/SPI/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="UART">
+          <File Name="../testhal/STM32/STM32F37x/UART/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/UART/main.c"/>
+          <File Name="../testhal/STM32/STM32F37x/UART/Makefile"/>
+          <File Name="../testhal/STM32/STM32F37x/UART/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/UART/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SDADC">
+          <File Name="../testhal/STM32/STM32F37x/SDADC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/SDADC/main.c"/>
+          <File Name="../testhal/STM32/STM32F37x/SDADC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F37x/SDADC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/SDADC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="USB_CDC">
+          <File Name="../testhal/STM32/STM32F37x/USB_CDC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/USB_CDC/main.c"/>
+          <File Name="../testhal/STM32/STM32F37x/USB_CDC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F37x/USB_CDC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/USB_CDC/usbcfg.h"/>
+          <File Name="../testhal/STM32/STM32F37x/USB_CDC/usbcfg.c"/>
+          <File Name="../testhal/STM32/STM32F37x/USB_CDC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ADC">
+          <File Name="../testhal/STM32/STM32F37x/ADC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/ADC/main.c"/>
+          <File Name="../testhal/STM32/STM32F37x/ADC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F37x/ADC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/ADC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="IRQ_STORM">
+          <File Name="../testhal/STM32/STM32F37x/IRQ_STORM/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/IRQ_STORM/main.c"/>
+          <File Name="../testhal/STM32/STM32F37x/IRQ_STORM/Makefile"/>
+          <File Name="../testhal/STM32/STM32F37x/IRQ_STORM/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/IRQ_STORM/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="CAN">
+          <File Name="../testhal/STM32/STM32F37x/CAN/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/CAN/main.c"/>
+          <File Name="../testhal/STM32/STM32F37x/CAN/Makefile"/>
+          <File Name="../testhal/STM32/STM32F37x/CAN/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/CAN/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="PWM-ICU">
+          <File Name="../testhal/STM32/STM32F37x/PWM-ICU/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/PWM-ICU/main.c"/>
+          <File Name="../testhal/STM32/STM32F37x/PWM-ICU/Makefile"/>
+          <File Name="../testhal/STM32/STM32F37x/PWM-ICU/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F37x/PWM-ICU/mcuconf.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="STM32F2xx">
+        <VirtualDirectory Name="EXT">
+          <File Name="../testhal/STM32/STM32F2xx/EXT/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F2xx/EXT/main.c"/>
+          <File Name="../testhal/STM32/STM32F2xx/EXT/Makefile"/>
+          <File Name="../testhal/STM32/STM32F2xx/EXT/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F2xx/EXT/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="USB_CDC">
+          <File Name="../testhal/STM32/STM32F2xx/USB_CDC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F2xx/USB_CDC/main.c"/>
+          <File Name="../testhal/STM32/STM32F2xx/USB_CDC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F2xx/USB_CDC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F2xx/USB_CDC/usbcfg.h"/>
+          <File Name="../testhal/STM32/STM32F2xx/USB_CDC/usbcfg.c"/>
+          <File Name="../testhal/STM32/STM32F2xx/USB_CDC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="PWM-ICU">
+          <File Name="../testhal/STM32/STM32F2xx/PWM-ICU/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F2xx/PWM-ICU/main.c"/>
+          <File Name="../testhal/STM32/STM32F2xx/PWM-ICU/Makefile"/>
+          <File Name="../testhal/STM32/STM32F2xx/PWM-ICU/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F2xx/PWM-ICU/mcuconf.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="STM32L0xx">
+        <VirtualDirectory Name="EXT">
+          <File Name="../testhal/STM32/STM32L0xx/EXT/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L0xx/EXT/main.c"/>
+          <File Name="../testhal/STM32/STM32L0xx/EXT/Makefile"/>
+          <File Name="../testhal/STM32/STM32L0xx/EXT/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L0xx/EXT/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SPI">
+          <File Name="../testhal/STM32/STM32L0xx/SPI/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L0xx/SPI/main.c"/>
+          <File Name="../testhal/STM32/STM32L0xx/SPI/Makefile"/>
+          <File Name="../testhal/STM32/STM32L0xx/SPI/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L0xx/SPI/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ADC">
+          <File Name="../testhal/STM32/STM32L0xx/ADC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32L0xx/ADC/main.c"/>
+          <File Name="../testhal/STM32/STM32L0xx/ADC/Makefile"/>
+          <File Name="../testhal/STM32/STM32L0xx/ADC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32L0xx/ADC/mcuconf.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="STM32F4xx">
+        <VirtualDirectory Name="I2C">
+          <File Name="../testhal/STM32/STM32F4xx/I2C/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/I2C/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/I2C/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/I2C/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/I2C/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="EXT">
+          <File Name="../testhal/STM32/STM32F4xx/EXT/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/EXT/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/EXT/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/EXT/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/EXT/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SPI">
+          <File Name="../testhal/STM32/STM32F4xx/SPI/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/SPI/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/SPI/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/SPI/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/SPI/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="UART">
+          <File Name="../testhal/STM32/STM32F4xx/UART/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/UART/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/UART/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/UART/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/UART/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="USB_CDC">
+          <File Name="../testhal/STM32/STM32F4xx/USB_CDC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/USB_CDC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/USB_CDC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/USB_CDC/usbcfg.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/USB_CDC/usbcfg.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/USB_CDC/mcuconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/USB_CDC/main.cpp"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ADC">
+          <File Name="../testhal/STM32/STM32F4xx/ADC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/ADC/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/ADC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/ADC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/ADC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="WDG">
+          <File Name="../testhal/STM32/STM32F4xx/WDG/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/WDG/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/WDG/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/WDG/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/WDG/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="RTC">
+          <File Name="../testhal/STM32/STM32F4xx/RTC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/RTC/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/RTC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/RTC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/RTC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="GPT">
+          <File Name="../testhal/STM32/STM32F4xx/GPT/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/GPT/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/GPT/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/GPT/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/GPT/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="I2S">
+          <File Name="../testhal/STM32/STM32F4xx/I2S/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/I2S/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/I2S/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/I2S/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/I2S/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SDC">
+          <File Name="../testhal/STM32/STM32F4xx/SDC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/SDC/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/SDC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/SDC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/SDC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="DAC_DUAL">
+          <File Name="../testhal/STM32/STM32F4xx/DAC_DUAL/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/DAC_DUAL/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/DAC_DUAL/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/DAC_DUAL/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/DAC_DUAL/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="DMA_STORM">
+          <File Name="../testhal/STM32/STM32F4xx/DMA_STORM/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/DMA_STORM/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/DMA_STORM/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/DMA_STORM/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/DMA_STORM/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="IRQ_STORM">
+          <File Name="../testhal/STM32/STM32F4xx/IRQ_STORM/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/IRQ_STORM/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/IRQ_STORM/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/IRQ_STORM/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/IRQ_STORM/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="USB_CDC_IAD">
+          <File Name="../testhal/STM32/STM32F4xx/USB_CDC_IAD/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/USB_CDC_IAD/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/USB_CDC_IAD/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/USB_CDC_IAD/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/USB_CDC_IAD/usbcfg.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/USB_CDC_IAD/usbcfg.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/USB_CDC_IAD/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="IRQ_STORM_FPU">
+          <File Name="../testhal/STM32/STM32F4xx/IRQ_STORM_FPU/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/IRQ_STORM_FPU/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/IRQ_STORM_FPU/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/IRQ_STORM_FPU/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/IRQ_STORM_FPU/extfunc.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/IRQ_STORM_FPU/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="CAN">
+          <File Name="../testhal/STM32/STM32F4xx/CAN/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/CAN/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/CAN/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/CAN/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/CAN/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="DAC">
+          <File Name="../testhal/STM32/STM32F4xx/DAC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/DAC/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/DAC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/DAC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/DAC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="PWM-ICU">
+          <File Name="../testhal/STM32/STM32F4xx/PWM-ICU/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/PWM-ICU/main.c"/>
+          <File Name="../testhal/STM32/STM32F4xx/PWM-ICU/Makefile"/>
+          <File Name="../testhal/STM32/STM32F4xx/PWM-ICU/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/PWM-ICU/mcuconf.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="STM32F1xx">
+        <VirtualDirectory Name="I2C">
+          <File Name="../testhal/STM32/STM32F1xx/I2C/fake.c"/>
+          <File Name="../testhal/STM32/STM32F1xx/I2C/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/I2C/main.c"/>
+          <File Name="../testhal/STM32/STM32F1xx/I2C/Makefile"/>
+          <File Name="../testhal/STM32/STM32F1xx/I2C/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/I2C/lis3.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/I2C/lis3.c"/>
+          <File Name="../testhal/STM32/STM32F1xx/I2C/fake.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/I2C/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="EXT">
+          <File Name="../testhal/STM32/STM32F1xx/EXT/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/EXT/main.c"/>
+          <File Name="../testhal/STM32/STM32F1xx/EXT/Makefile"/>
+          <File Name="../testhal/STM32/STM32F1xx/EXT/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/EXT/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SPI">
+          <File Name="../testhal/STM32/STM32F1xx/SPI/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/SPI/main.c"/>
+          <File Name="../testhal/STM32/STM32F1xx/SPI/Makefile"/>
+          <File Name="../testhal/STM32/STM32F1xx/SPI/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/SPI/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="UART">
+          <File Name="../testhal/STM32/STM32F1xx/UART/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/UART/main.c"/>
+          <File Name="../testhal/STM32/STM32F1xx/UART/Makefile"/>
+          <File Name="../testhal/STM32/STM32F1xx/UART/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/UART/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="USB_CDC_F107">
+          <File Name="../testhal/STM32/STM32F1xx/USB_CDC_F107/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/USB_CDC_F107/main.c"/>
+          <File Name="../testhal/STM32/STM32F1xx/USB_CDC_F107/Makefile"/>
+          <File Name="../testhal/STM32/STM32F1xx/USB_CDC_F107/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/USB_CDC_F107/usbcfg.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/USB_CDC_F107/usbcfg.c"/>
+          <File Name="../testhal/STM32/STM32F1xx/USB_CDC_F107/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="USB_CDC">
+          <File Name="../testhal/STM32/STM32F1xx/USB_CDC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/USB_CDC/main.c"/>
+          <File Name="../testhal/STM32/STM32F1xx/USB_CDC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F1xx/USB_CDC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/USB_CDC/usbcfg.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/USB_CDC/usbcfg.c"/>
+          <File Name="../testhal/STM32/STM32F1xx/USB_CDC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ADC">
+          <File Name="../testhal/STM32/STM32F1xx/ADC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/ADC/main.c"/>
+          <File Name="../testhal/STM32/STM32F1xx/ADC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F1xx/ADC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/ADC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="RTC">
+          <File Name="../testhal/STM32/STM32F1xx/RTC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/RTC/main.c"/>
+          <File Name="../testhal/STM32/STM32F1xx/RTC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F1xx/RTC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/RTC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="IRQ_STORM">
+          <File Name="../testhal/STM32/STM32F1xx/IRQ_STORM/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/IRQ_STORM/main.c"/>
+          <File Name="../testhal/STM32/STM32F1xx/IRQ_STORM/Makefile"/>
+          <File Name="../testhal/STM32/STM32F1xx/IRQ_STORM/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/IRQ_STORM/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="CAN">
+          <File Name="../testhal/STM32/STM32F1xx/CAN/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/CAN/main.c"/>
+          <File Name="../testhal/STM32/STM32F1xx/CAN/Makefile"/>
+          <File Name="../testhal/STM32/STM32F1xx/CAN/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/CAN/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="PWM-ICU">
+          <File Name="../testhal/STM32/STM32F1xx/PWM-ICU/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/PWM-ICU/main.c"/>
+          <File Name="../testhal/STM32/STM32F1xx/PWM-ICU/Makefile"/>
+          <File Name="../testhal/STM32/STM32F1xx/PWM-ICU/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F1xx/PWM-ICU/mcuconf.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="STM32F0xx">
+        <VirtualDirectory Name="EXT">
+          <File Name="../testhal/STM32/STM32F0xx/EXT/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/EXT/main.c"/>
+          <File Name="../testhal/STM32/STM32F0xx/EXT/Makefile"/>
+          <File Name="../testhal/STM32/STM32F0xx/EXT/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/EXT/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SPI">
+          <File Name="../testhal/STM32/STM32F0xx/SPI/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/SPI/main.c"/>
+          <File Name="../testhal/STM32/STM32F0xx/SPI/Makefile"/>
+          <File Name="../testhal/STM32/STM32F0xx/SPI/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/SPI/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="UART">
+          <File Name="../testhal/STM32/STM32F0xx/UART/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/UART/main.c"/>
+          <File Name="../testhal/STM32/STM32F0xx/UART/Makefile"/>
+          <File Name="../testhal/STM32/STM32F0xx/UART/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/UART/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="USB_CDC">
+          <File Name="../testhal/STM32/STM32F0xx/USB_CDC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/USB_CDC/main.c"/>
+          <File Name="../testhal/STM32/STM32F0xx/USB_CDC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F0xx/USB_CDC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/USB_CDC/usbcfg.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/USB_CDC/usbcfg.c"/>
+          <File Name="../testhal/STM32/STM32F0xx/USB_CDC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ADC">
+          <File Name="../testhal/STM32/STM32F0xx/ADC/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/ADC/main.c"/>
+          <File Name="../testhal/STM32/STM32F0xx/ADC/Makefile"/>
+          <File Name="../testhal/STM32/STM32F0xx/ADC/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/ADC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="WDG">
+          <File Name="../testhal/STM32/STM32F0xx/WDG/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/WDG/main.c"/>
+          <File Name="../testhal/STM32/STM32F0xx/WDG/Makefile"/>
+          <File Name="../testhal/STM32/STM32F0xx/WDG/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/WDG/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="IRQ_STORM">
+          <File Name="../testhal/STM32/STM32F0xx/IRQ_STORM/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/IRQ_STORM/main.c"/>
+          <File Name="../testhal/STM32/STM32F0xx/IRQ_STORM/Makefile"/>
+          <File Name="../testhal/STM32/STM32F0xx/IRQ_STORM/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/IRQ_STORM/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="CAN">
+          <File Name="../testhal/STM32/STM32F0xx/CAN/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/CAN/main.c"/>
+          <File Name="../testhal/STM32/STM32F0xx/CAN/Makefile"/>
+          <File Name="../testhal/STM32/STM32F0xx/CAN/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/CAN/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="PWM-ICU">
+          <File Name="../testhal/STM32/STM32F0xx/PWM-ICU/halconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/PWM-ICU/main.c"/>
+          <File Name="../testhal/STM32/STM32F0xx/PWM-ICU/Makefile"/>
+          <File Name="../testhal/STM32/STM32F0xx/PWM-ICU/chconf.h"/>
+          <File Name="../testhal/STM32/STM32F0xx/PWM-ICU/mcuconf.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="common">
+      <File Name="../testhal/common/irq_storm.h"/>
+      <File Name="../testhal/common/irq_storm.c"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="testex">
+    <VirtualDirectory Name="STM32">
+      <VirtualDirectory Name="STM32L4xx">
+        <VirtualDirectory Name="I2C-LIS3MLD">
+          <File Name="../testex/STM32/STM32L4xx/I2C-LIS3MLD/halconf.h"/>
+          <File Name="../testex/STM32/STM32L4xx/I2C-LIS3MLD/main.c"/>
+          <File Name="../testex/STM32/STM32L4xx/I2C-LIS3MLD/Makefile"/>
+          <File Name="../testex/STM32/STM32L4xx/I2C-LIS3MLD/chconf.h"/>
+          <File Name="../testex/STM32/STM32L4xx/I2C-LIS3MLD/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="I2C-LSM6DS0">
+          <File Name="../testex/STM32/STM32L4xx/I2C-LSM6DS0/halconf.h"/>
+          <File Name="../testex/STM32/STM32L4xx/I2C-LSM6DS0/main.c"/>
+          <File Name="../testex/STM32/STM32L4xx/I2C-LSM6DS0/Makefile"/>
+          <File Name="../testex/STM32/STM32L4xx/I2C-LSM6DS0/chconf.h"/>
+          <File Name="../testex/STM32/STM32L4xx/I2C-LSM6DS0/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SPI-L3GD20">
+          <File Name="../testex/STM32/STM32L4xx/SPI-L3GD20/halconf.h"/>
+          <File Name="../testex/STM32/STM32L4xx/SPI-L3GD20/main.c"/>
+          <File Name="../testex/STM32/STM32L4xx/SPI-L3GD20/Makefile"/>
+          <File Name="../testex/STM32/STM32L4xx/SPI-L3GD20/chconf.h"/>
+          <File Name="../testex/STM32/STM32L4xx/SPI-L3GD20/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="QSPI-N25Q128">
+          <File Name="../testex/STM32/STM32L4xx/QSPI-N25Q128/halconf.h"/>
+          <File Name="../testex/STM32/STM32L4xx/QSPI-N25Q128/main.c"/>
+          <File Name="../testex/STM32/STM32L4xx/QSPI-N25Q128/Makefile"/>
+          <File Name="../testex/STM32/STM32L4xx/QSPI-N25Q128/chconf.h"/>
+          <File Name="../testex/STM32/STM32L4xx/QSPI-N25Q128/mcuconf.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="STM32F3xx">
+        <VirtualDirectory Name="SPI-L3GD20">
+          <File Name="../testex/STM32/STM32F3xx/SPI-L3GD20/halconf.h"/>
+          <File Name="../testex/STM32/STM32F3xx/SPI-L3GD20/main.c"/>
+          <File Name="../testex/STM32/STM32F3xx/SPI-L3GD20/Makefile"/>
+          <File Name="../testex/STM32/STM32F3xx/SPI-L3GD20/chconf.h"/>
+          <File Name="../testex/STM32/STM32F3xx/SPI-L3GD20/usbcfg.h"/>
+          <File Name="../testex/STM32/STM32F3xx/SPI-L3GD20/usbcfg.c"/>
+          <File Name="../testex/STM32/STM32F3xx/SPI-L3GD20/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="I2C-LSM303DLHC">
+          <File Name="../testex/STM32/STM32F3xx/I2C-LSM303DLHC/halconf.h"/>
+          <File Name="../testex/STM32/STM32F3xx/I2C-LSM303DLHC/main.c"/>
+          <File Name="../testex/STM32/STM32F3xx/I2C-LSM303DLHC/Makefile"/>
+          <File Name="../testex/STM32/STM32F3xx/I2C-LSM303DLHC/chconf.h"/>
+          <File Name="../testex/STM32/STM32F3xx/I2C-LSM303DLHC/usbcfg.h"/>
+          <File Name="../testex/STM32/STM32F3xx/I2C-LSM303DLHC/usbcfg.c"/>
+          <File Name="../testex/STM32/STM32F3xx/I2C-LSM303DLHC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SPI-N25Q128">
+          <File Name="../testex/STM32/STM32F3xx/SPI-N25Q128/halconf.h"/>
+          <File Name="../testex/STM32/STM32F3xx/SPI-N25Q128/main.c"/>
+          <File Name="../testex/STM32/STM32F3xx/SPI-N25Q128/Makefile"/>
+          <File Name="../testex/STM32/STM32F3xx/SPI-N25Q128/chconf.h"/>
+          <File Name="../testex/STM32/STM32F3xx/SPI-N25Q128/mcuconf.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="STM32F4xx">
+        <VirtualDirectory Name="I2C-LIS3MLD">
+          <File Name="../testex/STM32/STM32F4xx/I2C-LIS3MLD/halconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LIS3MLD/main.c"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LIS3MLD/Makefile"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LIS3MLD/chconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LIS3MLD/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="I2C-LPS25H">
+          <File Name="../testex/STM32/STM32F4xx/I2C-LPS25H/halconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LPS25H/main.c"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LPS25H/Makefile"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LPS25H/chconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LPS25H/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SPI-LIS3DSH">
+          <File Name="../testex/STM32/STM32F4xx/SPI-LIS3DSH/halconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-LIS3DSH/main.c"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-LIS3DSH/Makefile"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-LIS3DSH/chconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-LIS3DSH/usbcfg.h"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-LIS3DSH/usbcfg.c"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-LIS3DSH/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="I2C-HTS221">
+          <File Name="../testex/STM32/STM32F4xx/I2C-HTS221/halconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-HTS221/main.c"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-HTS221/Makefile"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-HTS221/chconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-HTS221/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="I2C-LSM6DS0">
+          <File Name="../testex/STM32/STM32F4xx/I2C-LSM6DS0/halconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LSM6DS0/main.c"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LSM6DS0/Makefile"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LSM6DS0/chconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LSM6DS0/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SPI-L3GD20">
+          <File Name="../testex/STM32/STM32F4xx/SPI-L3GD20/halconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-L3GD20/main.c"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-L3GD20/Makefile"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-L3GD20/chconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-L3GD20/usbcfg.h"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-L3GD20/usbcfg.c"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-L3GD20/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="I2C-LSM303DLHC">
+          <File Name="../testex/STM32/STM32F4xx/I2C-LSM303DLHC/halconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LSM303DLHC/main.c"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LSM303DLHC/Makefile"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LSM303DLHC/chconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LSM303DLHC/usbcfg.h"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LSM303DLHC/usbcfg.c"/>
+          <File Name="../testex/STM32/STM32F4xx/I2C-LSM303DLHC/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="SPI-LIS302DL">
+          <File Name="../testex/STM32/STM32F4xx/SPI-LIS302DL/halconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-LIS302DL/main.c"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-LIS302DL/Makefile"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-LIS302DL/chconf.h"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-LIS302DL/usbcfg.h"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-LIS302DL/usbcfg.c"/>
+          <File Name="../testex/STM32/STM32F4xx/SPI-LIS302DL/mcuconf.h"/>
+        </VirtualDirectory>
+        <File Name="../demos/STM32/RT-STM32F407-DISCOVERY-G++/main.cpp"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="test">
+    <VirtualDirectory Name="rt">
+      <VirtualDirectory Name="testbuild">
+        <VirtualDirectory Name="pclint">
+          <File Name="../test/rt/testbuild/pclint/lint_cppmac.h"/>
+          <File Name="../test/rt/testbuild/pclint/co-gcc.h"/>
+          <File Name="../test/rt/testbuild/pclint/lint_cmac.h"/>
+        </VirtualDirectory>
+        <File Name="../test/rt/testbuild/halconf.h"/>
+        <File Name="../test/rt/testbuild/main.c"/>
+        <File Name="../test/rt/testbuild/Makefile"/>
+        <File Name="../test/rt/testbuild/chconf.h"/>
+        <File Name="../test/rt/testbuild/Makefile_win32"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="source">
+        <VirtualDirectory Name="test">
+          <File Name="../test/rt/source/test/test_sequence_001.c"/>
+          <File Name="../test/rt/source/test/test_sequence_012.c"/>
+          <File Name="../test/rt/source/test/test_root.h"/>
+          <File Name="../test/rt/source/test/test_sequence_006.h"/>
+          <File Name="../test/rt/source/test/test_sequence_005.c"/>
+          <File Name="../test/rt/source/test/test_sequence_003.c"/>
+          <File Name="../test/rt/source/test/test_sequence_003.h"/>
+          <File Name="../test/rt/source/test/test_sequence_004.c"/>
+          <File Name="../test/rt/source/test/test_sequence_001.h"/>
+          <File Name="../test/rt/source/test/test_sequence_012.h"/>
+          <File Name="../test/rt/source/test/test_sequence_005.h"/>
+          <File Name="../test/rt/source/test/test_sequence_008.h"/>
+          <File Name="../test/rt/source/test/test_sequence_007.h"/>
+          <File Name="../test/rt/source/test/test_sequence_006.c"/>
+          <File Name="../test/rt/source/test/test_sequence_010.c"/>
+          <File Name="../test/rt/source/test/test_sequence_011.h"/>
+          <File Name="../test/rt/source/test/test_sequence_010.h"/>
+          <File Name="../test/rt/source/test/test_sequence_009.h"/>
+          <File Name="../test/rt/source/test/test_sequence_007.c"/>
+          <File Name="../test/rt/source/test/test_root.c"/>
+          <File Name="../test/rt/source/test/test_sequence_009.c"/>
+          <File Name="../test/rt/source/test/test_sequence_008.c"/>
+          <File Name="../test/rt/source/test/test_sequence_002.h"/>
+          <File Name="../test/rt/source/test/test_sequence_011.c"/>
+          <File Name="../test/rt/source/test/test_sequence_004.h"/>
+          <File Name="../test/rt/source/test/test_sequence_002.c"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="specgen">
+        <File Name="../test/rt/specgen/Doxyfile"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="nil">
+      <VirtualDirectory Name="testbuild">
+        <VirtualDirectory Name="pclint">
+          <File Name="../test/nil/testbuild/pclint/lint_cppmac.h"/>
+          <File Name="../test/nil/testbuild/pclint/co-gcc.h"/>
+          <File Name="../test/nil/testbuild/pclint/lint_cmac.h"/>
+        </VirtualDirectory>
+        <File Name="../test/nil/testbuild/main.c"/>
+        <File Name="../test/nil/testbuild/Makefile"/>
+        <File Name="../test/nil/testbuild/chconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="source">
+        <VirtualDirectory Name="test">
+          <File Name="../test/nil/source/test/test_sequence_001.c"/>
+          <File Name="../test/nil/source/test/test_root.h"/>
+          <File Name="../test/nil/source/test/test_sequence_006.h"/>
+          <File Name="../test/nil/source/test/test_sequence_005.c"/>
+          <File Name="../test/nil/source/test/test_sequence_003.c"/>
+          <File Name="../test/nil/source/test/test_sequence_003.h"/>
+          <File Name="../test/nil/source/test/test_sequence_004.c"/>
+          <File Name="../test/nil/source/test/test_sequence_001.h"/>
+          <File Name="../test/nil/source/test/test_sequence_005.h"/>
+          <File Name="../test/nil/source/test/test_sequence_006.c"/>
+          <File Name="../test/nil/source/test/test_root.c"/>
+          <File Name="../test/nil/source/test/test_sequence_002.h"/>
+          <File Name="../test/nil/source/test/test_sequence_004.h"/>
+          <File Name="../test/nil/source/test/test_sequence_002.c"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="specgen">
+        <File Name="../test/nil/specgen/Doxyfile"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="nasa_osal">
+      <VirtualDirectory Name="source">
+        <VirtualDirectory Name="test">
+          <File Name="../test/nasa_osal/source/test/test_sequence_001.c"/>
+          <File Name="../test/nasa_osal/source/test/test_root.h"/>
+          <File Name="../test/nasa_osal/source/test/test_sequence_006.h"/>
+          <File Name="../test/nasa_osal/source/test/test_sequence_005.c"/>
+          <File Name="../test/nasa_osal/source/test/test_sequence_003.c"/>
+          <File Name="../test/nasa_osal/source/test/test_sequence_003.h"/>
+          <File Name="../test/nasa_osal/source/test/test_sequence_004.c"/>
+          <File Name="../test/nasa_osal/source/test/test_sequence_001.h"/>
+          <File Name="../test/nasa_osal/source/test/test_sequence_005.h"/>
+          <File Name="../test/nasa_osal/source/test/test_sequence_006.c"/>
+          <File Name="../test/nasa_osal/source/test/test_root.c"/>
+          <File Name="../test/nasa_osal/source/test/test_sequence_002.h"/>
+          <File Name="../test/nasa_osal/source/test/test_sequence_004.h"/>
+          <File Name="../test/nasa_osal/source/test/test_sequence_002.c"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="specgen">
+        <File Name="../test/nasa_osal/specgen/Doxyfile"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="hal">
+      <VirtualDirectory Name="testbuild">
+        <VirtualDirectory Name="pclint">
+          <File Name="../test/hal/testbuild/pclint/lint_cppmac.h"/>
+          <File Name="../test/hal/testbuild/pclint/co-gcc.h"/>
+          <File Name="../test/hal/testbuild/pclint/lint_cmac.h"/>
+        </VirtualDirectory>
+        <File Name="../test/hal/testbuild/main.c"/>
+        <File Name="../test/hal/testbuild/Makefile"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="lib">
+      <File Name="../test/lib/ch_test.h"/>
+      <File Name="../test/lib/ch_test.c"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="os">
+    <VirtualDirectory Name="rt">
+      <VirtualDirectory Name="templates">
+        <VirtualDirectory Name="meta">
+          <File Name="../os/rt/templates/meta/module.h"/>
+          <File Name="../os/rt/templates/meta/module.c"/>
+        </VirtualDirectory>
+        <File Name="../os/rt/templates/chconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="include">
+        <File Name="../os/rt/include/chdynamic.h"/>
+        <File Name="../os/rt/include/chchecks.h"/>
+        <File Name="../os/rt/include/chdebug.h"/>
+        <File Name="../os/rt/include/chstats.h"/>
+        <File Name="../os/rt/include/chtrace.h"/>
+        <File Name="../os/rt/include/chthreads.h"/>
+        <File Name="../os/rt/include/chsys.h"/>
+        <File Name="../os/rt/include/chvt.h"/>
+        <File Name="../os/rt/include/chcond.h"/>
+        <File Name="../os/rt/include/chsystypes.h"/>
+        <File Name="../os/rt/include/chalign.h"/>
+        <File Name="../os/rt/include/chtm.h"/>
+        <File Name="../os/rt/include/chschd.h"/>
+        <File Name="../os/rt/include/chcustomer.h"/>
+        <File Name="../os/rt/include/chmtx.h"/>
+        <File Name="../os/rt/include/chevents.h"/>
+        <File Name="../os/rt/include/ch.h"/>
+        <File Name="../os/rt/include/chmsg.h"/>
+        <File Name="../os/rt/include/chsem.h"/>
+        <File Name="../os/rt/include/chregistry.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="src">
+        <File Name="../os/rt/src/chcond.c"/>
+        <File Name="../os/rt/src/chthreads.c"/>
+        <File Name="../os/rt/src/chvt.c"/>
+        <File Name="../os/rt/src/chmsg.c"/>
+        <File Name="../os/rt/src/chregistry.c"/>
+        <File Name="../os/rt/src/chmtx.c"/>
+        <File Name="../os/rt/src/chtm.c"/>
+        <File Name="../os/rt/src/chdebug.c"/>
+        <File Name="../os/rt/src/chschd.c"/>
+        <File Name="../os/rt/src/chsys.c"/>
+        <File Name="../os/rt/src/chtrace.c"/>
+        <File Name="../os/rt/src/chstats.c"/>
+        <File Name="../os/rt/src/chdynamic.c"/>
+        <File Name="../os/rt/src/chevents.c"/>
+        <File Name="../os/rt/src/chsem.c"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="nil">
+      <VirtualDirectory Name="include">
+        <File Name="../os/nil/include/ch.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="templates">
+        <File Name="../os/nil/templates/chconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="src">
+        <File Name="../os/nil/src/ch.c"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="various">
+      <VirtualDirectory Name="lwip_bindings">
+        <VirtualDirectory Name="arch">
+          <File Name="../os/various/lwip_bindings/arch/sys_arch.c"/>
+          <File Name="../os/various/lwip_bindings/arch/cc.h"/>
+          <File Name="../os/various/lwip_bindings/arch/sys_arch.h"/>
+          <File Name="../os/various/lwip_bindings/arch/perf.h"/>
+        </VirtualDirectory>
+        <File Name="../os/various/lwip_bindings/lwipthread.h"/>
+        <File Name="../os/various/lwip_bindings/lwipthread.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="devices_lib">
+        <VirtualDirectory Name="accel">
+          <File Name="../os/various/devices_lib/accel/lis302dl.c"/>
+          <File Name="../os/various/devices_lib/accel/lis302dl.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="lcd">
+          <File Name="../os/various/devices_lib/lcd/lcd3310.c"/>
+          <File Name="../os/various/devices_lib/lcd/lcd3310.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="fatfs_bindings">
+        <File Name="../os/various/fatfs_bindings/fatfs_syscall.c"/>
+        <File Name="../os/various/fatfs_bindings/fatfs_diskio.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="cpp_wrappers">
+        <File Name="../os/various/cpp_wrappers/syscalls_cpp.cpp"/>
+        <File Name="../os/various/cpp_wrappers/ch.cpp"/>
+        <File Name="../os/various/cpp_wrappers/syscalls_cpp.hpp"/>
+        <File Name="../os/various/cpp_wrappers/ch.hpp"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="shell">
+        <File Name="../os/various/shell/shell_cmd.h"/>
+        <File Name="../os/various/shell/shell_cmd.c"/>
+        <File Name="../os/various/shell/shell.c"/>
+        <File Name="../os/various/shell/shell.h"/>
+      </VirtualDirectory>
+      <File Name="../os/various/syscalls.c"/>
+      <File Name="../os/various/evtimer.c"/>
+      <File Name="../os/various/evtimer.h"/>
+      <File Name="../../uxv_prog/shellconf.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="common">
+      <VirtualDirectory Name="abstractions">
+        <VirtualDirectory Name="nasa_cfe">
+          <VirtualDirectory Name="psp">
+            <VirtualDirectory Name="include">
+              <File Name="../os/common/abstractions/nasa_cfe/psp/include/cfe_psp.h"/>
+              <File Name="../os/common/abstractions/nasa_cfe/psp/include/psp_version.h"/>
+              <File Name="../os/common/abstractions/nasa_cfe/psp/include/cfe_psp_config.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="src">
+              <File Name="../os/common/abstractions/nasa_cfe/psp/src/cfe_psp_timer.c"/>
+              <File Name="../os/common/abstractions/nasa_cfe/psp/src/cfe_psp_exception.c"/>
+              <File Name="../os/common/abstractions/nasa_cfe/psp/src/cfe_psp_support.c"/>
+              <File Name="../os/common/abstractions/nasa_cfe/psp/src/cfe_psp_memory.c"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="osal">
+            <VirtualDirectory Name="include">
+              <File Name="../os/common/abstractions/nasa_cfe/osal/include/osapi.h"/>
+              <File Name="../os/common/abstractions/nasa_cfe/osal/include/common_types.h"/>
+              <File Name="../os/common/abstractions/nasa_cfe/osal/include/osapi-os-loader.h"/>
+              <File Name="../os/common/abstractions/nasa_cfe/osal/include/osapi-os-custom.h"/>
+              <File Name="../os/common/abstractions/nasa_cfe/osal/include/osapi-version.h"/>
+              <File Name="../os/common/abstractions/nasa_cfe/osal/include/osapi-os-filesys.h"/>
+              <File Name="../os/common/abstractions/nasa_cfe/osal/include/osapi-os-core.h"/>
+              <File Name="../os/common/abstractions/nasa_cfe/osal/include/osapi-os-net.h"/>
+              <File Name="../os/common/abstractions/nasa_cfe/osal/include/osapi-os-timer.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="src">
+              <File Name="../os/common/abstractions/nasa_cfe/osal/src/osapi.c"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="cmsis_os">
+          <File Name="../os/common/abstractions/cmsis_os/cmsis_os.h"/>
+          <File Name="../os/common/abstractions/cmsis_os/cmsis_os.c"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="ports">
+        <VirtualDirectory Name="ARMCMx">
+          <VirtualDirectory Name="compilers">
+            <VirtualDirectory Name="RVCT">
+              <File Name="../os/common/ports/ARMCMx/compilers/RVCT/chtypes.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="IAR">
+              <File Name="../os/common/ports/ARMCMx/compilers/IAR/chtypes.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="GCC">
+              <File Name="../os/common/ports/ARMCMx/compilers/GCC/chtypes.h"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <File Name="../os/common/ports/ARMCMx/chcore_v7m.c"/>
+          <File Name="../os/common/ports/ARMCMx/chcore.h"/>
+          <File Name="../os/common/ports/ARMCMx/mpu.h"/>
+          <File Name="../os/common/ports/ARMCMx/chcore_v7m.h"/>
+          <File Name="../os/common/ports/ARMCMx/chcore_timer.h"/>
+          <File Name="../os/common/ports/ARMCMx/chcore.c"/>
+          <File Name="../os/common/ports/ARMCMx/chcore_v6m.c"/>
+          <File Name="../os/common/ports/ARMCMx/chcore_v6m.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ARM">
+          <VirtualDirectory Name="compilers">
+            <VirtualDirectory Name="GCC">
+              <File Name="../os/common/ports/ARM/compilers/GCC/chtypes.h"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <File Name="../os/common/ports/ARM/chcore.h"/>
+          <File Name="../os/common/ports/ARM/chcore_timer.h"/>
+          <File Name="../os/common/ports/ARM/chcore.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="templates">
+          <File Name="../os/common/ports/templates/chtypes.h"/>
+          <File Name="../os/common/ports/templates/chcore.h"/>
+          <File Name="../os/common/ports/templates/chcore.c"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="oslib">
+        <VirtualDirectory Name="include">
+          <File Name="../os/common/oslib/include/chmempools.h"/>
+          <File Name="../os/common/oslib/include/chheap.h"/>
+          <File Name="../os/common/oslib/include/chbsem.h"/>
+          <File Name="../os/common/oslib/include/chmemcore.h"/>
+          <File Name="../os/common/oslib/include/chmboxes.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="src">
+          <File Name="../os/common/oslib/src/chmemcore.c"/>
+          <File Name="../os/common/oslib/src/chheap.c"/>
+          <File Name="../os/common/oslib/src/chmempools.c"/>
+          <File Name="../os/common/oslib/src/chmboxes.c"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="startup">
+        <VirtualDirectory Name="ARMCMx">
+          <VirtualDirectory Name="compilers">
+            <VirtualDirectory Name="GCC">
+              <File Name="../os/common/startup/ARMCMx/compilers/GCC/vectors.h"/>
+              <File Name="../os/common/startup/ARMCMx/compilers/GCC/crt1.c"/>
+              <File Name="../os/common/startup/ARMCMx/compilers/GCC/vectors.c"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="devices">
+            <VirtualDirectory Name="STM32F0xx">
+              <File Name="../os/common/startup/ARMCMx/devices/STM32F0xx/cmparams.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32F1xx">
+              <File Name="../os/common/startup/ARMCMx/devices/STM32F1xx/cmparams.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32F4xx">
+              <File Name="../os/common/startup/ARMCMx/devices/STM32F4xx/cmparams.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32L0xx">
+              <File Name="../os/common/startup/ARMCMx/devices/STM32L0xx/cmparams.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32F2xx">
+              <File Name="../os/common/startup/ARMCMx/devices/STM32F2xx/cmparams.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32F7xx">
+              <File Name="../os/common/startup/ARMCMx/devices/STM32F7xx/cmparams.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32L1xx">
+              <File Name="../os/common/startup/ARMCMx/devices/STM32L1xx/cmparams.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32F3xx">
+              <File Name="../os/common/startup/ARMCMx/devices/STM32F3xx/cmparams.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32L4xx">
+              <File Name="../os/common/startup/ARMCMx/devices/STM32L4xx/cmparams.h"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ARM">
+          <VirtualDirectory Name="compilers">
+            <VirtualDirectory Name="GCC">
+              <File Name="../os/common/startup/ARM/compilers/GCC/crt1.c"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="devices">
+            <VirtualDirectory Name="LPC214x">
+              <File Name="../os/common/startup/ARM/devices/LPC214x/lpc214x.h"/>
+              <File Name="../os/common/startup/ARM/devices/LPC214x/armparams.h"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="ext">
+        <VirtualDirectory Name="CMSIS">
+          <VirtualDirectory Name="ST">
+            <VirtualDirectory Name="STM32F0xx">
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f031x6.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f0xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f098xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f058xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f030xc.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f042x6.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f030x8.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f070xb.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f091xc.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f038xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f072xb.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f051x8.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f071xb.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f048xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f030x6.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f070x6.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/system_stm32f0xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F0xx/stm32f078xx.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32F1xx">
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/stm32f101xe.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/stm32f103xg.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/stm32f103xe.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/stm32f107xc.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/stm32f102xb.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/stm32f100xe.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/stm32f101xg.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/stm32f1xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/stm32f103x6.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/stm32f103xb.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/stm32f101x6.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/stm32f105xc.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/stm32f100xb.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/stm32f101xb.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/system_stm32f1xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F1xx/stm32f102x6.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32F4xx">
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f410tx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f401xe.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f469xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f411xe.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f429xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f412cx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/system_stm32f4xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f4xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f479xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f401xc.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f410cx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f412zx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f427xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f412vx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f410rx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f405xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f446xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f407xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f439xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f415xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f412rx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f437xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F4xx/stm32f417xx.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32L0xx">
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l061xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l072xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l071xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l021xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l0xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l081xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l031xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l053xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l011xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l052xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l063xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l051xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/system_stm32l0xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l073xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l083xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l041xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l082xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L0xx/stm32l062xx.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32F2xx">
+              <File Name="../os/common/ext/CMSIS/ST/STM32F2xx/stm32f2xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F2xx/stm32f217xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F2xx/stm32f207xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F2xx/system_stm32f2xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F2xx/stm32f205xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F2xx/stm32f215xx.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32F7xx">
+              <File Name="../os/common/ext/CMSIS/ST/STM32F7xx/stm32f7xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F7xx/stm32f769xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F7xx/stm32f746xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F7xx/stm32f745xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F7xx/stm32f779xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F7xx/stm32f765xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F7xx/stm32f767xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F7xx/system_stm32f7xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F7xx/stm32f777xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F7xx/stm32f756xx.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32L1xx">
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l151xdx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l162xe.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l152xba.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l151xba.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l151xca.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l152xd.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l151xe.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l152xb.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l162xc.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l152xe.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l1xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l100xc.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l151xd.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l100xb.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l162xca.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l162xd.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l152xca.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l100xba.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l151xc.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l162xdx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/system_stm32l1xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l152xc.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l152xdx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L1xx/stm32l151xb.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32F3xx">
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/stm32f318xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/system_stm32f3xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/stm32f398xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/stm32f302x8.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/stm32f373xc.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/stm32f328xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/stm32f302xe.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/stm32f301x8.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/stm32f302xc.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/stm32f378xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/stm32f303x8.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/stm32f3xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/stm32f303xe.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/stm32f303xc.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/stm32f334x8.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32F3xx/stm32f358xx.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STM32L4xx">
+              <File Name="../os/common/ext/CMSIS/ST/STM32L4xx/stm32l443xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L4xx/stm32l475xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L4xx/stm32l431xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L4xx/stm32l4xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L4xx/stm32l471xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L4xx/stm32l432xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L4xx/stm32l485xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L4xx/system_stm32l4xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L4xx/stm32l442xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L4xx/stm32l486xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L4xx/stm32l433xx.h"/>
+              <File Name="../os/common/ext/CMSIS/ST/STM32L4xx/stm32l476xx.h"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="Infineon">
+            <VirtualDirectory Name="XMC1100">
+              <File Name="../os/common/ext/CMSIS/Infineon/XMC1100/XMC1000_RomFunctionTable.h"/>
+              <File Name="../os/common/ext/CMSIS/Infineon/XMC1100/system_XMC1100.h"/>
+              <File Name="../os/common/ext/CMSIS/Infineon/XMC1100/XMC1100.h"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="include">
+            <File Name="../os/common/ext/CMSIS/include/cmsis_gcc.h"/>
+            <File Name="../os/common/ext/CMSIS/include/core_cm0plus.h"/>
+            <File Name="../os/common/ext/CMSIS/include/core_cm4.h"/>
+            <File Name="../os/common/ext/CMSIS/include/core_cmFunc.h"/>
+            <File Name="../os/common/ext/CMSIS/include/core_cm0.h"/>
+            <File Name="../os/common/ext/CMSIS/include/core_cm7.h"/>
+            <File Name="../os/common/ext/CMSIS/include/core_cmSimd.h"/>
+            <File Name="../os/common/ext/CMSIS/include/core_cmInstr.h"/>
+            <File Name="../os/common/ext/CMSIS/include/core_cm3.h"/>
+            <File Name="../os/common/ext/CMSIS/include/arm_common_tables.h"/>
+            <File Name="../os/common/ext/CMSIS/include/cmsis_armcc.h"/>
+            <File Name="../os/common/ext/CMSIS/include/cmsis_armcc_V6.h"/>
+            <File Name="../os/common/ext/CMSIS/include/core_sc000.h"/>
+            <File Name="../os/common/ext/CMSIS/include/arm_const_structs.h"/>
+            <File Name="../os/common/ext/CMSIS/include/core_sc300.h"/>
+            <File Name="../os/common/ext/CMSIS/include/arm_math.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="generic">
+            <File Name="../os/common/ext/CMSIS/generic/system_generic.h"/>
+            <File Name="../os/common/ext/CMSIS/generic/generic_cm0.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="hal">
+      <VirtualDirectory Name="ports">
+        <VirtualDirectory Name="simulator">
+          <VirtualDirectory Name="posix">
+            <File Name="../os/hal/ports/simulator/posix/hal_lld.c"/>
+            <File Name="../os/hal/ports/simulator/posix/hal_lld.h"/>
+            <File Name="../os/hal/ports/simulator/posix/hal_serial_lld.c"/>
+            <File Name="../os/hal/ports/simulator/posix/hal_serial_lld.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="win32">
+            <File Name="../os/hal/ports/simulator/win32/hal_lld.c"/>
+            <File Name="../os/hal/ports/simulator/win32/hal_lld.h"/>
+            <File Name="../os/hal/ports/simulator/win32/hal_serial_lld.c"/>
+            <File Name="../os/hal/ports/simulator/win32/hal_serial_lld.h"/>
+          </VirtualDirectory>
+          <File Name="../os/hal/ports/simulator/hal_pal_lld.h"/>
+          <File Name="../os/hal/ports/simulator/console.h"/>
+          <File Name="../os/hal/ports/simulator/console.c"/>
+          <File Name="../os/hal/ports/simulator/hal_st_lld.h"/>
+          <File Name="../os/hal/ports/simulator/hal_pal_lld.c"/>
+          <File Name="../os/hal/ports/simulator/hal_st_lld.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="STM32">
+          <VirtualDirectory Name="LLD">
+            <VirtualDirectory Name="I2Cv2">
+              <File Name="../os/hal/ports/STM32/LLD/I2Cv2/hal_i2c_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/I2Cv2/hal_i2c_lld.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="ADCv2">
+              <File Name="../os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="xWDGv1">
+              <File Name="../os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="SDMMCv1">
+              <File Name="../os/hal/ports/STM32/LLD/SDMMCv1/hal_sdc_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/SDMMCv1/hal_sdc_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="RTCv2">
+              <File Name="../os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="MACv1">
+              <File Name="../os/hal/ports/STM32/LLD/MACv1/hal_mac_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/MACv1/hal_mac_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="DMAv1">
+              <File Name="../os/hal/ports/STM32/LLD/DMAv1/stm32_dma.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/DMAv1/stm32_dma.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="I2Cv1">
+              <File Name="../os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="DACv1">
+              <File Name="../os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="GPIOv3">
+              <File Name="../os/hal/ports/STM32/LLD/GPIOv3/hal_pal_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/GPIOv3/hal_pal_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="ADCv1">
+              <File Name="../os/hal/ports/STM32/LLD/ADCv1/hal_adc_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/ADCv1/hal_adc_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="USARTv2">
+              <File Name="../os/hal/ports/STM32/LLD/USARTv2/hal_uart_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/USARTv2/hal_serial_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/USARTv2/hal_serial_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/USARTv2/hal_uart_lld.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="ADCv3">
+              <File Name="../os/hal/ports/STM32/LLD/ADCv3/hal_adc_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/ADCv3/hal_adc_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="SPIv1">
+              <File Name="../os/hal/ports/STM32/LLD/SPIv1/hal_i2s_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/SPIv1/hal_i2s_lld.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="EXTIv1">
+              <File Name="../os/hal/ports/STM32/LLD/EXTIv1/hal_ext_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/EXTIv1/hal_ext_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="CANv1">
+              <File Name="../os/hal/ports/STM32/LLD/CANv1/hal_can_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/CANv1/hal_can_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="QUADSPIv1">
+              <File Name="../os/hal/ports/STM32/LLD/QUADSPIv1/hal_qspi_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/QUADSPIv1/hal_qspi_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="SPIv2">
+              <File Name="../os/hal/ports/STM32/LLD/SPIv2/hal_i2s_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/SPIv2/hal_spi_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/SPIv2/hal_spi_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/SPIv2/hal_i2s_lld.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="USBv1">
+              <File Name="../os/hal/ports/STM32/LLD/USBv1/hal_usb_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/USBv1/hal_usb_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/USBv1/stm32_usb.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="DMAv2">
+              <File Name="../os/hal/ports/STM32/LLD/DMAv2/stm32_dma.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/DMAv2/stm32_dma.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="GPIOv2">
+              <File Name="../os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="RTCv1">
+              <File Name="../os/hal/ports/STM32/LLD/RTCv1/hal_rtc_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/RTCv1/hal_rtc_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="GPIOv1">
+              <File Name="../os/hal/ports/STM32/LLD/GPIOv1/hal_pal_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/GPIOv1/hal_pal_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="TIMv1">
+              <File Name="../os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/TIMv1/hal_st_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/TIMv1/stm32_tim.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/TIMv1/hal_st_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="USARTv1">
+              <File Name="../os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="OTGv1">
+              <File Name="../os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.c"/>
+              <File Name="../os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="SDIOv1">
+              <File Name="../os/hal/ports/STM32/LLD/SDIOv1/hal_sdc_lld.h"/>
+              <File Name="../os/hal/ports/STM32/LLD/SDIOv1/hal_sdc_lld.c"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="STM32F0xx">
+            <File Name="../os/hal/ports/STM32/STM32F0xx/hal_lld.c"/>
+            <File Name="../os/hal/ports/STM32/STM32F0xx/hal_ext_lld_isr.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F0xx/stm32_isr.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F0xx/stm32_registry.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F0xx/stm32_rcc.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F0xx/hal_lld.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F0xx/hal_ext_lld_isr.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="STM32F1xx">
+            <File Name="../os/hal/ports/STM32/STM32F1xx/hal_lld.c"/>
+            <File Name="../os/hal/ports/STM32/STM32F1xx/hal_ext_lld_isr.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F1xx/hal_adc_lld.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F1xx/hal_adc_lld.c"/>
+            <File Name="../os/hal/ports/STM32/STM32F1xx/stm32_isr.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F1xx/stm32_registry.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F1xx/stm32_rcc.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F1xx/hal_lld_f105_f107.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F1xx/hal_lld.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F1xx/hal_ext_lld_isr.c"/>
+            <File Name="../os/hal/ports/STM32/STM32F1xx/hal_lld_f103.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F1xx/hal_lld_f100.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="STM32F4xx">
+            <File Name="../os/hal/ports/STM32/STM32F4xx/hal_lld.c"/>
+            <File Name="../os/hal/ports/STM32/STM32F4xx/hal_ext_lld_isr.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F4xx/stm32_isr.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F4xx/stm32_registry.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F4xx/stm32_rcc.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F4xx/hal_lld.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F4xx/hal_ext_lld_isr.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="STM32L0xx">
+            <File Name="../os/hal/ports/STM32/STM32L0xx/hal_lld.c"/>
+            <File Name="../os/hal/ports/STM32/STM32L0xx/hal_ext_lld_isr.h"/>
+            <File Name="../os/hal/ports/STM32/STM32L0xx/stm32_registry.h"/>
+            <File Name="../os/hal/ports/STM32/STM32L0xx/stm32_rcc.h"/>
+            <File Name="../os/hal/ports/STM32/STM32L0xx/hal_lld.h"/>
+            <File Name="../os/hal/ports/STM32/STM32L0xx/hal_ext_lld_isr.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="STM32F37x">
+            <File Name="../os/hal/ports/STM32/STM32F37x/hal_lld.c"/>
+            <File Name="../os/hal/ports/STM32/STM32F37x/hal_ext_lld_isr.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F37x/hal_adc_lld.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F37x/hal_adc_lld.c"/>
+            <File Name="../os/hal/ports/STM32/STM32F37x/stm32_isr.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F37x/stm32_registry.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F37x/stm32_rcc.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F37x/hal_lld.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F37x/hal_ext_lld_isr.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="STM32F7xx">
+            <File Name="../os/hal/ports/STM32/STM32F7xx/hal_lld.c"/>
+            <File Name="../os/hal/ports/STM32/STM32F7xx/hal_ext_lld_isr.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F7xx/stm32_registry.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F7xx/stm32_rcc.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F7xx/hal_lld.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F7xx/hal_ext_lld_isr.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="STM32L1xx">
+            <File Name="../os/hal/ports/STM32/STM32L1xx/hal_lld.c"/>
+            <File Name="../os/hal/ports/STM32/STM32L1xx/hal_ext_lld_isr.h"/>
+            <File Name="../os/hal/ports/STM32/STM32L1xx/hal_adc_lld.h"/>
+            <File Name="../os/hal/ports/STM32/STM32L1xx/hal_adc_lld.c"/>
+            <File Name="../os/hal/ports/STM32/STM32L1xx/stm32_isr.h"/>
+            <File Name="../os/hal/ports/STM32/STM32L1xx/stm32_registry.h"/>
+            <File Name="../os/hal/ports/STM32/STM32L1xx/stm32_rcc.h"/>
+            <File Name="../os/hal/ports/STM32/STM32L1xx/hal_lld.h"/>
+            <File Name="../os/hal/ports/STM32/STM32L1xx/hal_ext_lld_isr.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="STM32F3xx">
+            <File Name="../os/hal/ports/STM32/STM32F3xx/hal_lld.c"/>
+            <File Name="../os/hal/ports/STM32/STM32F3xx/hal_ext_lld_isr.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F3xx/stm32_isr.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F3xx/stm32_registry.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F3xx/stm32_rcc.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F3xx/hal_lld.h"/>
+            <File Name="../os/hal/ports/STM32/STM32F3xx/hal_ext_lld_isr.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="STM32L4xx">
+            <File Name="../os/hal/ports/STM32/STM32L4xx/hal_lld.c"/>
+            <File Name="../os/hal/ports/STM32/STM32L4xx/hal_ext_lld_isr.h"/>
+            <File Name="../os/hal/ports/STM32/STM32L4xx/stm32_registry.h"/>
+            <File Name="../os/hal/ports/STM32/STM32L4xx/stm32_rcc.h"/>
+            <File Name="../os/hal/ports/STM32/STM32L4xx/hal_lld.h"/>
+            <File Name="../os/hal/ports/STM32/STM32L4xx/hal_ext_lld_isr.c"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="common">
+          <VirtualDirectory Name="ARMCMx">
+            <File Name="../os/hal/ports/common/ARMCMx/nvic.h"/>
+            <File Name="../os/hal/ports/common/ARMCMx/nvic.c"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="templates">
+        <VirtualDirectory Name="board">
+          <File Name="../os/hal/templates/board/board.h"/>
+          <File Name="../os/hal/templates/board/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="osal">
+          <File Name="../os/hal/templates/osal/osal.h"/>
+          <File Name="../os/hal/templates/osal/osal.c"/>
+        </VirtualDirectory>
+        <File Name="../os/hal/templates/hal_i2s_lld.c"/>
+        <File Name="../os/hal/templates/hal_pal_lld.h"/>
+        <File Name="../os/hal/templates/hal_lld.c"/>
+        <File Name="../os/hal/templates/hal_usb_lld.c"/>
+        <File Name="../os/hal/templates/halconf.h"/>
+        <File Name="../os/hal/templates/hal_can_lld.h"/>
+        <File Name="../os/hal/templates/hal_spi_lld.h"/>
+        <File Name="../os/hal/templates/hal_uart_lld.c"/>
+        <File Name="../os/hal/templates/hal_dac_lld.h"/>
+        <File Name="../os/hal/templates/hal_qspi_lld.h"/>
+        <File Name="../os/hal/templates/hal_i2c_lld.c"/>
+        <File Name="../os/hal/templates/hal_dac_lld.c"/>
+        <File Name="../os/hal/templates/hal_sdc_lld.h"/>
+        <File Name="../os/hal/templates/hal_usb_lld.h"/>
+        <File Name="../os/hal/templates/hal_adc_lld.h"/>
+        <File Name="../os/hal/templates/hal_pwm_lld.h"/>
+        <File Name="../os/hal/templates/hal_icu_lld.h"/>
+        <File Name="../os/hal/templates/hal_wdg_lld.c"/>
+        <File Name="../os/hal/templates/hal_icu_lld.c"/>
+        <File Name="../os/hal/templates/hal_adc_lld.c"/>
+        <File Name="../os/hal/templates/hal_i2c_lld.h"/>
+        <File Name="../os/hal/templates/hal_sdc_lld.c"/>
+        <File Name="../os/hal/templates/hal_spi_lld.c"/>
+        <File Name="../os/hal/templates/hal_gpt_lld.h"/>
+        <File Name="../os/hal/templates/hal_ext_lld.h"/>
+        <File Name="../os/hal/templates/hal_pwm_lld.c"/>
+        <File Name="../os/hal/templates/hal_wdg_lld.h"/>
+        <File Name="../os/hal/templates/hal_st_lld.h"/>
+        <File Name="../os/hal/templates/hal_pal_lld.c"/>
+        <File Name="../os/hal/templates/hal_lld.h"/>
+        <File Name="../os/hal/templates/hal_gpt_lld.c"/>
+        <File Name="../os/hal/templates/hal_serial_lld.c"/>
+        <File Name="../os/hal/templates/hal_rtc_lld.h"/>
+        <File Name="../os/hal/templates/hal_can_lld.c"/>
+        <File Name="../os/hal/templates/hal_serial_lld.h"/>
+        <File Name="../os/hal/templates/hal_rtc_lld.c"/>
+        <File Name="../os/hal/templates/hal_qspi_lld.c"/>
+        <File Name="../os/hal/templates/hal_st_lld.c"/>
+        <File Name="../os/hal/templates/hal_uart_lld.h"/>
+        <File Name="../os/hal/templates/hal_ext_lld.c"/>
+        <File Name="../os/hal/templates/hal_mac_lld.h"/>
+        <File Name="../os/hal/templates/mcuconf.h"/>
+        <File Name="../os/hal/templates/hal_mac_lld.c"/>
+        <File Name="../os/hal/templates/hal_i2s_lld.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="boards">
+        <VirtualDirectory Name="ST_STM3220G_EVAL">
+          <File Name="../os/hal/boards/ST_STM3220G_EVAL/board.h"/>
+          <File Name="../os/hal/boards/ST_STM3220G_EVAL/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO144_F429ZI">
+          <File Name="../os/hal/boards/ST_NUCLEO144_F429ZI/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO144_F429ZI/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="OLIMEX_STM32_E407">
+          <File Name="../os/hal/boards/OLIMEX_STM32_E407/board.h"/>
+          <File Name="../os/hal/boards/OLIMEX_STM32_E407/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO32_F303K8">
+          <File Name="../os/hal/boards/ST_NUCLEO32_F303K8/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO32_F303K8/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_F302R8">
+          <File Name="../os/hal/boards/ST_NUCLEO64_F302R8/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_F302R8/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_F103RB">
+          <File Name="../os/hal/boards/ST_NUCLEO64_F103RB/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_F103RB/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32F0_DISCOVERY">
+          <File Name="../os/hal/boards/ST_STM32F0_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32F0_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32L053_DISCOVERY">
+          <File Name="../os/hal/boards/ST_STM32L053_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32L053_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="OLIMEX_STM32_P107">
+          <File Name="../os/hal/boards/OLIMEX_STM32_P107/board.h"/>
+          <File Name="../os/hal/boards/OLIMEX_STM32_P107/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO144_F207ZG">
+          <File Name="../os/hal/boards/ST_NUCLEO144_F207ZG/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO144_F207ZG/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="MAPLEMINI_STM32_F103">
+          <File Name="../os/hal/boards/MAPLEMINI_STM32_F103/board.h"/>
+          <File Name="../os/hal/boards/MAPLEMINI_STM32_F103/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_L053R8">
+          <File Name="../os/hal/boards/ST_NUCLEO64_L053R8/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_L053R8/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="OLIMEX_STM32_E407_REV_D">
+          <File Name="../os/hal/boards/OLIMEX_STM32_E407_REV_D/board.h"/>
+          <File Name="../os/hal/boards/OLIMEX_STM32_E407_REV_D/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32F469I_DISCOVERY">
+          <File Name="../os/hal/boards/ST_STM32F469I_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32F469I_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_F091RC">
+          <File Name="../os/hal/boards/ST_NUCLEO64_F091RC/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_F091RC/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32F334_DISCOVERY">
+          <File Name="../os/hal/boards/ST_STM32F334_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32F334_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM3210C_EVAL">
+          <File Name="../os/hal/boards/ST_STM3210C_EVAL/board.h"/>
+          <File Name="../os/hal/boards/ST_STM3210C_EVAL/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_L073RZ">
+          <File Name="../os/hal/boards/ST_NUCLEO64_L073RZ/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_L073RZ/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32L_DISCOVERY">
+          <File Name="../os/hal/boards/ST_STM32L_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32L_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_F446RE">
+          <File Name="../os/hal/boards/ST_NUCLEO64_F446RE/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_F446RE/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_F411RE">
+          <File Name="../os/hal/boards/ST_NUCLEO64_F411RE/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_F411RE/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="MIKROE_CLICKER2_STM32">
+          <File Name="../os/hal/boards/MIKROE_CLICKER2_STM32/board.h"/>
+          <File Name="../os/hal/boards/MIKROE_CLICKER2_STM32/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO144_F767ZI">
+          <File Name="../os/hal/boards/ST_NUCLEO144_F767ZI/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO144_F767ZI/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32F2_DISCOVERY">
+          <File Name="../os/hal/boards/ST_STM32F2_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32F2_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32F3_DISCOVERY_REVC">
+          <File Name="../os/hal/boards/ST_STM32F3_DISCOVERY_REVC/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32F3_DISCOVERY_REVC/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="OLIMEX_STM32_H103">
+          <File Name="../os/hal/boards/OLIMEX_STM32_H103/board.h"/>
+          <File Name="../os/hal/boards/OLIMEX_STM32_H103/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="OLIMEX_STM32_103STK">
+          <File Name="../os/hal/boards/OLIMEX_STM32_103STK/board.h"/>
+          <File Name="../os/hal/boards/OLIMEX_STM32_103STK/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_F030R8">
+          <File Name="../os/hal/boards/ST_NUCLEO64_F030R8/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_F030R8/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_F334R8">
+          <File Name="../os/hal/boards/ST_NUCLEO64_F334R8/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_F334R8/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="OLIMEX_STM32_P103">
+          <File Name="../os/hal/boards/OLIMEX_STM32_P103/board.h"/>
+          <File Name="../os/hal/boards/OLIMEX_STM32_P103/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32373C_EVAL">
+          <File Name="../os/hal/boards/ST_STM32373C_EVAL/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32373C_EVAL/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32L476_DISCOVERY">
+          <File Name="../os/hal/boards/ST_STM32L476_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32L476_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32F401C_DISCOVERY">
+          <File Name="../os/hal/boards/ST_STM32F401C_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32F401C_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_F070RB">
+          <File Name="../os/hal/boards/ST_NUCLEO64_F070RB/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_F070RB/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO32_L432KC">
+          <File Name="../os/hal/boards/ST_NUCLEO32_L432KC/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO32_L432KC/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_L476RG">
+          <File Name="../os/hal/boards/ST_NUCLEO64_L476RG/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_L476RG/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32F769I_DISCOVERY">
+          <File Name="../os/hal/boards/ST_STM32F769I_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32F769I_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_L152RE">
+          <File Name="../os/hal/boards/ST_NUCLEO64_L152RE/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_L152RE/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO32_F042K6">
+          <File Name="../os/hal/boards/ST_NUCLEO32_F042K6/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO32_F042K6/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="simulator">
+          <File Name="../os/hal/boards/simulator/board.h"/>
+          <File Name="../os/hal/boards/simulator/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32F746G_DISCOVERY">
+          <File Name="../os/hal/boards/ST_STM32F746G_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32F746G_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="OLIMEX_STM32_H407">
+          <File Name="../os/hal/boards/OLIMEX_STM32_H407/board.h"/>
+          <File Name="../os/hal/boards/OLIMEX_STM32_H407/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_F303RE">
+          <File Name="../os/hal/boards/ST_NUCLEO64_F303RE/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_F303RE/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_F410RB">
+          <File Name="../os/hal/boards/ST_NUCLEO64_F410RB/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_F410RB/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_INEMO_M1_DISCOVERY">
+          <File Name="../os/hal/boards/ST_INEMO_M1_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_INEMO_M1_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO144_F446ZE">
+          <File Name="../os/hal/boards/ST_NUCLEO144_F446ZE/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO144_F446ZE/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32F4_DISCOVERY">
+          <File Name="../os/hal/boards/ST_STM32F4_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32F4_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="OLIMEX_STM32_P407">
+          <File Name="../os/hal/boards/OLIMEX_STM32_P407/board.h"/>
+          <File Name="../os/hal/boards/OLIMEX_STM32_P407/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32F072B_DISCOVERY">
+          <File Name="../os/hal/boards/ST_STM32F072B_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32F072B_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO32_L031K6">
+          <File Name="../os/hal/boards/ST_NUCLEO32_L031K6/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO32_L031K6/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO32_L011K4">
+          <File Name="../os/hal/boards/ST_NUCLEO32_L011K4/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO32_L011K4/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO144_F303ZE">
+          <File Name="../os/hal/boards/ST_NUCLEO144_F303ZE/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO144_F303ZE/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32F429I_DISCOVERY">
+          <File Name="../os/hal/boards/ST_STM32F429I_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32F429I_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_F072RB">
+          <File Name="../os/hal/boards/ST_NUCLEO64_F072RB/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_F072RB/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO144_F412ZG">
+          <File Name="../os/hal/boards/ST_NUCLEO144_F412ZG/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO144_F412ZG/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32F3_DISCOVERY">
+          <File Name="../os/hal/boards/ST_STM32F3_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32F3_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM3210E_EVAL">
+          <File Name="../os/hal/boards/ST_STM3210E_EVAL/board.h"/>
+          <File Name="../os/hal/boards/ST_STM3210E_EVAL/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO32_F031K6">
+          <File Name="../os/hal/boards/ST_NUCLEO32_F031K6/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO32_F031K6/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="STM32F103C8_MINIMAL">
+          <File Name="../os/hal/boards/STM32F103C8_MINIMAL/board.h"/>
+          <File Name="../os/hal/boards/STM32F103C8_MINIMAL/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="OLIMEX_STM32_LCD">
+          <File Name="../os/hal/boards/OLIMEX_STM32_LCD/board.h"/>
+          <File Name="../os/hal/boards/OLIMEX_STM32_LCD/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO64_F401RE">
+          <File Name="../os/hal/boards/ST_NUCLEO64_F401RE/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO64_F401RE/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="NONSTANDARD_STM32F4_BARTHESS1">
+          <File Name="../os/hal/boards/NONSTANDARD_STM32F4_BARTHESS1/board.h"/>
+          <File Name="../os/hal/boards/NONSTANDARD_STM32F4_BARTHESS1/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_STM32VL_DISCOVERY">
+          <File Name="../os/hal/boards/ST_STM32VL_DISCOVERY/board.h"/>
+          <File Name="../os/hal/boards/ST_STM32VL_DISCOVERY/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ST_NUCLEO144_F746ZG">
+          <File Name="../os/hal/boards/ST_NUCLEO144_F746ZG/board.h"/>
+          <File Name="../os/hal/boards/ST_NUCLEO144_F746ZG/board.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="UXV_XP1">
+          <File Name="../os/hal/boards/UXV_XP1/board.c"/>
+          <File Name="../os/hal/boards/UXV_XP1/board.h"/>
+          <File Name="../os/hal/boards/UXV_XP1/board.mk"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="MIKROE_STM32M4_CLICKER">
+          <File Name="../os/hal/boards/MIKROE_STM32M4_CLICKER/board.h"/>
+          <File Name="../os/hal/boards/MIKROE_STM32M4_CLICKER/board.c"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="osal">
+        <VirtualDirectory Name="os-less">
+          <VirtualDirectory Name="AVR">
+            <File Name="../os/hal/osal/os-less/AVR/osal.h"/>
+            <File Name="../os/hal/osal/os-less/AVR/osal.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="ARMCMx">
+            <File Name="../os/hal/osal/os-less/ARMCMx/osal.h"/>
+            <File Name="../os/hal/osal/os-less/ARMCMx/osal.c"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="lib">
+          <File Name="../os/hal/osal/lib/osal_vt.h"/>
+          <File Name="../os/hal/osal/lib/osal_vt.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="nil">
+          <File Name="../os/hal/osal/nil/osal.h"/>
+          <File Name="../os/hal/osal/nil/osal.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="rt">
+          <File Name="../os/hal/osal/rt/osal.h"/>
+          <File Name="../os/hal/osal/rt/osal.c"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="lib">
+        <VirtualDirectory Name="peripherals">
+          <VirtualDirectory Name="displays">
+            <File Name="../os/hal/lib/peripherals/displays/hal_displays.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="flash">
+            <File Name="../os/hal/lib/peripherals/flash/hal_jesd216_flash.c"/>
+            <File Name="../os/hal/lib/peripherals/flash/hal_flash.c"/>
+            <File Name="../os/hal/lib/peripherals/flash/hal_flash.h"/>
+            <File Name="../os/hal/lib/peripherals/flash/hal_jesd216_flash.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="sensors">
+            <File Name="../os/hal/lib/peripherals/sensors/hal_accelerometer.h"/>
+            <File Name="../os/hal/lib/peripherals/sensors/hal_sensors.h"/>
+            <File Name="../os/hal/lib/peripherals/sensors/hal_compass.h"/>
+            <File Name="../os/hal/lib/peripherals/sensors/hal_hygrometer.h"/>
+            <File Name="../os/hal/lib/peripherals/sensors/hal_thermometer.h"/>
+            <File Name="../os/hal/lib/peripherals/sensors/hal_barometer.h"/>
+            <File Name="../os/hal/lib/peripherals/sensors/hal_gyroscope.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="fallback">
+          <VirtualDirectory Name="I2C">
+            <File Name="../os/hal/lib/fallback/I2C/hal_i2c_lld.c"/>
+            <File Name="../os/hal/lib/fallback/I2C/hal_i2c_lld.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="streams">
+          <File Name="../os/hal/lib/streams/chprintf.c"/>
+          <File Name="../os/hal/lib/streams/memstreams.h"/>
+          <File Name="../os/hal/lib/streams/nullstreams.h"/>
+          <File Name="../os/hal/lib/streams/chprintf.h"/>
+          <File Name="../os/hal/lib/streams/memstreams.c"/>
+          <File Name="../os/hal/lib/streams/nullstreams.c"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="include">
+        <File Name="../os/hal/include/hal_i2s.h"/>
+        <File Name="../os/hal/include/hal_ext.h"/>
+        <File Name="../os/hal/include/hal_spi.h"/>
+        <File Name="../os/hal/include/hal_queues.h"/>
+        <File Name="../os/hal/include/hal_channels.h"/>
+        <File Name="../os/hal/include/hal_serial.h"/>
+        <File Name="../os/hal/include/hal.h"/>
+        <File Name="../os/hal/include/hal_mmc_spi.h"/>
+        <File Name="../os/hal/include/hal_adc.h"/>
+        <File Name="../os/hal/include/hal_icu.h"/>
+        <File Name="../os/hal/include/hal_i2c.h"/>
+        <File Name="../os/hal/include/hal_sdc.h"/>
+        <File Name="../os/hal/include/hal_files.h"/>
+        <File Name="../os/hal/include/hal_gpt.h"/>
+        <File Name="../os/hal/include/hal_usb_cdc.h"/>
+        <File Name="../os/hal/include/hal_streams.h"/>
+        <File Name="../os/hal/include/hal_wdg.h"/>
+        <File Name="../os/hal/include/hal_ioblock.h"/>
+        <File Name="../os/hal/include/hal_mmcsd.h"/>
+        <File Name="../os/hal/include/hal_dac.h"/>
+        <File Name="../os/hal/include/hal_mii.h"/>
+        <File Name="../os/hal/include/hal_usb.h"/>
+        <File Name="../os/hal/include/hal_serial_usb.h"/>
+        <File Name="../os/hal/include/hal_pwm.h"/>
+        <File Name="../os/hal/include/hal_mac.h"/>
+        <File Name="../os/hal/include/hal_pal.h"/>
+        <File Name="../os/hal/include/hal_st.h"/>
+        <File Name="../os/hal/include/hal_uart.h"/>
+        <File Name="../os/hal/include/hal_buffers.h"/>
+        <File Name="../os/hal/include/hal_rtc.h"/>
+        <File Name="../os/hal/include/hal_can.h"/>
+        <File Name="../os/hal/include/hal_qspi.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="src">
+        <File Name="../os/hal/src/hal_st.c"/>
+        <File Name="../os/hal/src/hal_usb.c"/>
+        <File Name="../os/hal/src/hal_wdg.c"/>
+        <File Name="../os/hal/src/hal_serial_usb.c"/>
+        <File Name="../os/hal/src/hal_dac.c"/>
+        <File Name="../os/hal/src/hal_ext.c"/>
+        <File Name="../os/hal/src/hal_icu.c"/>
+        <File Name="../os/hal/src/hal_gpt.c"/>
+        <File Name="../os/hal/src/hal_qspi.c"/>
+        <File Name="../os/hal/src/hal_i2s.c"/>
+        <File Name="../os/hal/src/hal_adc.c"/>
+        <File Name="../os/hal/src/hal_buffers.c"/>
+        <File Name="../os/hal/src/hal_mac.c"/>
+        <File Name="../os/hal/src/hal_serial.c"/>
+        <File Name="../os/hal/src/hal_mmc_spi.c"/>
+        <File Name="../os/hal/src/hal.c"/>
+        <File Name="../os/hal/src/hal_can.c"/>
+        <File Name="../os/hal/src/hal_pwm.c"/>
+        <File Name="../os/hal/src/hal_sdc.c"/>
+        <File Name="../os/hal/src/hal_pal.c"/>
+        <File Name="../os/hal/src/hal_rtc.c"/>
+        <File Name="../os/hal/src/hal_spi.c"/>
+        <File Name="../os/hal/src/hal_uart.c"/>
+        <File Name="../os/hal/src/hal_i2c.c"/>
+        <File Name="../os/hal/src/hal_mmcsd.c"/>
+        <File Name="../os/hal/src/hal_queues.c"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="ex">
+      <VirtualDirectory Name="Micron">
+        <File Name="../os/ex/Micron/m25q.h"/>
+        <File Name="../os/ex/Micron/m25q.c"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="ST">
+        <File Name="../os/ex/ST/lis302dl.c"/>
+        <File Name="../os/ex/ST/lps25h.c"/>
+        <File Name="../os/ex/ST/lsm6ds0.c"/>
+        <File Name="../os/ex/ST/hts221.c"/>
+        <File Name="../os/ex/ST/lsm6ds0.h"/>
+        <File Name="../os/ex/ST/lis3dsh.c"/>
+        <File Name="../os/ex/ST/l3gd20.c"/>
+        <File Name="../os/ex/ST/lsm303dlhc.h"/>
+        <File Name="../os/ex/ST/lis302dl.h"/>
+        <File Name="../os/ex/ST/l3gd20.h"/>
+        <File Name="../os/ex/ST/lis3mdl.h"/>
+        <File Name="../os/ex/ST/lis3mdl.c"/>
+        <File Name="../os/ex/ST/lsm303dlhc.c"/>
+        <File Name="../os/ex/ST/hts221.h"/>
+        <File Name="../os/ex/ST/lis3dsh.h"/>
+        <File Name="../os/ex/ST/lps25h.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="license">
+      <File Name="../os/license/chlicense.h"/>
+      <File Name="../os/license/chcustomer.h"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="doc">
+    <VirtualDirectory Name="hal-stm32f3">
+      <File Name="../doc/hal-stm32f3/Doxyfile_html"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="hal">
+      <File Name="../doc/hal/Doxyfile_html"/>
+      <File Name="../doc/hal/Doxyfile_chm"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="nil">
+      <File Name="../doc/nil/Doxyfile_html"/>
+      <File Name="../doc/nil/Doxyfile_chm"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="rt">
+      <File Name="../doc/rt/Doxyfile_html"/>
+      <File Name="../doc/rt/Doxyfile_chm"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="demos">
+    <VirtualDirectory Name="various">
+      <VirtualDirectory Name="RT-ARMCM4-GENERIC">
+        <File Name="../demos/various/RT-ARMCM4-GENERIC/main.c"/>
+        <File Name="../demos/various/RT-ARMCM4-GENERIC/Makefile"/>
+        <File Name="../demos/various/RT-ARMCM4-GENERIC/chconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="NIL-ARMCM4-GENERIC">
+        <File Name="../demos/various/NIL-ARMCM4-GENERIC/main.c"/>
+        <File Name="../demos/various/NIL-ARMCM4-GENERIC/Makefile"/>
+        <File Name="../demos/various/NIL-ARMCM4-GENERIC/chconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-ARMCM0-GENERIC">
+        <File Name="../demos/various/RT-ARMCM0-GENERIC/main.c"/>
+        <File Name="../demos/various/RT-ARMCM0-GENERIC/Makefile"/>
+        <File Name="../demos/various/RT-ARMCM0-GENERIC/chconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="NIL-ARMCM0-GENERIC">
+        <File Name="../demos/various/NIL-ARMCM0-GENERIC/main.c"/>
+        <File Name="../demos/various/NIL-ARMCM0-GENERIC/Makefile"/>
+        <File Name="../demos/various/NIL-ARMCM0-GENERIC/chconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-Win32-Simulator">
+        <File Name="../demos/various/RT-Win32-Simulator/halconf.h"/>
+        <File Name="../demos/various/RT-Win32-Simulator/main.c"/>
+        <File Name="../demos/various/RT-Win32-Simulator/Makefile"/>
+        <File Name="../demos/various/RT-Win32-Simulator/chconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-ARM7-GENERIC">
+        <File Name="../demos/various/RT-ARM7-GENERIC/main.c"/>
+        <File Name="../demos/various/RT-ARM7-GENERIC/Makefile"/>
+        <File Name="../demos/various/RT-ARM7-GENERIC/chconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-Posix-Simulator">
+        <File Name="../demos/various/RT-Posix-Simulator/halconf.h"/>
+        <File Name="../demos/various/RT-Posix-Simulator/main.c"/>
+        <File Name="../demos/various/RT-Posix-Simulator/Makefile"/>
+        <File Name="../demos/various/RT-Posix-Simulator/chconf.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="STM32">
+      <VirtualDirectory Name="RT-STM32F746G-DISCOVERY-LWIP-FATFS-USB">
+        <VirtualDirectory Name="web">
+          <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY-LWIP-FATFS-USB/web/web.h"/>
+          <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY-LWIP-FATFS-USB/web/web.c"/>
+        </VirtualDirectory>
+        <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY-LWIP-FATFS-USB/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY-LWIP-FATFS-USB/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY-LWIP-FATFS-USB/ffconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY-LWIP-FATFS-USB/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY-LWIP-FATFS-USB/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY-LWIP-FATFS-USB/lwipopts.h"/>
+        <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY-LWIP-FATFS-USB/usbcfg.h"/>
+        <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY-LWIP-FATFS-USB/usbcfg.c"/>
+        <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY-LWIP-FATFS-USB/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F407-OLIMEX_E407-LWIP-FATFS-USB">
+        <VirtualDirectory Name="web">
+          <File Name="../demos/STM32/RT-STM32F407-OLIMEX_E407-LWIP-FATFS-USB/web/web.h"/>
+          <File Name="../demos/STM32/RT-STM32F407-OLIMEX_E407-LWIP-FATFS-USB/web/web.c"/>
+        </VirtualDirectory>
+        <File Name="../demos/STM32/RT-STM32F407-OLIMEX_E407-LWIP-FATFS-USB/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F407-OLIMEX_E407-LWIP-FATFS-USB/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F407-OLIMEX_E407-LWIP-FATFS-USB/ffconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F407-OLIMEX_E407-LWIP-FATFS-USB/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F407-OLIMEX_E407-LWIP-FATFS-USB/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F407-OLIMEX_E407-LWIP-FATFS-USB/lwipopts.h"/>
+        <File Name="../demos/STM32/RT-STM32F407-OLIMEX_E407-LWIP-FATFS-USB/usbcfg.h"/>
+        <File Name="../demos/STM32/RT-STM32F407-OLIMEX_E407-LWIP-FATFS-USB/usbcfg.c"/>
+        <File Name="../demos/STM32/RT-STM32F407-OLIMEX_E407-LWIP-FATFS-USB/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F107-OLIMEX_P107-LWIP">
+        <VirtualDirectory Name="web">
+          <File Name="../demos/STM32/RT-STM32F107-OLIMEX_P107-LWIP/web/web.h"/>
+          <File Name="../demos/STM32/RT-STM32F107-OLIMEX_P107-LWIP/web/web.c"/>
+        </VirtualDirectory>
+        <File Name="../demos/STM32/RT-STM32F107-OLIMEX_P107-LWIP/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F107-OLIMEX_P107-LWIP/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F107-OLIMEX_P107-LWIP/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F107-OLIMEX_P107-LWIP/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F107-OLIMEX_P107-LWIP/lwipopts.h"/>
+        <File Name="../demos/STM32/RT-STM32F107-OLIMEX_P107-LWIP/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32L152RE-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32L152RE-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L152RE-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32L152RE-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32L152RE-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L152RE-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F207-DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32F207-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F207-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F207-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F207-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F207-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F103-OLIMEX_STM32_P103-FATFS">
+        <File Name="../demos/STM32/RT-STM32F103-OLIMEX_STM32_P103-FATFS/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F103-OLIMEX_STM32_P103-FATFS/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F103-OLIMEX_STM32_P103-FATFS/ffconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F103-OLIMEX_STM32_P103-FATFS/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F103-OLIMEX_STM32_P103-FATFS/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F103-OLIMEX_STM32_P103-FATFS/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F769I-DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32F769I-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F769I-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F769I-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F769I-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F769I-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32L031K6-NUCLEO32">
+        <File Name="../demos/STM32/RT-STM32L031K6-NUCLEO32/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L031K6-NUCLEO32/main.c"/>
+        <File Name="../demos/STM32/RT-STM32L031K6-NUCLEO32/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32L031K6-NUCLEO32/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L031K6-NUCLEO32/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F303RE-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32F303RE-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F303RE-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F303RE-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F303RE-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F303RE-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="NIL-STM32F373-STM32373C_EVAL">
+        <File Name="../demos/STM32/NIL-STM32F373-STM32373C_EVAL/halconf.h"/>
+        <File Name="../demos/STM32/NIL-STM32F373-STM32373C_EVAL/main.c"/>
+        <File Name="../demos/STM32/NIL-STM32F373-STM32373C_EVAL/Makefile"/>
+        <File Name="../demos/STM32/NIL-STM32F373-STM32373C_EVAL/chconf.h"/>
+        <File Name="../demos/STM32/NIL-STM32F373-STM32373C_EVAL/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32L476-DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32L476-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L476-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32L476-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32L476-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L476-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="NASA-OSAL-STM32F746G-DISCOVERY">
+        <File Name="../demos/STM32/NASA-OSAL-STM32F746G-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/NASA-OSAL-STM32F746G-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/NASA-OSAL-STM32F746G-DISCOVERY/osconfig.h"/>
+        <File Name="../demos/STM32/NASA-OSAL-STM32F746G-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/NASA-OSAL-STM32F746G-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/NASA-OSAL-STM32F746G-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F373-STM32373C_EVAL">
+        <File Name="../demos/STM32/RT-STM32F373-STM32373C_EVAL/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F373-STM32373C_EVAL/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F373-STM32373C_EVAL/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F373-STM32373C_EVAL/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F373-STM32373C_EVAL/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F303ZE-NUCLEO144">
+        <File Name="../demos/STM32/RT-STM32F303ZE-NUCLEO144/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F303ZE-NUCLEO144/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F303ZE-NUCLEO144/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F303ZE-NUCLEO144/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F303ZE-NUCLEO144/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F103-OLIMEX_STM32_P103">
+        <File Name="../demos/STM32/RT-STM32F103-OLIMEX_STM32_P103/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F103-OLIMEX_STM32_P103/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F103-OLIMEX_STM32_P103/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F103-OLIMEX_STM32_P103/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F103-OLIMEX_STM32_P103/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F334-DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32F334-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F334-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F334-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F334-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F334-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="NIL-STM32F303-DISCOVERY">
+        <File Name="../demos/STM32/NIL-STM32F303-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/NIL-STM32F303-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/NIL-STM32F303-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/NIL-STM32F303-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/NIL-STM32F303-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F302R8-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32F302R8-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F302R8-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F302R8-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F302R8-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F302R8-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F407-DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32F407-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F407-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F407-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F407-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F407-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32L432KC-NUCLEO32">
+        <File Name="../demos/STM32/RT-STM32L432KC-NUCLEO32/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L432KC-NUCLEO32/main.c"/>
+        <File Name="../demos/STM32/RT-STM32L432KC-NUCLEO32/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32L432KC-NUCLEO32/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L432KC-NUCLEO32/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F407-DISCOVERY-G++">
+        <File Name="../demos/STM32/RT-STM32F407-DISCOVERY-G++/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F407-DISCOVERY-G++/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F407-DISCOVERY-G++/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F407-DISCOVERY-G++/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="NASA-OSAL-STM32F407-DISCOVERY">
+        <File Name="../demos/STM32/NASA-OSAL-STM32F407-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/NASA-OSAL-STM32F407-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/NASA-OSAL-STM32F407-DISCOVERY/osconfig.h"/>
+        <File Name="../demos/STM32/NASA-OSAL-STM32F407-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/NASA-OSAL-STM32F407-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/NASA-OSAL-STM32F407-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F070RB-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32F070RB-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F070RB-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F070RB-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F070RB-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F070RB-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32L476RG-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32L476RG-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L476RG-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32L476RG-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32L476RG-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L476RG-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F303-DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32F303-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F303-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F303-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F303-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F303-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="CMSIS-STM32F407-DISCOVERY">
+        <File Name="../demos/STM32/CMSIS-STM32F407-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/CMSIS-STM32F407-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/CMSIS-STM32F407-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/CMSIS-STM32F407-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/CMSIS-STM32F407-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F030R8-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32F030R8-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F030R8-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F030R8-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F030R8-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F030R8-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F429-DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32F429-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F429-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F429-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F429-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F429-DISCOVERY/usbcfg.h"/>
+        <File Name="../demos/STM32/RT-STM32F429-DISCOVERY/usbcfg.c"/>
+        <File Name="../demos/STM32/RT-STM32F429-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F072RB-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32F072RB-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F072RB-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F072RB-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F072RB-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F072RB-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F767ZI-NUCLEO144">
+        <File Name="../demos/STM32/RT-STM32F767ZI-NUCLEO144/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F767ZI-NUCLEO144/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F767ZI-NUCLEO144/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F767ZI-NUCLEO144/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F767ZI-NUCLEO144/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="NIL-STM32F100-DISCOVERY">
+        <File Name="../demos/STM32/NIL-STM32F100-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/NIL-STM32F100-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/NIL-STM32F100-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/NIL-STM32F100-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/NIL-STM32F100-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F446RE-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32F446RE-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F446RE-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F446RE-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F446RE-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F446RE-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="NIL-STM32L152-DISCOVERY">
+        <File Name="../demos/STM32/NIL-STM32L152-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/NIL-STM32L152-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/NIL-STM32L152-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/NIL-STM32L152-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/NIL-STM32L152-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="NIL-STM32F051-DISCOVERY">
+        <File Name="../demos/STM32/NIL-STM32F051-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/NIL-STM32F051-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/NIL-STM32F051-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/NIL-STM32F051-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/NIL-STM32F051-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F042K6-NUCLEO32">
+        <File Name="../demos/STM32/RT-STM32F042K6-NUCLEO32/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F042K6-NUCLEO32/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F042K6-NUCLEO32/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F042K6-NUCLEO32/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F042K6-NUCLEO32/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F429ZI-NUCLEO144">
+        <File Name="../demos/STM32/RT-STM32F429ZI-NUCLEO144/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F429ZI-NUCLEO144/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F429ZI-NUCLEO144/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F429ZI-NUCLEO144/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F429ZI-NUCLEO144/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32L053R8-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32L053R8-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L053R8-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32L053R8-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32L053R8-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L053R8-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F303K8-NUCLEO32">
+        <File Name="../demos/STM32/RT-STM32F303K8-NUCLEO32/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F303K8-NUCLEO32/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F303K8-NUCLEO32/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F303K8-NUCLEO32/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F303K8-NUCLEO32/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32L053-DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32L053-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L053-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32L053-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32L053-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L053-DISCOVERY/usbcfg.h"/>
+        <File Name="../demos/STM32/RT-STM32L053-DISCOVERY/usbcfg.c"/>
+        <File Name="../demos/STM32/RT-STM32L053-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F446ZE-NUCLEO144">
+        <File Name="../demos/STM32/RT-STM32F446ZE-NUCLEO144/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F446ZE-NUCLEO144/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F446ZE-NUCLEO144/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F446ZE-NUCLEO144/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F446ZE-NUCLEO144/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F411RE-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32F411RE-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F411RE-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F411RE-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F411RE-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F411RE-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32L073RZ-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32L073RZ-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L073RZ-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32L073RZ-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32L073RZ-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L073RZ-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F746G-DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F746G-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F746ZG-NUCLEO144">
+        <File Name="../demos/STM32/RT-STM32F746ZG-NUCLEO144/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F746ZG-NUCLEO144/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F746ZG-NUCLEO144/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F746ZG-NUCLEO144/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F746ZG-NUCLEO144/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F207ZG-NUCLEO144">
+        <File Name="../demos/STM32/RT-STM32F207ZG-NUCLEO144/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F207ZG-NUCLEO144/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F207ZG-NUCLEO144/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F207ZG-NUCLEO144/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F207ZG-NUCLEO144/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F401RE-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32F401RE-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F401RE-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F401RE-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F401RE-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F401RE-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F103_INEMO_DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32F103_INEMO_DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F103_INEMO_DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F103_INEMO_DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F103_INEMO_DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F103_INEMO_DISCOVERY/usbcfg.h"/>
+        <File Name="../demos/STM32/RT-STM32F103_INEMO_DISCOVERY/usbcfg.c"/>
+        <File Name="../demos/STM32/RT-STM32F103_INEMO_DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F334R8-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32F334R8-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F334R8-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F334R8-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F334R8-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F334R8-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F091RC-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32F091RC-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F091RC-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F091RC-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F091RC-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F091RC-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F103-STM3210E_EVAL-FATFS-USB">
+        <File Name="../demos/STM32/RT-STM32F103-STM3210E_EVAL-FATFS-USB/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F103-STM3210E_EVAL-FATFS-USB/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F103-STM3210E_EVAL-FATFS-USB/ffconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F103-STM3210E_EVAL-FATFS-USB/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F103-STM3210E_EVAL-FATFS-USB/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F103-STM3210E_EVAL-FATFS-USB/usbcfg.h"/>
+        <File Name="../demos/STM32/RT-STM32F103-STM3210E_EVAL-FATFS-USB/usbcfg.c"/>
+        <File Name="../demos/STM32/RT-STM32F103-STM3210E_EVAL-FATFS-USB/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="NIL-STM32F746G-DISCOVERY">
+        <File Name="../demos/STM32/NIL-STM32F746G-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/NIL-STM32F746G-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/NIL-STM32F746G-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/NIL-STM32F746G-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/NIL-STM32F746G-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F410RB-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32F410RB-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F410RB-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F410RB-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F410RB-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F410RB-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F303-DISCOVERY-REVC">
+        <File Name="../demos/STM32/RT-STM32F303-DISCOVERY-REVC/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F303-DISCOVERY-REVC/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F303-DISCOVERY-REVC/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F303-DISCOVERY-REVC/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F303-DISCOVERY-REVC/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F401C-DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32F401C-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F401C-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F401C-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F401C-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F401C-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F100-DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32F100-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F100-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F100-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F100-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F100-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F103RB-NUCLEO64">
+        <File Name="../demos/STM32/RT-STM32F103RB-NUCLEO64/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F103RB-NUCLEO64/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F103RB-NUCLEO64/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F103RB-NUCLEO64/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F103RB-NUCLEO64/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="NIL-STM32L011K4-NUCLEO32">
+        <File Name="../demos/STM32/NIL-STM32L011K4-NUCLEO32/halconf.h"/>
+        <File Name="../demos/STM32/NIL-STM32L011K4-NUCLEO32/main.c"/>
+        <File Name="../demos/STM32/NIL-STM32L011K4-NUCLEO32/Makefile"/>
+        <File Name="../demos/STM32/NIL-STM32L011K4-NUCLEO32/chconf.h"/>
+        <File Name="../demos/STM32/NIL-STM32L011K4-NUCLEO32/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F469I-DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32F469I-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F469I-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F469I-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F469I-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F469I-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F072-DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32F072-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F072-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F072-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F072-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F072-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F103-MAPLEMINI">
+        <File Name="../demos/STM32/RT-STM32F103-MAPLEMINI/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F103-MAPLEMINI/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F103-MAPLEMINI/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F103-MAPLEMINI/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F103-MAPLEMINI/usbcfg.h"/>
+        <File Name="../demos/STM32/RT-STM32F103-MAPLEMINI/usbcfg.c"/>
+        <File Name="../demos/STM32/RT-STM32F103-MAPLEMINI/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F031K6-NUCLEO32">
+        <File Name="../demos/STM32/RT-STM32F031K6-NUCLEO32/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F031K6-NUCLEO32/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F031K6-NUCLEO32/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F031K6-NUCLEO32/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F031K6-NUCLEO32/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F051-DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32F051-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F051-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F051-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F051-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F051-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="HAL-STM32F407-DISCOVERY">
+        <File Name="../demos/STM32/HAL-STM32F407-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/HAL-STM32F407-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/HAL-STM32F407-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/HAL-STM32F407-DISCOVERY/osalconf.h"/>
+        <File Name="../demos/STM32/HAL-STM32F407-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32F412ZG-NUCLEO144">
+        <File Name="../demos/STM32/RT-STM32F412ZG-NUCLEO144/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F412ZG-NUCLEO144/main.c"/>
+        <File Name="../demos/STM32/RT-STM32F412ZG-NUCLEO144/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32F412ZG-NUCLEO144/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32F412ZG-NUCLEO144/mcuconf.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="RT-STM32L152-DISCOVERY">
+        <File Name="../demos/STM32/RT-STM32L152-DISCOVERY/halconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L152-DISCOVERY/main.c"/>
+        <File Name="../demos/STM32/RT-STM32L152-DISCOVERY/Makefile"/>
+        <File Name="../demos/STM32/RT-STM32L152-DISCOVERY/chconf.h"/>
+        <File Name="../demos/STM32/RT-STM32L152-DISCOVERY/mcuconf.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="community">
+    <VirtualDirectory Name="os">
+      <VirtualDirectory Name="various">
+        <VirtualDirectory Name="devices_lib">
+          <VirtualDirectory Name="mems">
+            <File Name="../community/os/various/devices_lib/mems/lsm6ds0.c"/>
+            <File Name="../community/os/various/devices_lib/mems/lsm6ds0.h"/>
+            <File Name="../community/os/various/devices_lib/mems/l3gd20.c"/>
+            <File Name="../community/os/various/devices_lib/mems/lsm303dlhc.h"/>
+            <File Name="../community/os/various/devices_lib/mems/l3gd20.h"/>
+            <File Name="../community/os/various/devices_lib/mems/lis3mdl.h"/>
+            <File Name="../community/os/various/devices_lib/mems/lis3mdl.c"/>
+            <File Name="../community/os/various/devices_lib/mems/lsm303dlhc.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="others">
+            <File Name="../community/os/various/devices_lib/others/max7219.h"/>
+            <File Name="../community/os/various/devices_lib/others/max7219.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="lcd">
+            <File Name="../community/os/various/devices_lib/lcd/ili9341.c"/>
+            <File Name="../community/os/various/devices_lib/lcd/ili9341.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="rf">
+            <File Name="../community/os/various/devices_lib/rf/nrf24l01.h"/>
+            <File Name="../community/os/various/devices_lib/rf/nrf24l01.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="sensors">
+            <File Name="../community/os/various/devices_lib/sensors/hdc1000.h"/>
+            <File Name="../community/os/various/devices_lib/sensors/tsl2561.h"/>
+            <File Name="../community/os/various/devices_lib/sensors/tsl2591.h"/>
+            <File Name="../community/os/various/devices_lib/sensors/tsl2561.c"/>
+            <File Name="../community/os/various/devices_lib/sensors/mcp9808.c"/>
+            <File Name="../community/os/various/devices_lib/sensors/tsl2591.c"/>
+            <File Name="../community/os/various/devices_lib/sensors/mcp9808.h"/>
+            <File Name="../community/os/various/devices_lib/sensors/sensor.h"/>
+            <File Name="../community/os/various/devices_lib/sensors/hdc1000.c"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <File Name="../community/os/various/memtest.h"/>
+        <File Name="../community/os/various/crcsw.h"/>
+        <File Name="../community/os/various/tribuf.c"/>
+        <File Name="../community/os/various/tribuf.h"/>
+        <File Name="../community/os/various/i2c_helpers.h"/>
+        <File Name="../community/os/various/bitmap.c"/>
+        <File Name="../community/os/various/lib_scsi.c"/>
+        <File Name="../community/os/various/crcsw.c"/>
+        <File Name="../community/os/various/bitmap.h"/>
+        <File Name="../community/os/various/ramdisk.h"/>
+        <File Name="../community/os/various/lib_scsi.h"/>
+        <File Name="../community/os/various/ramdisk.c"/>
+        <File Name="../community/os/various/bswap.h"/>
+        <File Name="../community/os/various/dbgtrace.h"/>
+        <File Name="../community/os/various/memtest.cpp"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="common">
+        <VirtualDirectory Name="ports"/>
+        <VirtualDirectory Name="startup">
+          <VirtualDirectory Name="ARMCMx">
+            <VirtualDirectory Name="devices">
+              <VirtualDirectory Name="NRF52832">
+                <File Name="../community/os/common/startup/ARMCMx/devices/NRF52832/cmparams.h"/>
+              </VirtualDirectory>
+            </VirtualDirectory>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ext">
+          <VirtualDirectory Name="CMSIS"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="hal">
+        <VirtualDirectory Name="src">
+          <VirtualDirectory Name="usbh">
+            <File Name="../community/os/hal/src/usbh/hal_usbh_uvc.c"/>
+            <File Name="../community/os/hal/src/usbh/hal_usbh_debug.c"/>
+            <File Name="../community/os/hal/src/usbh/hal_usbh_ftdi.c"/>
+            <File Name="../community/os/hal/src/usbh/hal_usbh_msd.c"/>
+            <File Name="../community/os/hal/src/usbh/hal_usbh_hub.c"/>
+            <File Name="../community/os/hal/src/usbh/hal_usbh_desciter.c"/>
+          </VirtualDirectory>
+          <File Name="../community/os/hal/src/hal_comp.c"/>
+          <File Name="../community/os/hal/src/hal_usb_hid.c"/>
+          <File Name="../community/os/hal/src/hal_ee24xx.c"/>
+          <File Name="../community/os/hal/src/hal_eeprom.c"/>
+          <File Name="../community/os/hal/src/hal_crc.c"/>
+          <File Name="../community/os/hal/src/hal_eicu.c"/>
+          <File Name="../community/os/hal/src/hal_timcap.c"/>
+          <File Name="../community/os/hal/src/hal_community.c"/>
+          <File Name="../community/os/hal/src/hal_usbh.c"/>
+          <File Name="../community/os/hal/src/hal_nand.c"/>
+          <File Name="../community/os/hal/src/hal_onewire.c"/>
+          <File Name="../community/os/hal/src/hal_ee25xx.c"/>
+          <File Name="../community/os/hal/src/hal_rng.c"/>
+          <File Name="../community/os/hal/src/hal_usb_msd.c"/>
+          <File Name="../community/os/hal/src/hal_qei.c"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="ports">
+          <VirtualDirectory Name="STM32">
+            <VirtualDirectory Name="LLD">
+              <VirtualDirectory Name="USBHv1">
+                <File Name="../community/os/hal/ports/STM32/LLD/USBHv1/hal_usbh_lld.c"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/USBHv1/hal_usbh_lld.h"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/USBHv1/hal_stm32_otg.h"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="FSMCv1">
+                <File Name="../community/os/hal/ports/STM32/LLD/FSMCv1/hal_fsmc_sdram.h"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/FSMCv1/hal_fsmc_sram.h"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/FSMCv1/hal_fsmc_sdram.c"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/FSMCv1/hal_fsmc_sram.c"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.h"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/FSMCv1/hal_fsmc.h"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/FSMCv1/hal_fsmc.c"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="CRCv1">
+                <File Name="../community/os/hal/ports/STM32/LLD/CRCv1/hal_crc_lld.c"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/CRCv1/hal_crc_lld.h"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="DMA2Dv1">
+                <File Name="../community/os/hal/ports/STM32/LLD/DMA2Dv1/hal_stm32_dma2d.h"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/DMA2Dv1/hal_stm32_dma2d.c"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="LTDCv1">
+                <File Name="../community/os/hal/ports/STM32/LLD/LTDCv1/hal_stm32_ltdc.h"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/LTDCv1/hal_stm32_ltdc.c"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="TIMv1">
+                <File Name="../community/os/hal/ports/STM32/LLD/TIMv1/hal_qei_lld.c"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/TIMv1/hal_eicu_lld.h"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/TIMv1/hal_timcap_lld.h"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/TIMv1/hal_qei_lld.h"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/TIMv1/hal_eicu_lld.c"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/TIMv1/hal_timcap_lld.c"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="COMPv1">
+                <File Name="../community/os/hal/ports/STM32/LLD/COMPv1/hal_comp_lld.h"/>
+                <File Name="../community/os/hal/ports/STM32/LLD/COMPv1/hal_comp_lld.c"/>
+              </VirtualDirectory>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="NRF5">
+            <VirtualDirectory Name="NRF52832">
+              <File Name="../community/os/hal/ports/NRF5/NRF52832/hal_lld.c"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF52832/nrf_delay.h"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF52832/nrf52_bitfields.h"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF52832/hal_lld.h"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF52832/nrf52.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="NRF51822">
+              <File Name="../community/os/hal/ports/NRF5/NRF51822/hal_lld.c"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF51822/nrf_delay.h"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF51822/hal_ext_lld_isr.h"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF51822/hal_adc_lld.h"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF51822/hal_pwm_lld.h"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF51822/hal_adc_lld.c"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF51822/nrf51.h"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF51822/nrf51_bitfields.h"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF51822/hal_ext_lld.h"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF51822/hal_pwm_lld.c"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF51822/hal_lld.h"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF51822/hal_ext_lld_isr.c"/>
+              <File Name="../community/os/hal/ports/NRF5/NRF51822/hal_ext_lld.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="LLD">
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_qei_lld.c"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_pal_lld.h"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_spi_lld.h"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_qei_lld.h"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_i2c_lld.c"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_wdg_lld.c"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_i2c_lld.h"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_spi_lld.c"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_gpt_lld.h"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_wdg_lld.h"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_st_lld.h"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_pal_lld.c"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_gpt_lld.c"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_rng_lld.c"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_serial_lld.c"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_rng_lld.h"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_serial_lld.h"/>
+              <File Name="../community/os/hal/ports/NRF5/LLD/hal_st_lld.c"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="boards">
+          <VirtualDirectory Name="ST_STM32F0308_DISCOVERY">
+            <File Name="../community/os/hal/boards/ST_STM32F0308_DISCOVERY/board.h"/>
+            <File Name="../community/os/hal/boards/ST_STM32F0308_DISCOVERY/board.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="NONSTANDARD_STM32F4_BARTHESS2">
+            <File Name="../community/os/hal/boards/NONSTANDARD_STM32F4_BARTHESS2/board.h"/>
+            <File Name="../community/os/hal/boards/NONSTANDARD_STM32F4_BARTHESS2/board.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="NRF52-DK">
+            <File Name="../community/os/hal/boards/NRF52-DK/board.h"/>
+            <File Name="../community/os/hal/boards/NRF52-DK/board.c"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="include">
+          <VirtualDirectory Name="usbh">
+            <VirtualDirectory Name="dev">
+              <File Name="../community/os/hal/include/usbh/dev/hub.h"/>
+              <File Name="../community/os/hal/include/usbh/dev/msd.h"/>
+              <File Name="../community/os/hal/include/usbh/dev/ftdi.h"/>
+            </VirtualDirectory>
+            <File Name="../community/os/hal/include/usbh/list.h"/>
+            <File Name="../community/os/hal/include/usbh/desciter.h"/>
+            <File Name="../community/os/hal/include/usbh/defs.h"/>
+            <File Name="../community/os/hal/include/usbh/debug.h"/>
+            <File Name="../community/os/hal/include/usbh/internal.h"/>
+          </VirtualDirectory>
+          <File Name="../community/os/hal/include/hal_usb_msd.h"/>
+          <File Name="../community/os/hal/include/hal_community.h"/>
+          <File Name="../community/os/hal/include/hal_comp.h"/>
+          <File Name="../community/os/hal/include/hal_usb_hid.h"/>
+          <File Name="../community/os/hal/include/hal_rng.h"/>
+          <File Name="../community/os/hal/include/hal_crc.h"/>
+          <File Name="../community/os/hal/include/hal_onewire.h"/>
+          <File Name="../community/os/hal/include/hal_ee25xx.h"/>
+          <File Name="../community/os/hal/include/hal_usbh.h"/>
+          <File Name="../community/os/hal/include/hal_ee24xx.h"/>
+          <File Name="../community/os/hal/include/hal_qei.h"/>
+          <File Name="../community/os/hal/include/hal_timcap.h"/>
+          <File Name="../community/os/hal/include/hal_nand.h"/>
+          <File Name="../community/os/hal/include/hal_eicu.h"/>
+          <File Name="../community/os/hal/include/hal_eeprom.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="testhal">
+      <VirtualDirectory Name="STM32">
+        <VirtualDirectory Name="STM32F3xx">
+          <VirtualDirectory Name="TIMCAP">
+            <File Name="../community/testhal/STM32/STM32F3xx/TIMCAP/halconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/TIMCAP/main.c"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/TIMCAP/mcuconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/TIMCAP/Makefile"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/TIMCAP/chconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/TIMCAP/halconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/TIMCAP/mcuconf.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="EEProm">
+            <File Name="../community/testhal/STM32/STM32F3xx/EEProm/halconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/EEProm/main.c"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/EEProm/mcuconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/EEProm/Makefile"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/EEProm/chconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/EEProm/halconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/EEProm/mcuconf.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="COMP">
+            <File Name="../community/testhal/STM32/STM32F3xx/COMP/halconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/COMP/main.c"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/COMP/mcuconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/COMP/Makefile"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/COMP/chconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/COMP/halconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F3xx/COMP/mcuconf.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="STM32F7xx">
+          <VirtualDirectory Name="USB_MSD">
+            <File Name="../community/testhal/STM32/STM32F7xx/USB_MSD/halconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F7xx/USB_MSD/main.c"/>
+            <File Name="../community/testhal/STM32/STM32F7xx/USB_MSD/Makefile"/>
+            <File Name="../community/testhal/STM32/STM32F7xx/USB_MSD/chconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F7xx/USB_MSD/usbcfg.h"/>
+            <File Name="../community/testhal/STM32/STM32F7xx/USB_MSD/usbcfg.c"/>
+            <File Name="../community/testhal/STM32/STM32F7xx/USB_MSD/halconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F7xx/USB_MSD/mcuconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F7xx/USB_MSD/romfs_img.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="STM32F4xx">
+          <VirtualDirectory Name="USB_HOST">
+            <File Name="../community/testhal/STM32/STM32F4xx/USB_HOST/halconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/USB_HOST/main.c"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/USB_HOST/mcuconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/USB_HOST/ffconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/USB_HOST/Makefile"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/USB_HOST/chconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/USB_HOST/integer.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/USB_HOST/halconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/USB_HOST/fatfs_diskio.c"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/USB_HOST/ff.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/USB_HOST/ff.c"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/USB_HOST/mcuconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/USB_HOST/diskio.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="onewire">
+            <File Name="../community/testhal/STM32/STM32F4xx/onewire/halconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/onewire/main.c"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/onewire/mcuconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/onewire/Makefile"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/onewire/chconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/onewire/halconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/onewire/boarddef.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/onewire/mcuconf.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="EICU">
+            <File Name="../community/testhal/STM32/STM32F4xx/EICU/halconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/EICU/main.c"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/EICU/mcuconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/EICU/Makefile"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/EICU/chconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/EICU/halconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/EICU/mcuconf.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="FSMC_SRAM">
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SRAM/membench.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SRAM/halconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SRAM/main.c"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SRAM/mcuconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SRAM/Makefile"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SRAM/chconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SRAM/membench.c"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SRAM/memcpy_dma.c"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SRAM/halconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SRAM/memcpy_dma.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SRAM/mcuconf.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="FSMC_SDRAM">
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SDRAM/membench.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SDRAM/halconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SDRAM/main.c"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SDRAM/mcuconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SDRAM/Makefile"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SDRAM/chconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SDRAM/membench.c"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SDRAM/memcpy_dma.c"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SDRAM/halconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SDRAM/memcpy_dma.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_SDRAM/mcuconf.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="FSMC_NAND">
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_NAND/halconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_NAND/main.c"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_NAND/mcuconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_NAND/Makefile"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_NAND/chconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_NAND/dma_storm.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_NAND/dma_storm_uart.c"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_NAND/dma_storm_spi.c"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_NAND/halconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_NAND/dma_storm_adc.c"/>
+            <File Name="../community/testhal/STM32/STM32F4xx/FSMC_NAND/mcuconf.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="STM32F1xx">
+          <VirtualDirectory Name="onewire">
+            <File Name="../community/testhal/STM32/STM32F1xx/onewire/halconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F1xx/onewire/main.c"/>
+            <File Name="../community/testhal/STM32/STM32F1xx/onewire/mcuconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F1xx/onewire/Makefile"/>
+            <File Name="../community/testhal/STM32/STM32F1xx/onewire/chconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F1xx/onewire/halconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F1xx/onewire/boarddef.h"/>
+            <File Name="../community/testhal/STM32/STM32F1xx/onewire/mcuconf.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="qei">
+            <File Name="../community/testhal/STM32/STM32F1xx/qei/halconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F1xx/qei/main.c"/>
+            <File Name="../community/testhal/STM32/STM32F1xx/qei/mcuconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F1xx/qei/Makefile"/>
+            <File Name="../community/testhal/STM32/STM32F1xx/qei/chconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F1xx/qei/halconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F1xx/qei/mcuconf.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="STM32F0xx">
+          <VirtualDirectory Name="onewire">
+            <File Name="../community/testhal/STM32/STM32F0xx/onewire/halconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/onewire/main.c"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/onewire/mcuconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/onewire/Makefile"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/onewire/chconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/onewire/halconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/onewire/boarddef.h"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/onewire/mcuconf.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="qei">
+            <File Name="../community/testhal/STM32/STM32F0xx/qei/halconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/qei/main.c"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/qei/mcuconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/qei/Makefile"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/qei/chconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/qei/halconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/qei/mcuconf.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="crc">
+            <File Name="../community/testhal/STM32/STM32F0xx/crc/halconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/crc/main.c"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/crc/mcuconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/crc/Makefile"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/crc/chconf.h"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/crc/halconf_community.h"/>
+            <File Name="../community/testhal/STM32/STM32F0xx/crc/mcuconf.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="common">
+        <VirtualDirectory Name="onewire">
+          <File Name="../community/testhal/common/onewire/testhal_onewire.c"/>
+          <File Name="../community/testhal/common/onewire/testhal_onewire.h"/>
+          <File Name="../community/testhal/common/onewire/synth_searchrom.c"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="demos">
+      <VirtualDirectory Name="various">
+        <VirtualDirectory Name="RT-Win32-TriBuf">
+          <File Name="../community/demos/various/RT-Win32-TriBuf/halconf.h"/>
+          <File Name="../community/demos/various/RT-Win32-TriBuf/main.c"/>
+          <File Name="../community/demos/various/RT-Win32-TriBuf/Makefile"/>
+          <File Name="../community/demos/various/RT-Win32-TriBuf/chconf.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="STM32">
+        <VirtualDirectory Name="RT-STM32F429-DISCOVERY-DMA2D">
+          <VirtualDirectory Name="res">
+            <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-DMA2D/res/wolf3d_vgagraph_chunk87.h"/>
+            <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-DMA2D/res/wolf3d_vgagraph_chunk87.c"/>
+          </VirtualDirectory>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-DMA2D/halconf.h"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-DMA2D/main.c"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-DMA2D/mcuconf_community.h"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-DMA2D/Makefile"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-DMA2D/chconf.h"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-DMA2D/usbcfg.h"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-DMA2D/wolf3d_palette.c"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-DMA2D/usbcfg.c"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-DMA2D/halconf_community.h"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-DMA2D/mcuconf.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="RT-STM32F429-DISCOVERY-TRIBUF">
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-TRIBUF/halconf.h"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-TRIBUF/main.c"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-TRIBUF/mcuconf_community.h"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-TRIBUF/Makefile"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-TRIBUF/chconf.h"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-TRIBUF/usbcfg.h"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-TRIBUF/usbcfg.c"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-TRIBUF/halconf_community.h"/>
+          <File Name="../community/demos/STM32/RT-STM32F429-DISCOVERY-TRIBUF/mcuconf.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="tools">
+    <File Name="../tools/test.c"/>
+  </VirtualDirectory>
+  <Settings Type="Static Library">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Static Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/lib$(ProjectName).a" IntermediateDirectory="./Debug" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="yes">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Static Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/lib$(ProjectName).a" IntermediateDirectory="./Release" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>
