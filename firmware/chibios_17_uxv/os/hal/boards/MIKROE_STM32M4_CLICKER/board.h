@@ -242,6 +242,9 @@
 
  
 //LINES
+#define LINE_BUT1_PRESSED 0 // the line reads this when pressed
+#define LINE_BUT2_PRESSED 0 // the line reads this when pressed
+
 #define     LINE_BUT1                 PAL_LINE(GPIOC, PIN_BUT1)
 #define     LINE_BUT2                 PAL_LINE(GPIOC, PIN_BUT2)
 

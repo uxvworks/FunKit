@@ -64,7 +64,7 @@ int main(void)
 
     osalThreadSleepMilliseconds(500);
 
-    if(palReadLine(LINE_BUT2) == LINE_BUT2_PRESSED) {
+    if(palReadLine(LINE_BUT1) == LINE_BUT1_PRESSED) {
         cmd_func_goto_exec(BOOT_BASE_ADDR);
     } else {
         cmd_func_goto_exec(APP1_BASE_ADDR);

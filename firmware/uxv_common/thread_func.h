@@ -2,7 +2,6 @@
 #define _FW_THREAD_FUNC_H
 
 
-#define LINE_BUT2_PRESSED 0 // the line reads this when pressed
 
 #ifdef __cplusplus
 extern "C" {

@@ -3,6 +3,8 @@ Embedded product template with bootloader and other useful features.
 
 Description:    Bootloader, Application Template, Host tool
 
+Hardware Support:  STM32F4XX
+
 Bootcfg:  Internal Flash:
 
 Boot Communication Interface Phy:   USBCDC=Serial,  UART-Serial,  CAN,  Radio

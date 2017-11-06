@@ -225,7 +225,7 @@ void sh_cmd_startapp1(BaseSequentialStream* chp, int argc, char* argv[])
         return;
     }
     chprintf(chp, "Will start app1 in 1 second\r\n");
-    osalThreadSleepMilliseconds(1000);  //chThdSleepMilliseconds(1000);
+    osalThreadSleepMilliseconds(1000);
 
     cmd_func_goto_exec(APP1_BASE_ADDR);
 }
@@ -238,7 +238,7 @@ void sh_cmd_startboot(BaseSequentialStream* chp, int argc, char* argv[])
         return;
     }
     chprintf(chp, "Will start bootloader in 1 second\r\n");
-    osalThreadSleepMilliseconds(1000);  //chThdSleepMilliseconds(1000);
+    osalThreadSleepMilliseconds(1000);
 
     cmd_func_goto_exec(BOOT_BASE_ADDR);
 }
@@ -252,13 +252,13 @@ void sh_cmd_reset(BaseSequentialStream* chp, int argc, char* argv[])
     }
 
     chprintf(chp, "Will reset in 1 second\r\n");
-    osalThreadSleepMilliseconds(1000);  //chThdSleepMilliseconds(1000);
+    osalThreadSleepMilliseconds(1000);
 
     cmd_func_reset();
 }
 
 
-#if 0
+
 static void sh_cmd_uart3_send(BaseSequentialStream* chp, int argc, char* argv[])
 {
     (void)argv;
@@ -267,12 +267,12 @@ static void sh_cmd_uart3_send(BaseSequentialStream* chp, int argc, char* argv[])
         return;
     }
 #if (HAL_USE_UART == TRUE)
-    uartStartSend(&UARTD3, 10, "uxv_boot\r\n");
+    uartStartSend(&UARTD3, 7, "UART3\r\n");
 #else
     chprintf(chp, "UARTD3 not available.\r\n");
 #endif
 }
-#endif
+
 
 
 
@@ -302,7 +302,7 @@ static void sh_cmd_write(BaseSequentialStream* chp, int argc, char* argv[])
         return;
     }
 
-    static uint32_t loop_cnt = 0;
+    uint32_t loop_cnt = 0;
 
     while(chnGetTimeout((BaseChannel*)chp, TIME_IMMEDIATE) == Q_TIMEOUT) {
 #if 1
@@ -316,7 +316,7 @@ static void sh_cmd_write(BaseSequentialStream* chp, int argc, char* argv[])
 #endif
 #if 0
         if((loop_cnt % 1000) == 0) {
-            systime_t now_time = chVTGetSystemTime();
+            systime_t now_time = osalOsGetSystemTimeX();
             int rval = chsnprintf(
                            (char*)send_message, SEND_MSG_BUF_SIZE - 1, "%u %u rx: %u\r\n", now_time, loop_cnt, uart3_rxcount);
             uartStartSend(&UARTD3, rval, send_message);
@@ -324,16 +324,52 @@ static void sh_cmd_write(BaseSequentialStream* chp, int argc, char* argv[])
 #endif
         loop_cnt++;
     }
-    chprintf(chp, "\r\n\nstopped\r\n");
+    chprintf(chp, "\r\n\nstopped after %u X %u bytes.\r\n", loop_cnt, sizeof buf-1 );
 }
 
+
+static void sh_cmd_read(BaseSequentialStream* chp, int argc, char* argv[])
+{
+    (void)argv;
+    if(argc > 0) {
+        chprintf(chp, "Usage: read\r\n");
+        return;
+    }
+
+    uint32_t loop_cnt = 0;
+    uint32_t byte_total = 0;
+
+    uint8_t* buf = chHeapAlloc(NULL, 256);
+
+    chprintf(chp, "Reading from port until button pressed...\r\n");
+
+    while (palReadLine(LINE_BUT1) != LINE_BUT1_PRESSED) {
+
+        size_t retval = chnReadTimeout((BaseChannel*)chp, buf, sizeof buf, OSAL_MS2ST(1));
+
+        if(retval > 0) {
+            byte_total += retval;
+            //systime_t now_time = osalOsGetSystemTimeX();
+            //chprintf(chp, "%u %u rx: %u\r\n", now_time, loop_cnt, retval);
+        }
+
+        loop_cnt++;
+    }
+
+    chHeapFree(buf);
+    chprintf(chp, "\r\n\nstopped after %u bytes.\r\n", byte_total );
+}
+
+
+
 static const ShellCommand commands[] = {
+    { "read", sh_cmd_read },
     { "write", sh_cmd_write },
     { "uid", sh_cmd_uid },
     { "otp", sh_cmd_otp },
     { "flash", sh_cmd_flash },
     { "eeprom", sh_cmd_eeprom },
-    /*   { "u3send", sh_cmd_uart3_send }, */
+    { "u3send", sh_cmd_uart3_send },
     { "boot", sh_cmd_startboot },
     { "app1", sh_cmd_startapp1 },
     { "reset", sh_cmd_reset },

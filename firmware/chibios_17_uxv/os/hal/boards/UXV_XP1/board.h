@@ -277,6 +277,11 @@
 #define     LINE_GPIO_1               GPIOC_PIN1
 #define     LINE_GPIO_2               GPIOC_PIN2
 #define     LINE_GPIO_3               GPIOC_PIN3
+
+#define LINE_BUT1_PRESSED 0 // the line reads this when pressed
+#define LINE_BUT2_PRESSED 0 // the line reads this when pressed
+
+#define     LINE_BUT1                 LINE_BUT_WAKE
 #define     LINE_BUT2                 PAL_LINE(GPIOC, GPIOC_PIN2)
 
 #define     LINE_CAN_RX               GPIOB_PIN5
