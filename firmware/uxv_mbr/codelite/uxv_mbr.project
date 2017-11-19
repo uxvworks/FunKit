@@ -6,16 +6,10 @@
     </Plugin>
   </Plugins>
   <VirtualDirectory Name="uxv_common">
-    <File Name="../../uxv_common/usbcfg.h"/>
-    <File Name="../../uxv_common/usbcfg.c"/>
     <File Name="../../uxv_common/flash_util.c"/>
     <File Name="../../uxv_common/flash_util.h"/>
     <File Name="../../uxv_common/cmd_func.c"/>
     <File Name="../../uxv_common/cmd_func.h"/>
-    <File Name="../../uxv_common/uart_func.c"/>
-    <File Name="../../uxv_common/uart_func.h"/>
-    <File Name="../../uxv_common/thread_func.cpp"/>
-    <File Name="../../uxv_common/thread_func.h"/>
     <File Name="../../uxv_common/flash_defines.h"/>
   </VirtualDirectory>
   <Description/>
@@ -24,12 +18,15 @@
     <File Name="../halconf.h"/>
     <File Name="../Makefile"/>
     <File Name="../chconf.h"/>
-    <File Name="../main.cpp"/>
     <File Name="../mcuconf.h"/>
     <File Name="../shellconf.h"/>
     <File Name="../STM32F405xG_mbr.ld"/>
     <File Name="../postbuild.sh"/>
     <File Name="../stm32f4xx_hal_conf.h"/>
+    <File Name="../main.c"/>
+    <File Name="../dfu_program.sh"/>
+    <File Name="../osalconf.h"/>
+    <File Name="../readme.txt"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>

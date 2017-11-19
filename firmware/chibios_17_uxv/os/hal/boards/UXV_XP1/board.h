@@ -33,7 +33,7 @@
  * Board oscillators-related settings.
  */
 
-#define STM32_LSE_ENABLED            TRUE
+//#define STM32_LSE_ENABLED            TRUE
 
 #define STM32_PLLM_VALUE               16
  
@@ -221,6 +221,7 @@
 #define     PIN_LED1                 GPIOB_PIN0
 #define     PIN_LED2                 GPIOB_PIN1
 
+#define     PIN_BUT1                 GPIOC_PIN0
 #define     PIN_GPIO_0               GPIOC_PIN0
 #define     PIN_GPIO_1               GPIOC_PIN1
 #define     PIN_GPIO_2               GPIOC_PIN2
@@ -233,8 +234,11 @@
 #define     PIN_UART3_TX             GPIOC_PIN10
 
 #define     PIN_DW_INT               GPIOA_PIN8
-#define     PIN_DW_WAKE              GPIOC_PIN9  
+#define     PIN_DW_WAKE              GPIOC_PIN9 
+
+#define     PORT_DW_RESET            GPIOC
 #define     PIN_DW_RESET             GPIOC_PIN8 
+
 #define     PIN_DW_GPIO6             GPIOC_PIN7 
 #define     PIN_DW_GPIO5             GPIOC_PIN6 
 #define     PIN_DW_SPI_CS            GPIOA_PIN4
@@ -279,26 +283,27 @@
 #define     LINE_GPIO_3               GPIOC_PIN3
 
 #define LINE_BUT1_PRESSED 0 // the line reads this when pressed
-#define LINE_BUT2_PRESSED 0 // the line reads this when pressed
+//#define LINE_BUT2_PRESSED 0 // the line reads this when pressed
 
-#define     LINE_BUT1                 LINE_BUT_WAKE
-#define     LINE_BUT2                 PAL_LINE(GPIOC, GPIOC_PIN2)
+//#define     LINE_BUT1                 LINE_BUT_WAKE
+#define     LINE_BUT1                 PAL_LINE(GPIOC, PIN_BUT1)
+//#define     LINE_BUT2                 PAL_LINE(GPIOC, GPIOC_PIN2)
 
-#define     LINE_CAN_RX               GPIOB_PIN5
-#define     LINE_CAN_TX               GPIOB_PIN13
+//#define     LINE_CAN_RX               GPIOB_PIN5
+//#define     LINE_CAN_TX               GPIOB_PIN13
 
-#define     LINE_UART3_RX             PAL_LINE(GPIOC, PIN_UART3_RX);
-#define     LINE_UART3_TX             PAL_LINE(GPIOC, PIN_UART3_TX);
+#define     LINE_UART3_RX             PAL_LINE(GPIOC, PIN_UART3_RX)
+#define     LINE_UART3_TX             PAL_LINE(GPIOC, PIN_UART3_TX)
 
-#define     LINE_DW_INT               PAL_LINE(GPIOA, PIN_DW_INT);
-#define     LINE_DW_WAKE              GPIOC_PIN9  
-#define     LINE_DW_RESET             GPIOC_PIN8 
-#define     LINE_DW_GPIO6             GPIOC_PIN7 
-#define     LINE_DW_GPIO5             GPIOC_PIN6 
-#define     LINE_DW_SPI_CS            PAL_LINE(GPIOA, PIN_DW_SPI_CS);
-#define     LINE_DW_SPI_SCK           PAL_LINE(GPIOA, PIN_DW_SPI_SCK);
-#define     LINE_DW_SPI_MISO          PAL_LINE(GPIOA, PIN_DW_SPI_MISO);
-#define     LINE_DW_SPI_MOSI          PAL_LINE(GPIOA, PIN_DW_SPI_MOSI);
+#define     LINE_DW_INT               PAL_LINE(GPIOA, PIN_DW_INT)
+//#define     LINE_DW_WAKE              GPIOC_PIN9  
+//#define     LINE_DW_RESET             GPIOC_PIN8 
+//#define     LINE_DW_GPIO6             GPIOC_PIN7 
+//#define     LINE_DW_GPIO5             GPIOC_PIN6 
+#define     LINE_DW_SPI_CS            PAL_LINE(GPIOA, PIN_DW_SPI_CS)
+#define     LINE_DW_SPI_SCK           PAL_LINE(GPIOA, PIN_DW_SPI_SCK)
+#define     LINE_DW_SPI_MISO          PAL_LINE(GPIOA, PIN_DW_SPI_MISO)
+#define     LINE_DW_SPI_MOSI          PAL_LINE(GPIOA, PIN_DW_SPI_MOSI)
 
 #define     LINE_MPU_SCL              GPIOB_PIN10
 #define     LINE_MPU_SDA              GPIOB_PIN11
@@ -309,13 +314,13 @@
 #define     LINE_MCP_STAT2            GPIOB_PIN15
 #define     LINE_MCP_PG               GPIOB_PIN12
 
-#define     LINE_VBUS_FS              PAL_LINE(GPIOA, GPIOA_PIN9);
-#define     LINE_OTG_FS_ID            PAL_LINE(GPIOA, GPIOA_PIN10);
-#define     LINE_OTG_FS_DM            PAL_LINE(GPIOA, GPIOA_PIN11);
-#define     LINE_OTG_FS_DP            PAL_LINE(GPIOA, GPIOA_PIN12);
-#define     LINE_SWDIO                PAL_LINE(GPIOA, GPIOA_PIN13);
-#define     LINE_SWCLK                PAL_LINE(GPIOA, GPIOA_PIN14);
-#define     LINE_TDI                  PAL_LINE(GPIOA, GPIOA_PIN15);
+#define     LINE_VBUS_FS              PAL_LINE(GPIOA, GPIOA_PIN9)
+#define     LINE_OTG_FS_ID            PAL_LINE(GPIOA, GPIOA_PIN10)
+#define     LINE_OTG_FS_DM            PAL_LINE(GPIOA, GPIOA_PIN11)
+#define     LINE_OTG_FS_DP            PAL_LINE(GPIOA, GPIOA_PIN12)
+#define     LINE_SWDIO                PAL_LINE(GPIOA, GPIOA_PIN13)
+#define     LINE_SWCLK                PAL_LINE(GPIOA, GPIOA_PIN14)
+#define     LINE_TDI                  PAL_LINE(GPIOA, GPIOA_PIN15)
 
 #define     LINE_OSC_IN               GPIOH_PIN0  
 #define     LINE_OSC_OUT              GPIOH_PIN1
@@ -583,7 +588,7 @@
 /*
  * GPIOC setup:
  *
- * PC0  - OTG_FS_POWER_ON           (output pushpull maximum).
+ * PC0  - PIN0                      (Input pullup).
  * PC1  - PIN1                      (input pullup).
  * PC2  - PIN2                      (input pullup).
  * PC3  - PDM_OUT                   (input pullup).
@@ -648,9 +653,9 @@
                                      PIN_OSPEED_HIGH(GPIOC_PIN13) |         \
                                      PIN_OSPEED_HIGH(GPIOC_PIN14) |         \
                                      PIN_OSPEED_HIGH(GPIOC_PIN15))
-#define VAL_GPIOC_PUPDR             (PIN_PUPDR_FLOATING(GPIOC_PIN0) |\
+#define VAL_GPIOC_PUPDR             (PIN_PUPDR_PULLUP(GPIOC_PIN0) |\
                                      PIN_PUPDR_FLOATING(GPIOC_PIN1) |         \
-                                     PIN_PUPDR_PULLUP(GPIOC_PIN2) |         \
+                                     PIN_PUPDR_FLOATING(GPIOC_PIN2) |         \
                                      PIN_PUPDR_FLOATING(GPIOC_PIN3) |      \
                                      PIN_PUPDR_FLOATING(GPIOC_PIN4) |         \
                                      PIN_PUPDR_FLOATING(GPIOC_PIN5) |         \

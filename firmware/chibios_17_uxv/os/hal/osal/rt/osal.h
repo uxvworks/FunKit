@@ -95,6 +95,8 @@
  */
 #define OSAL_ST_FREQUENCY                   CH_CFG_ST_FREQUENCY
 
+#define OSAL_US_PER_ST                      (1000000/OSAL_ST_FREQUENCY)
+
 /**
  * @brief   Systick mode required by the underlying OS.
  */
@@ -300,6 +302,7 @@ typedef struct {
  * @{
  */
  
+
   /**
  * @brief   System ticks to milliseconds.
  * @details Converts from system ticks number to milliseconds.

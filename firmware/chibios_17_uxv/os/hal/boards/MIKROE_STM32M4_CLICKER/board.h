@@ -33,7 +33,7 @@
  * Board oscillators-related settings.
  */
 
-#define STM32_LSE_ENABLED            TRUE
+//#define STM32_LSE_ENABLED            TRUE
 
 #define STM32_PLLM_VALUE               16
  
@@ -291,7 +291,7 @@
 /*
  * GPIOA setup:
  *
- * PA0  - PIN1                      (input floating). 
+ * PA0  - PIN0                      (input floating). 
  * PA1  - PIN_LED1                  (output pushpull maximum) . // LED1
  * PA2  - PIN_LED2                  (output pushpull maximum) . // LED2
  * PA3  - PIN3                      (input floating).  
@@ -308,7 +308,7 @@
  * PA14 - PIN_SWCLK                 (alternate 0).
  * PA15 - PIN_TDI                   (input pullup).
  */
-#define VAL_GPIOA_MODER             (PIN_MODE_INPUT(GPIOA_PIN1) |         \
+#define VAL_GPIOA_MODER             (PIN_MODE_INPUT(GPIOA_PIN0) |         \
                                      PIN_MODE_OUTPUT(PIN_LED1) |           \
                                      PIN_MODE_OUTPUT(PIN_LED2) |           \
                                      PIN_MODE_INPUT(GPIOA_PIN3) |           \

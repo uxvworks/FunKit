@@ -125,5 +125,7 @@
     <File Name="../postbuild.sh"/>
     <File Name="../shellconf.h"/>
     <File Name="../STM32F405xG_app1.ld"/>
+    <File Name="../stm32f4xx_hal_conf.h"/>
+    <File Name="../dfu_program.sh"/>
   </VirtualDirectory>
 </CodeLite_Project>

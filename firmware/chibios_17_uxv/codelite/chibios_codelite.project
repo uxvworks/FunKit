@@ -374,7 +374,6 @@
         </VirtualDirectory>
         <VirtualDirectory Name="EXT">
           <File Name="../testhal/STM32/STM32F4xx/EXT/halconf.h"/>
-          <File Name="../testhal/STM32/STM32F4xx/EXT/main.c"/>
           <File Name="../testhal/STM32/STM32F4xx/EXT/Makefile"/>
           <File Name="../testhal/STM32/STM32F4xx/EXT/chconf.h"/>
           <File Name="../testhal/STM32/STM32F4xx/EXT/mcuconf.h"/>
@@ -385,6 +384,7 @@
           <File Name="../testhal/STM32/STM32F4xx/SPI/Makefile"/>
           <File Name="../testhal/STM32/STM32F4xx/SPI/chconf.h"/>
           <File Name="../testhal/STM32/STM32F4xx/SPI/mcuconf.h"/>
+          <File Name="../testhal/STM32/STM32F4xx/EXT/main.c"/>
         </VirtualDirectory>
         <VirtualDirectory Name="UART">
           <File Name="../testhal/STM32/STM32F4xx/UART/halconf.h"/>
@@ -1012,7 +1012,6 @@
       <File Name="../os/various/syscalls.c"/>
       <File Name="../os/various/evtimer.c"/>
       <File Name="../os/various/evtimer.h"/>
-      <File Name="../../uxv_prog/shellconf.h"/>
     </VirtualDirectory>
     <VirtualDirectory Name="common">
       <VirtualDirectory Name="abstractions">

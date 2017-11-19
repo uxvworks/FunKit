@@ -1,6 +1,9 @@
 
+
+#include <stdint.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #include "ch.h"
 #include "hal.h"
@@ -15,6 +18,19 @@
 #include "uart_func.h"
 #include "thread_func.h"
 #include "cfg_storage.h"
+
+
+#if (FW_SHELL_APPCMD_ENABLED == TRUE)
+void sh_cmd_appcmd(BaseSequentialStream* chp, int argc, char* argv[])
+{
+    (void)argv;
+    const char *const usage =
+        "Usage: appcmd has nothing to do\r\n";
+    
+    chprintf(chp, usage);
+}
+#endif
+
 
 
 int main(void)

@@ -10,6 +10,12 @@
 extern "C" {
 #endif
 
+#define streq(s1, s2)   (strcmp((s1), (s2)) == 0)
+
+#if (FW_SHELL_APPCMD_ENABLED == TRUE)
+    extern void sh_cmd_appcmd(BaseSequentialStream* chp, int argc, char* argv[]);
+#endif
+
 #if (FW_SHELL_ON_USB == TRUE)
 extern const ShellConfig shell_cfg_sdu;
 #endif

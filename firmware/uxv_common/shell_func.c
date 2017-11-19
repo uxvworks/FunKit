@@ -17,9 +17,10 @@
 #include "uart_func.h"
 #include "cfg_storage.h"
 #include "stm_eeprom.h"
+#include "shell_func.h"
 
 
-#define streq(s1, s2)   (strcmp((s1), (s2)) == 0)
+
 
 /*===========================================================================*/
 /* Shell Command line related.                                                     */
@@ -30,7 +31,7 @@
 static uint8_t send_message[SEND_MSG_BUF_SIZE] = "\r\n";
 #endif
 
-
+#if (FW_SHELL_EEPROM_ENABLED == TRUE) 
 void sh_cmd_eeprom(BaseSequentialStream* chp, int argc, char* argv[])
 {
     (void)argv;
@@ -82,10 +83,10 @@ void sh_cmd_eeprom(BaseSequentialStream* chp, int argc, char* argv[])
 
     chprintf(chp, "Cfg_Store size:%d  NUM_VARS:%d\r\n", sizeof(app_cfg_t), EE_NUM_VARS);
 }
+#endif
 
 
-
-
+#if (FW_SHELL_FLASH_ENABLED == TRUE) 
 void sh_cmd_flash(BaseSequentialStream* chp, int argc, char* argv[])
 {
     (void)argv;
@@ -127,6 +128,7 @@ void sh_cmd_flash(BaseSequentialStream* chp, int argc, char* argv[])
 
     chprintf(chp, "flash verify for %08X, errors = %08X\r\n", value, flash_verify_user_data(value));
 }
+#endif
 
 
 void sh_cmd_otp(BaseSequentialStream* chp, int argc, char* argv[])
@@ -192,6 +194,7 @@ void sh_cmd_otp(BaseSequentialStream* chp, int argc, char* argv[])
     chprintf(chp, "device = %08X\r\n", cmd_func_otp_get_device());
     chprintf(chp, "id16   = %08X\r\n", cmd_func_otp_get_id16());
     chprintf(chp, "id8    = %08X\r\n", cmd_func_otp_get_id8());
+    chprintf(chp, "lock0  = %02X\r\n", cmd_func_otp_get_lock(0));
     //chprintf(chp, "name   = %s\r\n",   cmd_func_otp_get_name());
 }
 
@@ -216,7 +219,7 @@ void sh_cmd_uid(BaseSequentialStream* chp, int argc, char* argv[])
     chprintf(chp, "UID = %08X:%08X:%08X\r\n", uid[2], uid[1], uid[0]);
 }
 
-
+#if (FW_SHELL_GO2APP1_ENABLED == TRUE) 
 void sh_cmd_startapp1(BaseSequentialStream* chp, int argc, char* argv[])
 {
     (void)argv;
@@ -229,7 +232,9 @@ void sh_cmd_startapp1(BaseSequentialStream* chp, int argc, char* argv[])
 
     cmd_func_goto_exec(APP1_BASE_ADDR);
 }
+#endif
 
+#if (FW_SHELL_GO2BOOT_ENABLED == TRUE) 
 void sh_cmd_startboot(BaseSequentialStream* chp, int argc, char* argv[])
 {
     (void)argv;
@@ -242,6 +247,7 @@ void sh_cmd_startboot(BaseSequentialStream* chp, int argc, char* argv[])
 
     cmd_func_goto_exec(BOOT_BASE_ADDR);
 }
+#endif
 
 void sh_cmd_reset(BaseSequentialStream* chp, int argc, char* argv[])
 {
@@ -258,7 +264,7 @@ void sh_cmd_reset(BaseSequentialStream* chp, int argc, char* argv[])
 }
 
 
-
+#if (FW_SHELL_U3SEND_ENABLED == TRUE) 
 static void sh_cmd_uart3_send(BaseSequentialStream* chp, int argc, char* argv[])
 {
     (void)argv;
@@ -272,10 +278,10 @@ static void sh_cmd_uart3_send(BaseSequentialStream* chp, int argc, char* argv[])
     chprintf(chp, "UARTD3 not available.\r\n");
 #endif
 }
+#endif
 
 
-
-
+#if (FW_SHELL_WRITE_ENABLED == TRUE) 
 /* Can be measured using dd if=/dev/xxxx of=/dev/null bs=512 count=10000.*/
 static void sh_cmd_write(BaseSequentialStream* chp, int argc, char* argv[])
 {
@@ -314,20 +320,13 @@ static void sh_cmd_write(BaseSequentialStream* chp, int argc, char* argv[])
         memcpy(SDU1.obqueue.ptr, buf, SERIAL_USB_BUFFERS_SIZE);
         obqPostFullBuffer(&SDU1.obqueue, SERIAL_USB_BUFFERS_SIZE);
 #endif
-#if 0
-        if((loop_cnt % 1000) == 0) {
-            systime_t now_time = osalOsGetSystemTimeX();
-            int rval = chsnprintf(
-                           (char*)send_message, SEND_MSG_BUF_SIZE - 1, "%u %u rx: %u\r\n", now_time, loop_cnt, uart3_rxcount);
-            uartStartSend(&UARTD3, rval, send_message);
-        }
-#endif
         loop_cnt++;
     }
     chprintf(chp, "\r\n\nstopped after %u X %u bytes.\r\n", loop_cnt, sizeof buf-1 );
 }
+#endif
 
-
+#if (FW_SHELL_READ_ENABLED == TRUE) 
 static void sh_cmd_read(BaseSequentialStream* chp, int argc, char* argv[])
 {
     (void)argv;
@@ -359,20 +358,36 @@ static void sh_cmd_read(BaseSequentialStream* chp, int argc, char* argv[])
     chHeapFree(buf);
     chprintf(chp, "\r\n\nstopped after %u bytes.\r\n", byte_total );
 }
-
-
+#endif
 
 static const ShellCommand commands[] = {
+#if (FW_SHELL_READ_ENABLED == TRUE) 
     { "read", sh_cmd_read },
+#endif
+#if (FW_SHELL_WRITE_ENABLED == TRUE)     
     { "write", sh_cmd_write },
+#endif
     { "uid", sh_cmd_uid },
     { "otp", sh_cmd_otp },
+#if (FW_SHELL_FLASH_ENABLED == TRUE)    
     { "flash", sh_cmd_flash },
+#endif
+#if (FW_SHELL_EEPROM_ENABLED == TRUE)     
     { "eeprom", sh_cmd_eeprom },
+#endif
+#if (FW_SHELL_U3SEND_ENABLED == TRUE) 
     { "u3send", sh_cmd_uart3_send },
+#endif
+#if (FW_SHELL_GO2BOOT_ENABLED == TRUE)    
     { "boot", sh_cmd_startboot },
+#endif
+#if (FW_SHELL_GO2APP1_ENABLED == TRUE)    
     { "app1", sh_cmd_startapp1 },
+#endif
     { "reset", sh_cmd_reset },
+#if (FW_SHELL_APPCMD_ENABLED == TRUE)
+    { "cmd", sh_cmd_appcmd },
+#endif    
     { NULL, NULL }
 };
 

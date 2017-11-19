@@ -137,12 +137,12 @@ CSRC = $(STARTUPSRC) \
        $(UXV_COMMON)/uart_func.c \
        $(UXV_COMMON)/shell_func.c \
        $(UXV_COMMON)/stm_eeprom.c \
+	   $(UXV_COMMON)/thread_func.c \
        $(UXV_COMMON)/cfg_storage.c
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
 CPPSRC =  $(CHIBIOS)/os/various/cpp_wrappers/syscalls_cpp.cpp \
-		  $(UXV_COMMON)/thread_func.cpp \
           main.cpp 
 
 # C sources to be compiled in ARM mode regardless of the global setting.

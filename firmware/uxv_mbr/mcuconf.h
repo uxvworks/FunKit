@@ -36,16 +36,17 @@
 /*
  * HAL driver system settings.
  */
-#define STM32_NO_INIT                       FALSE
+#define STM32_NO_INIT                       TRUE
 #define STM32_HSI_ENABLED                   TRUE
 #define STM32_LSI_ENABLED                   TRUE
-#define STM32_HSE_ENABLED                   TRUE
-//#define STM32_LSE_ENABLED                   FALSE
-#define STM32_CLOCK48_REQUIRED              TRUE
-#define STM32_SW                            STM32_SW_PLL
-#define STM32_PLLSRC                        STM32_PLLSRC_HSE
+#define STM32_HSE_ENABLED                   FALSE
+#define STM32_LSE_ENABLED                   FALSE
+#define STM32_CLOCK48_REQUIRED              FALSE
+#define STM32_SW                            STM32_SW_HSI
+#define STM32_PLLSRC                        STM32_PLLSRC_HSI
 #if defined(BOARD_ST_STM32F4_DISCOVERY)
 #define STM32_PLLM_VALUE                    8
+#define STM32_LSE_ENABLED                   FALSE
 //#else
 //#define STM32_PLLM_VALUE                    12
 #endif
@@ -295,7 +296,7 @@
  */
 #define STM32_UART_USE_USART1               FALSE
 #define STM32_UART_USE_USART2               FALSE
-#define STM32_UART_USE_USART3               TRUE
+#define STM32_UART_USE_USART3               FALSE
 #define STM32_UART_USE_UART4                FALSE
 #define STM32_UART_USE_UART5                FALSE
 #define STM32_UART_USE_USART6               FALSE
@@ -328,7 +329,7 @@
 /*
  * USB driver system settings.
  */
-#define STM32_USB_USE_OTG1                  TRUE
+#define STM32_USB_USE_OTG1                  FALSE
 #define STM32_USB_USE_OTG2                  FALSE
 #define STM32_USB_OTG1_IRQ_PRIORITY         14
 #define STM32_USB_OTG2_IRQ_PRIORITY         14

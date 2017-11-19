@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="uxv_firmware" Database="" Version="10.0.0">
   <Project Name="chibios_codelite" Path="../chibios_17_uxv/codelite/chibios_codelite.project" Active="No"/>
-  <Project Name="uxv_boot" Path="../uxv_boot/codelite/uxv_boot.project" Active="No"/>
-  <Project Name="uxv_prog" Path="../uxv_prog/codelite/uxv_prog.project" Active="Yes"/>
+  <Project Name="uxv_boot" Path="../uxv_boot/codelite/uxv_boot.project" Active="Yes"/>
+  <Project Name="uxv_prog" Path="../uxv_prog/codelite/uxv_prog.project" Active="No"/>
   <Project Name="stm32cube" Path="../stm/stm32cube/stm32cube.project" Active="No"/>
   <Project Name="uxv_mbr" Path="../uxv_mbr/codelite/uxv_mbr.project" Active="No"/>
   <BuildMatrix>

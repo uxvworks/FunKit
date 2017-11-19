@@ -104,15 +104,16 @@ include $(CHIBIOS)/os/hal/ports/STM32/STM32F4xx/platform.mk
 include $(CHIBIOS)/os/hal/boards/MIKROE_STM32M4_CLICKER/board.mk
 # include $(CHIBIOS)/os/hal/boards/OLIMEX_STM32_E407/board.mk
 # include $(CHIBIOS)/os/hal/boards/ST_STM32F4_DISCOVERY/board.mk
-include $(CHIBIOS)/os/hal/osal/rt/osal.mk
+include $(CHIBIOS)/os/hal/osal/os-less/ARMCMx/osal.mk
+#include $(CHIBIOS)/os/hal/osal/rt/osal.mk
 # RTOS files (optional).
-include $(CHIBIOS)/os/rt/rt.mk
-include $(CHIBIOS)/os/common/ports/ARMCMx/compilers/GCC/mk/port_v7m.mk
+#include $(CHIBIOS)/os/rt/rt.mk
+#include $(CHIBIOS)/os/common/ports/ARMCMx/compilers/GCC/mk/port_v7m.mk
 # Other files (optional).
-include $(CHIBIOS)/test/rt/test.mk
-include $(CHIBIOS)/os/hal/lib/streams/streams.mk
-include $(CHIBIOS)/os/various/shell/shell.mk
-# include $(CHIBIOS)/os/various/cpp_wrappers/chcpp.mk
+#include $(CHIBIOS)/test/rt/test.mk
+#include $(CHIBIOS)/os/hal/lib/streams/streams.mk
+#include $(CHIBIOS)/os/various/shell/shell.mk
+#include $(CHIBIOS)/os/various/cpp_wrappers/chcpp.mk
 
 # Define linker script file here
 LDSCRIPT= ./STM32F405xG_mbr.ld
@@ -126,18 +127,15 @@ CSRC = $(STARTUPSRC) \
        $(HALSRC) \
        $(PLATFORMSRC) \
        $(BOARDSRC) \
-       $(STREAMSSRC) \
        $(STM32SRC)/stm32f4xx_hal_flash.c \
        $(STM32SRC)/stm32f4xx_hal_flash_ex.c \
-       $(UXV_COMMON)/usbcfg.c \
        $(UXV_COMMON)/flash_util.c \
        $(UXV_COMMON)/cmd_func.c \
-       $(UXV_COMMON)/uart_func.c 
+	   main.c
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
-CPPSRC =  $(CHIBIOS)/os/various/cpp_wrappers/syscalls_cpp.cpp \
-          main.cpp 
+CPPSRC =
 
 # C sources to be compiled in ARM mode regardless of the global setting.
 # NOTE: Mixing ARM and THUMB mode enables the -mthumb-interwork compiler
@@ -166,8 +164,7 @@ ASMXSRC = $(STARTUPASM) $(PORTASM) $(OSALASM)
 INCDIR = $(CHIBIOS)/os/license \
          $(STARTUPINC) $(KERNINC) $(PORTINC) $(OSALINC) \
          $(HALINC) $(PLATFORMINC) $(BOARDINC) \
-         $(STREAMSINC) \
-         $(CHCPPINC) $(CHIBIOS)/os/various
+         $(CHIBIOS)/os/various
 
 
 #
@@ -219,7 +216,7 @@ CPPWARN = -Wall -Wextra -Wundef
 #
 
 # List all user C define here, like -D_DEBUG=1
-UDEFS = -DSHELL_CONFIG_FILE -DUSE_RTOS=0 
+UDEFS = -DUSE_RTOS=0 
 
 # Define ASM defines here
 UADEFS =
