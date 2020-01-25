@@ -19,15 +19,65 @@
 #include "thread_func.h"
 #include "cfg_storage.h"
 
+#include "ws2812/ws2812.h"
+
 
 #if (FW_SHELL_APPCMD_ENABLED == TRUE)
 void sh_cmd_appcmd(BaseSequentialStream* chp, int argc, char* argv[])
 {
     (void)argv;
     const char *const usage =
-        "Usage: appcmd has nothing to do\r\n";
-    
-    chprintf(chp, usage);
+        "Usage: cmd (led) (NNRRGGBB) in 32 bit Hex format\r\n";
+    static bool init_done = false;
+    uint32_t NRGB = 0;
+    // int base = 10;
+    char *endptr;
+    int retval = 0;
+
+    if(argc < 1) {
+        chprintf(chp, usage);
+        return;
+    } else if (streq(argv[0], "led") && (argc == 2)) {
+        NRGB = (uint32_t)strtoul(argv[1], &endptr, 16);
+        if (argv[1] == endptr) {
+            chprintf(chp, "No NRGB was entered?\r\n");
+            chprintf(chp, usage);
+        } else {
+            if (!init_done) {
+                ws2812_init();
+                init_done = true;
+            }
+
+            // int s = 0;
+            uint8_t blu = NRGB & 0x000000FF;
+            uint8_t grn = (NRGB >> 8)  & 0x000000FF;
+            uint8_t red = (NRGB >> 16) & 0x000000FF;
+            uint32_t  n = (NRGB >> 24) & 0x000000FF;
+
+            chprintf(chp, "NRGB:%08X led:%u r:%d g:%d b:%d\r\n", NRGB, n, red, grn, blu);
+            // uint32_t cnt;
+
+            //for (; n < WS2812_LED_N; n++) {
+            ws2812_write_led(n, red, grn, blu);
+            // }
+
+#if 0
+            for (cnt = 0; cnt < count; cnt++)  {
+                for (n = 0; n < WS2812_LED_N; n++) {
+                    int s0 = s + 10*n;
+                    ws2812_write_led(n, s0%255, (s0+85)%255, (s0+170)%255);
+                }
+                s += 10;
+                osalThreadSleepMilliseconds(50);
+            }
+#endif
+
+            retval = 0;  //ping_cli(chp, count);
+            chprintf(chp, "cmd led returned  %d\r\n", retval);
+        }
+    } else {
+        chprintf(chp, usage);
+    }
 }
 #endif
 

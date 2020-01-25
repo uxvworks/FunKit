@@ -23,8 +23,8 @@ void cfg_storage_init(void)
 
     uint32_t index = 0;
 
-    for (uint32_t i = 0; i < (sizeof(app_cfg_t) / 2); i++) {
-        VirtAddVarTab[index++] = EEPROM_BASE_APPCFG + i;
+    for (index = 0; index < (sizeof(app_cfg_t) / 2); index++) {
+        VirtAddVarTab[index] = EEPROM_BASE_APPCFG + index;
     }
 
     HAL_FLASH_Unlock();
@@ -50,11 +50,12 @@ void cfg_storage_read(app_cfg_t *cfg)
     uint8_t *cfg_addr = (uint8_t*)cfg;
     uint16_t var;
     bool read_error = false;
+    uint32_t index;
 
-    for (uint32_t i = 0; i < (sizeof(app_cfg_t) / 2); i++) {
-        if (EE_ReadVariable(EEPROM_BASE_APPCFG + i, &var) == EE_OK) {
-            cfg_addr[2 * i] = (var >> 8) & 0xFF;
-            cfg_addr[2 * i + 1] = var & 0xFF;
+    for (index = 0; index < (sizeof(app_cfg_t) / 2); index++) {
+        if (EE_ReadVariable(EEPROM_BASE_APPCFG + index, &var) == EE_OK) {
+            cfg_addr[2 * index] = (var >> 8) & 0xFF;
+            cfg_addr[2 * index + 1] = var & 0xFF;
         } else {
             read_error = true;
             break;
@@ -74,17 +75,18 @@ bool cfg_storage_write(app_cfg_t *cfg)
     bool is_ok = true;
     uint8_t *cfg_addr = (uint8_t*)cfg;
     uint16_t var;
+    uint32_t index;
 
     HAL_FLASH_Unlock();
 
     //FLASH_ClearFlag(FLASH_FLAG_OPERR | FLASH_FLAG_WRPERR | FLASH_FLAG_PGAERR |
     //                FLASH_FLAG_PGPERR | FLASH_FLAG_PGSERR);
 
-    for (uint32_t i = 0; i < (sizeof(app_cfg_t) / 2); i++) {
-        var = (cfg_addr[2 * i] << 8) & 0xFF00;
-        var |= cfg_addr[2 * i + 1] & 0xFF;
+    for (index = 0; index < (sizeof(app_cfg_t) / 2); index++) {
+        var = (cfg_addr[2 * index] << 8) & 0xFF00;
+        var |= cfg_addr[2 * index + 1] & 0xFF;
 
-        if (EE_WriteVariable(EEPROM_BASE_APPCFG + i, var) != EE_OK) {
+        if (EE_WriteVariable(EEPROM_BASE_APPCFG + index, var) != EE_OK) {
             is_ok = false;
             break;
         }

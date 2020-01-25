@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Project Name="uxv_prog" Version="10.0.0" InternalType="Console">
+  <VirtualDirectory Name="uxv_device">
+    <VirtualDirectory Name="ws2812">
+      <File Name="../../uxv_device/ws2812/ws2812.c"/>
+      <File Name="../../uxv_device/ws2812/chutil.h"/>
+      <File Name="../../uxv_device/ws2812/ws2812.h"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
   <Plugins>
     <Plugin Name="qmake">
       <![CDATA[00010001N0007Release000000000000]]>
@@ -16,7 +23,7 @@
     <File Name="../../uxv_common/shell_func.h"/>
     <File Name="../../uxv_common/uart_func.c"/>
     <File Name="../../uxv_common/uart_func.h"/>
-    <File Name="../../uxv_common/thread_func.cpp"/>
+    <File Name="../../uxv_common/thread_func.c"/>
     <File Name="../../uxv_common/thread_func.h"/>
     <File Name="../../uxv_common/stm_eeprom.c"/>
     <File Name="../../uxv_common/stm_eeprom.h"/>

@@ -100,10 +100,12 @@ include $(CHIBIOS)/os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.m
 # HAL-OSAL files (optional).
 include $(CHIBIOS)/os/hal/hal.mk
 include $(CHIBIOS)/os/hal/ports/STM32/STM32F4xx/platform.mk
+
 # include $(CHIBIOS)/os/hal/boards/UXV_XP1/board.mk
 include $(CHIBIOS)/os/hal/boards/MIKROE_STM32M4_CLICKER/board.mk
 # include $(CHIBIOS)/os/hal/boards/OLIMEX_STM32_E407/board.mk
 # include $(CHIBIOS)/os/hal/boards/ST_STM32F4_DISCOVERY/board.mk
+
 include $(CHIBIOS)/os/hal/osal/os-less/ARMCMx/osal.mk
 #include $(CHIBIOS)/os/hal/osal/rt/osal.mk
 # RTOS files (optional).
@@ -131,7 +133,7 @@ CSRC = $(STARTUPSRC) \
        $(STM32SRC)/stm32f4xx_hal_flash_ex.c \
        $(UXV_COMMON)/flash_util.c \
        $(UXV_COMMON)/cmd_func.c \
-	   main.c
+       main.c
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.

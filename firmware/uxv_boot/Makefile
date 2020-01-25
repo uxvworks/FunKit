@@ -100,10 +100,12 @@ include $(CHIBIOS)/os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.m
 # HAL-OSAL files (optional).
 include $(CHIBIOS)/os/hal/hal.mk
 include $(CHIBIOS)/os/hal/ports/STM32/STM32F4xx/platform.mk
+
 # include $(CHIBIOS)/os/hal/boards/UXV_XP1/board.mk
 include $(CHIBIOS)/os/hal/boards/MIKROE_STM32M4_CLICKER/board.mk
 # include $(CHIBIOS)/os/hal/boards/OLIMEX_STM32_E407/board.mk
 # include $(CHIBIOS)/os/hal/boards/ST_STM32F4_DISCOVERY/board.mk
+
 include $(CHIBIOS)/os/hal/osal/rt/osal.mk
 # RTOS files (optional).
 include $(CHIBIOS)/os/rt/rt.mk
@@ -112,7 +114,7 @@ include $(CHIBIOS)/os/common/ports/ARMCMx/compilers/GCC/mk/port_v7m.mk
 include $(CHIBIOS)/test/rt/test.mk
 include $(CHIBIOS)/os/hal/lib/streams/streams.mk
 include $(CHIBIOS)/os/various/shell/shell.mk
-# include $(CHIBIOS)/os/various/cpp_wrappers/chcpp.mk
+#include $(CHIBIOS)/os/various/cpp_wrappers/chcpp.mk
 
 # Define linker script file here
 LDSCRIPT= ./STM32F405xG_boot.ld
@@ -137,7 +139,7 @@ CSRC = $(STARTUPSRC) \
        $(UXV_COMMON)/uart_func.c \
        $(UXV_COMMON)/shell_func.c \
        $(UXV_COMMON)/stm_eeprom.c \
-	   $(UXV_COMMON)/thread_func.c \
+       $(UXV_COMMON)/thread_func.c \
        $(UXV_COMMON)/cfg_storage.c
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global

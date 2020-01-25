@@ -92,17 +92,19 @@ CHIBIOS = ../chibios_17_uxv
 STCMSISINC = ../stm/STM32Cube_FW_F4_V1.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
 STM32INC = ../stm/STM32Cube_FW_F4_V1.17.0/Drivers/STM32F4xx_HAL_Driver/Inc
 STM32SRC = ../stm/STM32Cube_FW_F4_V1.17.0/Drivers/STM32F4xx_HAL_Driver/Src
-# STM32INC = /home/yeager/codebase/uxvworks/tools/STM32Cube_FW_F4_V1.13.0/Drivers/STM32F4xx_HAL_Driver/Inc
 UXV_COMMON = ../uxv_common
+UXV_DEVICE = ../uxv_device
 		
 include $(CHIBIOS)/os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.mk
 # HAL-OSAL files (optional).
 include $(CHIBIOS)/os/hal/hal.mk
 include $(CHIBIOS)/os/hal/ports/STM32/STM32F4xx/platform.mk
+
 # include $(CHIBIOS)/os/hal/boards/UXV_XP1/board.mk
 include $(CHIBIOS)/os/hal/boards/MIKROE_STM32M4_CLICKER/board.mk
 # include $(CHIBIOS)/os/hal/boards/OLIMEX_STM32_E407/board.mk
 # include $(CHIBIOS)/os/hal/boards/ST_STM32F4_DISCOVERY/board.mk
+
 include $(CHIBIOS)/os/hal/osal/rt/osal.mk
 # RTOS files (optional).
 include $(CHIBIOS)/os/rt/rt.mk
@@ -137,8 +139,9 @@ CSRC = $(STARTUPSRC) \
        $(UXV_COMMON)/uart_func.c \
        $(UXV_COMMON)/shell_func.c \
        $(UXV_COMMON)/stm_eeprom.c \
-	   $(UXV_COMMON)/thread_func.c \
-       $(UXV_COMMON)/cfg_storage.c
+       $(UXV_COMMON)/thread_func.c \
+       $(UXV_COMMON)/cfg_storage.c \
+	    $(UXV_DEVICE)/ws2812/ws2812.c
 
 #       $(DWAPI)/decadriver/deca_range_tables.c
 
@@ -235,7 +238,8 @@ UADEFS =
 # List all user directories here
 UINCDIR = $(STM32INC) \
           $(STCMSISINC) \
-          $(UXV_COMMON)
+          $(UXV_COMMON) \
+          $(UXV_DEVICE)
 
 # List the user directory to look for the libraries here
 ULIBDIR = 

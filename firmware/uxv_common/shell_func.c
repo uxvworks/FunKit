@@ -321,6 +321,7 @@ static void sh_cmd_write(BaseSequentialStream* chp, int argc, char* argv[])
         obqPostFullBuffer(&SDU1.obqueue, SERIAL_USB_BUFFERS_SIZE);
 #endif
         loop_cnt++;
+        if (palReadLine(LINE_BUT1) == LINE_BUT1_PRESSED) break;
     }
     chprintf(chp, "\r\n\nstopped after %u X %u bytes.\r\n", loop_cnt, sizeof buf-1 );
 }

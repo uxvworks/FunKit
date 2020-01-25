@@ -16,7 +16,7 @@
     <File Name="../../uxv_common/shell_func.h"/>
     <File Name="../../uxv_common/uart_func.c"/>
     <File Name="../../uxv_common/uart_func.h"/>
-    <File Name="../../uxv_common/thread_func.cpp"/>
+    <File Name="../../uxv_common/thread_func.c"/>
     <File Name="../../uxv_common/thread_func.h"/>
     <File Name="../../uxv_common/cfg_storage.c"/>
     <File Name="../../uxv_common/cfg_storage.h"/>

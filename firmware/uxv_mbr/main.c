@@ -27,4 +27,6 @@ int main(void)
     } else {
         cmd_func_goto_exec(APP1_BASE_ADDR);
     }
+    
+    return 0;
 }
