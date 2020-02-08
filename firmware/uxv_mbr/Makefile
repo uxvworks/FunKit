@@ -92,7 +92,6 @@ CHIBIOS = ../chibios_17_uxv
 STCMSISINC = ../stm/STM32Cube_FW_F4_V1.17.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
 STM32INC = ../stm/STM32Cube_FW_F4_V1.17.0/Drivers/STM32F4xx_HAL_Driver/Inc
 STM32SRC = ../stm/STM32Cube_FW_F4_V1.17.0/Drivers/STM32F4xx_HAL_Driver/Src
-# STM32INC = /home/yeager/codebase/uxvworks/tools/STM32Cube_FW_F4_V1.13.0/Drivers/STM32F4xx_HAL_Driver/Inc
 UXV_COMMON = ../uxv_common
 
 
@@ -102,9 +101,9 @@ include $(CHIBIOS)/os/hal/hal.mk
 include $(CHIBIOS)/os/hal/ports/STM32/STM32F4xx/platform.mk
 
 # include $(CHIBIOS)/os/hal/boards/UXV_XP1/board.mk
-include $(CHIBIOS)/os/hal/boards/MIKROE_STM32M4_CLICKER/board.mk
+# include $(CHIBIOS)/os/hal/boards/MIKROE_STM32M4_CLICKER/board.mk
 # include $(CHIBIOS)/os/hal/boards/OLIMEX_STM32_E407/board.mk
-# include $(CHIBIOS)/os/hal/boards/ST_STM32F4_DISCOVERY/board.mk
+include $(CHIBIOS)/os/hal/boards/ST_STM32F4_DISCOVERY/board.mk
 
 include $(CHIBIOS)/os/hal/osal/os-less/ARMCMx/osal.mk
 #include $(CHIBIOS)/os/hal/osal/rt/osal.mk

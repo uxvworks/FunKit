@@ -12,7 +12,7 @@
 int main(void)
 {
     halInit();
-    palSetPadMode(GPIOC, PIN_BUT1, PAL_MODE_INPUT_PULLUP);
+//    palSetPadMode(GPIOC, PIN_BUT1, PAL_MODE_INPUT_PULLUP);
     
     //osalSysEnable();
 

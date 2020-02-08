@@ -74,7 +74,7 @@
  * of zeroes at the end. (50 bits)*(1.25 uS/bit) = 62.5 uS, which gives us some
  * slack in the timing requirements
  */
-#define WS2812_RESET_BIT_N      (50)
+#define WS2812_RESET_BIT_N      (60)                            /**< PY had to fiddle this to get some 2 work */
 #define WS2812_COLOR_BIT_N      (WS2812_LED_N*24)                           /**< Number of data bits */
 #define WS2812_BIT_N            (WS2812_COLOR_BIT_N + WS2812_RESET_BIT_N)   /**< Total number of bits in a frame */
 
@@ -107,7 +107,7 @@
  * The duty cycle is calculated for a high period of 800 nS.
  * This is in the middle of the specifications of the WS2812 and WS2812B.
  */
-#define WS2812_DUTYCYCLE_1      (WS2812_PWM_FREQUENCY/(1000000000/900))
+#define WS2812_DUTYCYCLE_1      (WS2812_PWM_FREQUENCY/(1000000000/800))
 
 /* --- PRIVATE MACROS ------------------------------------------------------- */
 
@@ -210,8 +210,8 @@ void ws2812_init(void)
     #pragma GCC diagnostic pop                                                              // Restore command-line warning options
 
     // Configure DMA
-    dmaInit(); // Joe added this
-    dmaStreamAllocate(WS2812_DMA_STREAM, 10, NULL, NULL);
+    //dmaInit(); // Joe added this
+    dmaStreamAlloc(STM32_DMA_STREAM_ID(1, 6), 10, NULL, NULL); // this needs to match defines!!
     dmaStreamSetPeripheral(WS2812_DMA_STREAM, &(WS2812_PWMD.tim->CCR[WS2812_TIM_CH]));  // Ziel ist der An-Zeit im Cap-Comp-Register
     dmaStreamSetMemory0(WS2812_DMA_STREAM, ws2812_frame_buffer);
     dmaStreamSetTransactionSize(WS2812_DMA_STREAM, WS2812_BIT_N);

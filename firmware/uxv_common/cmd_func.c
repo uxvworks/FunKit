@@ -127,7 +127,7 @@ void cmd_func_reset(void)
     osalSysDisable();
 
     palClearLine(LINE_LED1);
-    palClearLine(LINE_LED2);
+  //  palClearLine(LINE_LED2);
 
     NVIC_SystemReset();
 }
@@ -144,12 +144,12 @@ void cmd_func_goto_exec(uint32_t base_address)
 #endif
 
     //palSetLine(LINE_LED1);
-    palSetLine(LINE_LED2);
+  //  palSetLine(LINE_LED2);
 
     //osalThreadSleepMilliseconds(500);
 
     palClearLine(LINE_LED1);
-    palClearLine(LINE_LED2);
+ //   palClearLine(LINE_LED2);
 
     SysTick->CTRL = 0;
     SysTick->LOAD = 0;
@@ -173,7 +173,7 @@ void cmd_func_goto_exec(uint32_t base_address)
     pResetHandler();
 }
 
-
+#if 0
 void cmd_func_goto_sysboot(void)
 {
     static void (*pResetHandler)(void);
@@ -216,3 +216,6 @@ void cmd_func_goto_sysboot(void)
     /* start the program  */
     pResetHandler();
 }
+#endif
+
+

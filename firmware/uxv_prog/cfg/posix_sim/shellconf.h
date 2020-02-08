@@ -1,0 +1,30 @@
+#ifndef _CHSHELL_CONF_H
+#define _CHSHELL_CONF_H
+
+
+
+
+// chibios internal
+#define SHELL_PROMPT_STR            "app1> "
+#define SHELL_CMD_ECHO_ENABLED       FALSE
+#define SHELL_CMD_EXIT_ENABLED       FALSE
+
+
+//uxv 
+#define FW_SHELL_ON_SERIAL         FALSE
+#define FW_SHELL_ON_USB            TRUE
+
+#define FW_SHELL_READ_ENABLED      FALSE
+#define FW_SHELL_WRITE_ENABLED     TRUE
+#define FW_SHELL_U3SEND_ENABLED    FALSE
+#define FW_SHELL_FLASH_ENABLED     FALSE
+#define FW_SHELL_EEPROM_ENABLED    FALSE
+#define FW_SHELL_GO2BOOT_ENABLED   FALSE
+#define FW_SHELL_GO2APP1_ENABLED   FALSE
+#define FW_SHELL_APPCMD_ENABLED    FALSE
+
+
+
+#endif  /* _CHSHELL_CONF_H */
+
+

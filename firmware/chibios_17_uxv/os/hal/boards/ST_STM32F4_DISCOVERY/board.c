@@ -126,4 +126,8 @@ bool mmc_lld_is_write_protected(MMCDriver *mmcp) {
  * @todo    Add your board-specific code, if any.
  */
 void boardInit(void) {
+    
+    // UART driver 3, PC10(TX) and PC11(RX) are routed to USART3.
+    palSetPadMode(GPIOC, PIN_UART3_TX, PAL_MODE_ALTERNATE(7));
+    palSetPadMode(GPIOC, PIN_UART3_RX, PAL_MODE_ALTERNATE(7));
 }

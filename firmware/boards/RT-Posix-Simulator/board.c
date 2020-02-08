@@ -1,5 +1,5 @@
 /*
-    ChibiOS - Copyright (C) 2006..2016 Giovanni Di Sirio
+    ChibiOS - Copyright (C) 2006..2018 Giovanni Di Sirio
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -14,15 +14,21 @@
     limitations under the License.
 */
 
-#ifndef USBCFG_H
-#define USBCFG_H
+#include "hal.h"
 
-#if (HAL_USE_SERIAL_USB == true)
-extern const USBConfig usbcfg;
-extern SerialUSBConfig serusbcfg;
-extern SerialUSBDriver SDU1;
+/**
+ * @brief PAL setup.
+ * @details Digital I/O ports static configuration as defined in @p board.h.
+ */
+#if HAL_USE_PAL || defined(__DOXYGEN__)
+const PALConfig pal_default_config = {
+ {0, 0, 0},
+ {0, 0, 0}
+};
 #endif
 
-#endif  /* USBCFG_H */
-
-/** @} */
+/*
+ * Board-specific initialization code.
+ */
+void boardInit(void) {
+}

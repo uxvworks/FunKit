@@ -1,0 +1,43 @@
+
+Possible ws2812 driver PWM TIMx_UP LED combos
+
+
+#define PORT_WS2812     GPIOA                 // A1 settings from original code
+#define PIN_WS2812      1
+#define WS2812_TIM_N    2                     // TIM2_CH2, 
+#define WS2812_TIM_CH   1                     // 0-3 (STM Alt Fxn Maps count ch1-4 so this needs CHx-1)  
+#define WS2812_DMA_STREAM STM32_DMA1_STREAM1  // DMA stream for TIMx_UP (look up in reference manual under DMA Channel selection)
+#define WS2812_DMA_CHANNEL 3                  // DMA channel for TIMx_UP
+
+
+
+#define PORT_WS2812     GPIOA                 // A6 is free on E407 and Clicker2 and Clicker1
+#define PIN_WS2812      6                      
+#define WS2812_TIM_N    3                     // TIM3_CH1
+#define WS2812_TIM_CH   0                     // 0-3 (STM Alt Fxn Maps count ch1-4 so this needs CHx-1) 
+#define WS2812_DMA_STREAM STM32_DMA1_STREAM2  // DMA stream for TIMx_UP (look up in reference manual under DMA Channel selection)
+#define WS2812_DMA_CHANNEL 5                  // DMA channel for TIMx_UP
+
+A6 OR B0
+
+#define PORT_WS2812     GPIOB                 // B0 free on Disco407, Clicker2, Clicker1.  tested on Mikroe STM32 M4 Clicker1
+#define PIN_WS2812      0
+#define WS2812_TIM_N    3                     // TIM3_CH3
+#define WS2812_TIM_CH   2                     // 0-3 (STM docs count ch1-4 so this needs CHx-1)  
+#define WS2812_DMA_STREAM STM32_DMA1_STREAM2  // DMA stream for TIMx_UP (look up in reference manual under DMA Channel selection)
+#define WS2812_DMA_CHANNEL 5                  // DMA channel for TIMx_UP
+
+
+
+#define PORT_WS2812     GPIOB                 // B7 is free on E407 and Disco407 and Clicker2 and clicker1
+#define PIN_WS2812      7                      
+#define WS2812_TIM_N    4                     // TIM4_CH2
+#define WS2812_TIM_CH   1                     // 0-3 (STM docs count ch1-4 so this needs CHx-1) 
+#define WS2812_DMA_STREAM STM32_DMA1_STREAM6  // DMA stream for TIMx_UP (look up in reference manual under DMA Channel selection)
+#define WS2812_DMA_CHANNEL 2                  // DMA channel for TIMx_UP
+
+
+
+
+
+

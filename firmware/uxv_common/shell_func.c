@@ -7,16 +7,22 @@
 #include "ch.h"
 #include "hal.h"
 
+#include "shellconf.h"
+#include "portab.h"
 #include "shell.h"
 #include "chprintf.h"
 
 #include "usbcfg.h"
 #include "cmd_func.h"
+
+#ifndef SIMULATOR
 #include "flash_defines.h"
 #include "flash_util.h"
 #include "uart_func.h"
 #include "cfg_storage.h"
 #include "stm_eeprom.h"
+#endif
+
 #include "shell_func.h"
 
 
@@ -321,7 +327,7 @@ static void sh_cmd_write(BaseSequentialStream* chp, int argc, char* argv[])
         obqPostFullBuffer(&SDU1.obqueue, SERIAL_USB_BUFFERS_SIZE);
 #endif
         loop_cnt++;
-        if (palReadLine(LINE_BUT1) == LINE_BUT1_PRESSED) break;
+        //if (palReadLine(LINE_BUT1) == LINE_BUT1_PRESSED) break;
     }
     chprintf(chp, "\r\n\nstopped after %u X %u bytes.\r\n", loop_cnt, sizeof buf-1 );
 }
@@ -345,7 +351,7 @@ static void sh_cmd_read(BaseSequentialStream* chp, int argc, char* argv[])
 
     while (palReadLine(LINE_BUT1) != LINE_BUT1_PRESSED) {
 
-        size_t retval = chnReadTimeout((BaseChannel*)chp, buf, sizeof buf, OSAL_MS2ST(1));
+        size_t retval = chnReadTimeout((BaseChannel*)chp, buf, sizeof buf, OSAL_MS2I(1));
 
         if(retval > 0) {
             byte_total += retval;
@@ -393,11 +399,11 @@ static const ShellCommand commands[] = {
 };
 
 #if (FW_SHELL_ON_USB == TRUE)
-const ShellConfig shell_cfg_sdu = {(BaseSequentialStream*)&SDU1, commands };
+const ShellConfig shell_cfg_sdu = {(BaseSequentialStream*)&PORTAB_SDU1, commands };
 #endif
-#if (FW_SHELL_ON_SERIAL3 == TRUE)
-const ShellConfig shell_cfg_sd3 = {(BaseSequentialStream*)&SD3, commands };
+#if (FW_SHELL_ON_SERIAL == TRUE)
+const ShellConfig shell_cfg_serial = {(BaseSequentialStream*)&PORTAB_SERIAL, commands };
 #endif
-#if ((FW_SHELL_ON_SERIAL3 == FALSE) && (FW_SHELL_ON_USB == FALSE))
+#if ((FW_SHELL_ON_SERIAL == FALSE) && (FW_SHELL_ON_USB == FALSE))
 #error "No shell port configured."
 #endif

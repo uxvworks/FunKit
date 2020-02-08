@@ -292,8 +292,8 @@
 //#define     LINE_CAN_RX               GPIOB_PIN5
 //#define     LINE_CAN_TX               GPIOB_PIN13
 
-#define     LINE_UART3_RX             PAL_LINE(GPIOC, PIN_UART3_RX)
-#define     LINE_UART3_TX             PAL_LINE(GPIOC, PIN_UART3_TX)
+//#define     LINE_UART3_RX             PAL_LINE(GPIOC, PIN_UART3_RX)
+//#define     LINE_UART3_TX             PAL_LINE(GPIOC, PIN_UART3_TX)
 
 #define     LINE_DW_INT               PAL_LINE(GPIOA, PIN_DW_INT)
 //#define     LINE_DW_WAKE              GPIOC_PIN9  

@@ -19,8 +19,8 @@ extern "C" {
 #if (FW_SHELL_ON_USB == TRUE)
 extern const ShellConfig shell_cfg_sdu;
 #endif
-#if (FW_SHELL_ON_SERIAL3 == TRUE)
-extern const ShellConfig shell_cfg_sd3;
+#if (FW_SHELL_ON_SERIAL == TRUE)
+extern const ShellConfig shell_cfg_serial;
 #endif
 
 

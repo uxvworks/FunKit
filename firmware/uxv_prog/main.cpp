@@ -7,20 +7,29 @@
 
 #include "ch.h"
 #include "hal.h"
+#include "rt_test_root.h"
 
-#include "shell.h"
+#include "shellconf.h"
 #include "chprintf.h"
+#include "shell.h"
 
+#include "portab.h"
 #include "usbcfg.h"
-#include "flash_util.h"
+
+//#include "flash_util.h"
 #include "cmd_func.h"
 #include "shell_func.h"
-#include "uart_func.h"
+//#include "uart_func.h"
 #include "thread_func.h"
-#include "cfg_storage.h"
+//#include "cfg_storage.h"
 
 #include "ws2812/ws2812.h"
+#include "sdcard/sdcard_mgr.h"
 
+//static void *testptr = NULL;
+/*===========================================================================*/
+/* Command line related.                                                     */
+/*===========================================================================*/
 
 #if (FW_SHELL_APPCMD_ENABLED == TRUE)
 void sh_cmd_appcmd(BaseSequentialStream* chp, int argc, char* argv[])
@@ -30,9 +39,9 @@ void sh_cmd_appcmd(BaseSequentialStream* chp, int argc, char* argv[])
         "Usage: cmd (led) (NNRRGGBB) in 32 bit Hex format\r\n";
     static bool init_done = false;
     uint32_t NRGB = 0;
-    // int base = 10;
     char *endptr;
     int retval = 0;
+
 
     if(argc < 1) {
         chprintf(chp, usage);
@@ -48,31 +57,77 @@ void sh_cmd_appcmd(BaseSequentialStream* chp, int argc, char* argv[])
                 init_done = true;
             }
 
-            // int s = 0;
             uint8_t blu = NRGB & 0x000000FF;
             uint8_t grn = (NRGB >> 8)  & 0x000000FF;
             uint8_t red = (NRGB >> 16) & 0x000000FF;
             uint32_t  n = (NRGB >> 24) & 0x000000FF;
 
             chprintf(chp, "NRGB:%08X led:%u r:%d g:%d b:%d\r\n", NRGB, n, red, grn, blu);
-            // uint32_t cnt;
 
-            //for (; n < WS2812_LED_N; n++) {
-            ws2812_write_led(n, red, grn, blu);
-            // }
-
-#if 0
-            for (cnt = 0; cnt < count; cnt++)  {
-                for (n = 0; n < WS2812_LED_N; n++) {
-                    int s0 = s + 10*n;
-                    ws2812_write_led(n, s0%255, (s0+85)%255, (s0+170)%255);
+            if (n == 0xFF) {
+                uint32_t index;
+                for (index = 0; index < WS2812_LED_N; index++) {
+                    ws2812_write_led(index, red, grn, blu);
                 }
-                s += 10;
-                osalThreadSleepMilliseconds(50);
+                //testptr = chHeapAlloc(NULL, 1000);
+            } else if (n == 0xFD) {
+                uint32_t index;
+                uint32_t eye =6;
+                for (index = 0; index < 100; index++) {
+                    ws2812_write_led(eye, red, grn, blu);
+                    osalThreadSleepMilliseconds(2000);
+                    ws2812_write_led(eye, 0, 0, 0);
+                    osalThreadSleepMilliseconds(100);
+                    if (eye == 0x06)  eye = 0x07;
+                    else if (eye ==0x07) eye = 0x08;
+                    else eye = 0x06;
+                }
+            } else if (n == 0xFC) {
+                uint32_t index;
+                while (true) {
+                    for (index = 0; index < WS2812_LED_N; index++) {
+                        ws2812_write_led(index, red, grn, blu);
+                        osalThreadSleepMilliseconds(5);
+                        ws2812_write_led(index, 0, 0, 0);
+                    }
+                    for (index = WS2812_LED_N; index > 0; index--) {
+                        ws2812_write_led(index-1, red, grn, blu);
+                        osalThreadSleepMilliseconds(5);
+                        ws2812_write_led(index-1, 0, 0, 0);
+                    }
+                    if (palReadLine(LINE_BUT1) == LINE_BUT1_PRESSED) break;
+                }
+            } else if (n == 0xFB) {
+                uint32_t index;
+                while (true) {
+                    for (index = 10; index > 0; index--) {
+                        float redf = float(index * red) * 0.1;
+                        float grnf = float(index * grn) * 0.1;
+                        float bluf = float(index * blu) * 0.1;
+                        uint32_t index2;
+                        for (index2 = 0; index2 < WS2812_LED_N; index2++) {
+                            ws2812_write_led(index2, (uint8_t)redf, (uint8_t)grnf, (uint8_t)bluf);
+                        }
+                        osalThreadSleepMilliseconds(50);
+                    }
+                    if (palReadLine(LINE_BUT1) == LINE_BUT1_PRESSED) break;
+                    for (index = 1; index <= 10; index++) {
+                        float redf = float(index * red) * 0.1;
+                        float grnf = float(index * grn) * 0.1;
+                        float bluf = float(index * blu) * 0.1;
+                        uint32_t index2;
+                        for (index2 = 0; index2 < WS2812_LED_N; index2++) {
+                            ws2812_write_led(index2, (uint8_t)redf, (uint8_t)grnf, (uint8_t)bluf);
+                        }
+                        osalThreadSleepMilliseconds(50);
+                    }
+                }
+            } else {
+                ws2812_write_led(n, red, grn, blu);
+                //if (testptr) chHeapFree(testptr);
             }
-#endif
 
-            retval = 0;  //ping_cli(chp, count);
+            retval = 0;
             chprintf(chp, "cmd led returned  %d\r\n", retval);
         }
     } else {
@@ -83,79 +138,85 @@ void sh_cmd_appcmd(BaseSequentialStream* chp, int argc, char* argv[])
 
 
 
+/*===========================================================================*/
+/* Main and generic code.                                                    */
+/*===========================================================================*/
+
+static thread_t *shelltp = NULL;
+
+/*
+ * Shell exit event.
+ */
+static void ShellHandler(eventid_t id)
+{
+
+    (void)id;
+    if (chThdTerminatedX(shelltp)) {
+        chThdRelease(shelltp);
+        shelltp = NULL;
+    }
+}
+
+
+/*
+ * Application entry point.
+ */
 int main(void)
 {
+    static const evhandler_t evhndl[] = {
+        sdcard_InsertHandler,
+        sdcard_RemoveHandler,
+        ShellHandler
+    };
+
     halInit();
     chSysInit();
 
-    cfg_storage_init();
-
-    // UART driver 3, PC10(TX) and PC11(RX) are routed to USART3.
-    palSetPadMode(GPIOC, PIN_UART3_TX, PAL_MODE_ALTERNATE(7));
-    palSetPadMode(GPIOC, PIN_UART3_RX, PAL_MODE_ALTERNATE(7));
-
-#if ((HAL_USE_UART == TRUE) && (FW_SHELL_ON_SERIAL3 == TRUE))
-#error  "UART3 config conflict"
-#elif (HAL_USE_UART == TRUE)
-    uartStart(&UARTD3, &uart3_cfg);
-    uartStartSend(&UARTD3, 12, "\r\nuxv_prog\r\n");
-#elif (HAL_USE_SERIAL == TRUE)
-    static SerialConfig ser3_cfg = {
-        115200,
-        0,
-        0,
-        0,
-    };
-    sdStart(&SD3, &ser3_cfg);
-#endif
-
+    portab_setup();   //Target-dependent setup code.
 
 #if (HAL_USE_SERIAL_USB == true)
     /*
      * Initializes a serial-over-USB CDC driver.
-     */
-    sduObjectInit(&SDU1);
-    sduStart(&SDU1, &serusbcfg);
-
+    */
+    sduObjectInit(&PORTAB_SDU1);
+    sduStart(&PORTAB_SDU1, &serusbcfg);
     /*
      * Activates the USB driver and then the USB bus pull-up on D+.
      * Note, a delay is inserted in order to not have to disconnect the cable
      * after a reset.
-     */
+    */
     usbDisconnectBus(serusbcfg.usbp);
-    osalThreadSleepMilliseconds(1500);
+    chThdSleepMilliseconds(1500);
     usbStart(serusbcfg.usbp, &usbcfg);
     usbConnectBus(serusbcfg.usbp);
 #endif
 
-    /*
-     * Shell manager initialization.
-     */
     shellInit();
+
+#if (FW_INCLUDE_SDCARD_MGR == TRUE)
+    event_listener_t el0, el1;
+    sdcard_mgr_start();
+    chEvtRegister(&sdcard_inserted_event, &el0, 0);
+    chEvtRegister(&sdcard_removed_event, &el1, 1);
+#endif
+
+#if (FW_SHELL_ON_SERIAL == TRUE)
+    chThdCreateFromHeap(NULL, SHELL_WA_SIZE, "shellserial", NORMALPRIO + 1, shellThread, (void*)&shell_cfg_serial);
+#endif
 
     CreateThread1();
 
-#if (FW_SHELL_ON_SERIAL3 == TRUE)
-    //thread_t* shelltp_sd3 =
-    chThdCreateFromHeap(NULL, SHELL_WA_SIZE, "shellsd3", NORMALPRIO + 1, shellThread, (void*)&shell_cfg_sd3);
-    //chThdWait(shelltp_sd3); /* Waiting termination.             */
-#endif
-    while(true) {
-#if (FW_SHELL_ON_USB == TRUE)
-        if(SDU1.config->usbp->state == USB_ACTIVE)  {
-            thread_t* shelltp_sdu =
-                chThdCreateFromHeap(NULL, SHELL_WA_SIZE, "shellsdu", NORMALPRIO + 1, shellThread, (void*)&shell_cfg_sdu);
-            chThdWait(shelltp_sdu); /* Waiting termination.             */
+    //httpd_init();  // Starts the HTTP server.
+
+    event_listener_t el2;
+    chEvtRegister(&shell_terminated, &el2, 2);
+
+    while (true) {
+        if (!shelltp && (PORTAB_SDU1.config->usbp->state == USB_ACTIVE)) {
+            shelltp = chThdCreateFromHeap(NULL, SHELL_WA_SIZE,
+                                          "shellusb", NORMALPRIO + 1,
+                                          shellThread, (void *)&shell_cfg_sdu);
         }
-#endif
-        osalThreadSleepMilliseconds(1000);
+        chEvtDispatch(evhndl, chEvtWaitOneTimeout(ALL_EVENTS, TIME_MS2I(500)));
     }
 }
-
-/*
-      chEvtWaitAny(EVENT_MASK(0));
-      if (chThdTerminatedX(shelltp1)) {
-        chThdRelease(shelltp1);
-        shelltp1 = NULL;
-      }
-*/

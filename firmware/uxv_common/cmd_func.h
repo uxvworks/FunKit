@@ -27,7 +27,10 @@ extern void cmd_func_uid(uint32_t* uid);
 
 extern void     cmd_func_reset(void);
 extern void     cmd_func_goto_exec(uint32_t base_address);
+
+#if 0
 extern void     cmd_func_goto_sysboot(void);
+#endif
 
 #ifdef __cplusplus
 }

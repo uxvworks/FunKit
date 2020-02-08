@@ -14,7 +14,7 @@ void HAL_Delay(__IO uint32_t Delay)
 
 uint32_t HAL_GetTick(void)
 {
-    return (OSAL_ST2MS(osalOsGetSystemTimeX()));
+    return (osalOsGetSystemTimeX());   //OSAL_ST2MS(osalOsGetSystemTimeX()));
 }
 
 
@@ -63,7 +63,8 @@ void flash_erase_user_data(void)
         /*
           FLASH_ErrorTypeDef errorcode = HAL_FLASH_GetError();
         */
-        palSetLine(LINE_LED2); //Error_Handler();
+        //palSetLine(LINE_LED2); 
+        //Error_Handler();
     }
 
 
@@ -105,7 +106,7 @@ void flash_store_user_data(uint32_t user_data)
             /*
               FLASH_ErrorTypeDef errorcode = HAL_FLASH_GetError();
             */
-            palSetLine(LINE_LED2); //Error_Handler();
+            ; //palSetLine(LINE_LED2); //Error_Handler();
         }
     }
 
@@ -140,7 +141,7 @@ uint32_t flash_verify_user_data(uint32_t user_data)
         //BSP_LED_On(LED4);
     } else {
         ; /* Error detected. Switch on LED5 */
-        palSetLine(LINE_LED2); //Error_Handler();
+        //palSetLine(LINE_LED2); //Error_Handler();
     }
 
     return (MemoryProgramStatus);

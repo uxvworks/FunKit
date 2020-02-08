@@ -37,13 +37,25 @@ extern "C" {
 // TODO: Add these #define's to the headers of your project.
 // Pin, timer and dma are all connected, check them all if you change one.
 // Tested with STM32F4, working at 144 or 168 MHz.
-#define WS2812_LED_N    7 // Number of LEDs
+#define WS2812_LED_N    115 // Number of LEDs
+
+#if 0
 #define PORT_WS2812     GPIOB
 #define PIN_WS2812      0
 #define WS2812_TIM_N    3  // timer, 1-11
-#define WS2812_TIM_CH   2  // timer channel, 0-3 (STM docs count ch1-4 so this needs CHx-1
+#define WS2812_TIM_CH   2  // timer channel, 0-3 (STM docs count ch1-4 so this needs CHx-1)
 #define WS2812_DMA_STREAM STM32_DMA1_STREAM2  // DMA stream for TIMx_UP (look up in reference manual under DMA Channel selection)
 #define WS2812_DMA_CHANNEL 5                  // DMA channel for TIMx_UP
+#endif
+
+#define PORT_WS2812     GPIOB
+#define PIN_WS2812      7                      // B7 is free on E407 and Disco407 and Clicker
+#define WS2812_TIM_N    4  // timer, 1-11
+#define WS2812_TIM_CH   1  // timer channel, 0-3 (STM docs count ch1-4 so this needs CHx-1) TIM4_CH2
+#define WS2812_DMA_STREAM STM32_DMA1_STREAM6  // DMA stream for TIMx_UP (look up in reference manual under 
+                                            // DMA Channel selection - also change init code in ws2818.c)  
+#define WS2812_DMA_CHANNEL 2                  // DMA channel for TIMx_UP
+
 
 // The WS2812 expects 5V signal level (or at least 0.7 * VDD). Sometimes it works
 // with a 3V signal level, otherwise the easiest way to get the signal level to 5V

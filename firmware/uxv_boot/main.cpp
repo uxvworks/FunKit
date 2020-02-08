@@ -24,10 +24,7 @@ int main(void)
 
     cfg_storage_init();
 
-    // UART driver 3, PC10(TX) and PC11(RX) are routed to USART3.
-    palSetPadMode(GPIOC, PIN_UART3_TX, PAL_MODE_ALTERNATE(7));
-    palSetPadMode(GPIOC, PIN_UART3_RX, PAL_MODE_ALTERNATE(7));
-
+ 
 #if ((HAL_USE_UART == TRUE) && (FW_SHELL_ON_SERIAL3 == TRUE))
 #error  "UART3 config conflict"
 #elif (HAL_USE_UART == TRUE)
@@ -86,6 +83,7 @@ int main(void)
     }
 }
 
+// TODO see the USB-CDC (IAD descriptors) driver demo
 /*
       chEvtWaitAny(EVENT_MASK(0));
       if (chThdTerminatedX(shelltp1)) {

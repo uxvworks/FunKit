@@ -211,10 +211,19 @@
 #define GPIOI_PIN14                 14U
 #define GPIOI_PIN15                 15U
 
+
+#define GPIOC_PIN10                  10U
+//#define GPIOC_PIN11                 11U
+#define     PIN_UART3_RX             GPIOC_PIN11
+#define     PIN_UART3_TX             GPIOC_PIN10
+
+
 /*
  * IO lines assignments.
  */
-#define LINE_BUTTON                 PAL_LINE(GPIOA, 0U)
+#define LINE_BUT1_PRESSED 1 // the line reads this when pressed
+ 
+#define LINE_BUT1                   PAL_LINE(GPIOA, 0U)
 #define LINE_LRCK                   PAL_LINE(GPIOA, 4U)
 #define LINE_SPC                    PAL_LINE(GPIOA, 5U)
 #define LINE_SDO                    PAL_LINE(GPIOA, 6U)
@@ -239,10 +248,10 @@
 
 #define LINE_RESET                  PAL_LINE(GPIOD, 4U)
 #define LINE_OVER_CURRENT           PAL_LINE(GPIOD, 5U)
-#define LINE_LED4                   PAL_LINE(GPIOD, 12U)
-#define LINE_LED3                   PAL_LINE(GPIOD, 13U)
-#define LINE_LED5                   PAL_LINE(GPIOD, 14U)
-#define LINE_LED6                   PAL_LINE(GPIOD, 15U)
+#define LINE_LED2                   PAL_LINE(GPIOD, 12U)
+#define LINE_LED1                   PAL_LINE(GPIOD, 13U)
+#define LINE_LED3                   PAL_LINE(GPIOD, 14U)
+#define LINE_LED4                   PAL_LINE(GPIOD, 15U)
 
 #define LINE_INT1                   PAL_LINE(GPIOE, 0U)
 #define LINE_INT2                   PAL_LINE(GPIOE, 1U)

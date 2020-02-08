@@ -5,13 +5,6 @@
       <![CDATA[00010001N0007Release000000000000]]>
     </Plugin>
   </Plugins>
-  <VirtualDirectory Name="uxv_common">
-    <File Name="../../uxv_common/flash_util.c"/>
-    <File Name="../../uxv_common/flash_util.h"/>
-    <File Name="../../uxv_common/cmd_func.c"/>
-    <File Name="../../uxv_common/cmd_func.h"/>
-    <File Name="../../uxv_common/flash_defines.h"/>
-  </VirtualDirectory>
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="uxv_mbr">
@@ -118,4 +111,6 @@
       </Completion>
     </Configuration>
   </Settings>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>
