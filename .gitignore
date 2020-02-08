@@ -30,6 +30,11 @@
 *.exe
 *.out
 *.app
+*.dmp
+*.hex
+*.map
+*.list
+*.srec
 
 
 *.*~
