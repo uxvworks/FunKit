@@ -251,7 +251,8 @@ void sh_cmd_startboot(BaseSequentialStream* chp, int argc, char* argv[])
     chprintf(chp, "Will start bootloader in 1 second\r\n");
     osalThreadSleepMilliseconds(1000);
 
-    cmd_func_goto_exec(BOOT_BASE_ADDR);
+   cmd_func_goto_exec(BOOT_BASE_ADDR);
+   //cmd_func_goto_sysboot();
 }
 #endif
 

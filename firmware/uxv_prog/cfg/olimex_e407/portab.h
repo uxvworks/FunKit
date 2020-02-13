@@ -25,13 +25,19 @@
 #ifndef PORTAB_H
 #define PORTAB_H
 
+#include "lwip/udp.h"
+#include "lwip/timeouts.h"
+#include "lwip/debug.h"
 #include "lwipthread.h"
 #include "lwip/apps/httpd.h"
 #include "ff.h"
 
+
 /*===========================================================================*/
 /* Module constants.                                                         */
 /*===========================================================================*/
+#define LWIP_UDP                    1
+
 
 #define FW_INCLUDE_SDCARD_MGR       TRUE
 

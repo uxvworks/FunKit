@@ -21,7 +21,7 @@
 #include "shell_func.h"
 //#include "uart_func.h"
 #include "thread_func.h"
-//#include "cfg_storage.h"
+#include "cfg_storage.h"
 
 #include "ws2812/ws2812.h"
 #include "sdcard/sdcard_mgr.h"
@@ -30,6 +30,7 @@
 /*===========================================================================*/
 /* Command line related.                                                     */
 /*===========================================================================*/
+
 
 #if (FW_SHELL_APPCMD_ENABLED == TRUE)
 void sh_cmd_appcmd(BaseSequentialStream* chp, int argc, char* argv[])
@@ -41,7 +42,6 @@ void sh_cmd_appcmd(BaseSequentialStream* chp, int argc, char* argv[])
     uint32_t NRGB = 0;
     char *endptr;
     int retval = 0;
-
 
     if(argc < 1) {
         chprintf(chp, usage);
@@ -171,8 +171,26 @@ int main(void)
 
     halInit();
     chSysInit();
-
+    
+   // cfg_storage_init();
+    
     portab_setup();   //Target-dependent setup code.
+
+#if ((HAL_USE_UART == TRUE) && (FW_SHELL_ON_SERIAL == TRUE))
+#error  "UART config conflict"
+#elif (HAL_USE_UART == TRUE)
+    uartStart(&UARTD3, &uart3_cfg);
+    uartStartSend(&UARTD3, 12, "\r\nuxv_prog\r\n");
+#elif (HAL_USE_SERIAL == TRUE)
+    static SerialConfig ser_cfg = {
+        115200,
+        0,
+        0,
+        0,
+    };
+    sdStart(&PORTAB_SERIAL, &ser_cfg);
+#endif
+
 
 #if (HAL_USE_SERIAL_USB == true)
     /*

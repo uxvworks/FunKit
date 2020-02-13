@@ -16,10 +16,10 @@ static THD_FUNCTION(Thread1, arg)
     (void)arg;
     chRegSetThreadName("blink");
     while(true) {
-        systime_t time = 500;
+        systime_t time = 2500;
 
 #ifndef SIMULATOR
-        time = serusbcfg.usbp->state == USB_ACTIVE ? 200 : 400;
+        time = serusbcfg.usbp->state == USB_ACTIVE ? 2500 : 5000;
         palClearLine(LINE_LED1);
         osalThreadSleepMilliseconds(time);
         palSetLine(LINE_LED1);

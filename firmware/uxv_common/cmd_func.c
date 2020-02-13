@@ -173,7 +173,7 @@ void cmd_func_goto_exec(uint32_t base_address)
     pResetHandler();
 }
 
-#if 0
+
 void cmd_func_goto_sysboot(void)
 {
     static void (*pResetHandler)(void);
@@ -185,16 +185,16 @@ void cmd_func_goto_sysboot(void)
 #endif
 
     palClearLine(LINE_LED1);
-    palSetLine(LINE_LED2);
+    //palSetLine(LINE_LED2);
 
     //osalThreadSleepMilliseconds(500);
 
     palClearLine(LINE_LED1);
-    palClearLine(LINE_LED2);
+   // palClearLine(LINE_LED2);
 
-    //HAL_RCC_DeInit();
-    //RCC_DeInit();
-    rccDisableAPB2(RCC_APB2ENR_SYSCFGEN, TRUE);
+  //  HAL_RCC_DeInit();
+  //  RCC_DeInit();
+    rccDisableAPB2(RCC_APB2ENR_SYSCFGEN);
 
     SysTick->CTRL = 0;
     SysTick->LOAD = 0;
@@ -216,6 +216,6 @@ void cmd_func_goto_sysboot(void)
     /* start the program  */
     pResetHandler();
 }
-#endif
+
 
 
