@@ -55,6 +55,7 @@ extern "C" {
 #define WS2812_DMA_STREAM STM32_DMA1_STREAM6  // DMA stream for TIMx_UP (look up in reference manual under 
                                             // DMA Channel selection - also change init code in ws2818.c)  
 #define WS2812_DMA_CHANNEL 2                  // DMA channel for TIMx_UP
+#define STM32_WS2812_DMA_STREAM_ID  STM32_DMA_STREAM_ID(1, 6)
 
 
 // The WS2812 expects 5V signal level (or at least 0.7 * VDD). Sometimes it works

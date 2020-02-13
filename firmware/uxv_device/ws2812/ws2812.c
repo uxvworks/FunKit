@@ -211,7 +211,7 @@ void ws2812_init(void)
 
     // Configure DMA
     //dmaInit(); // Joe added this
-    dmaStreamAlloc(STM32_DMA_STREAM_ID(1, 6), 10, NULL, NULL); // this needs to match defines!!
+    dmaStreamAlloc(STM32_WS2812_DMA_STREAM_ID, 10, NULL, NULL); // this needs to match defines!!
     dmaStreamSetPeripheral(WS2812_DMA_STREAM, &(WS2812_PWMD.tim->CCR[WS2812_TIM_CH]));  // Ziel ist der An-Zeit im Cap-Comp-Register
     dmaStreamSetMemory0(WS2812_DMA_STREAM, ws2812_frame_buffer);
     dmaStreamSetTransactionSize(WS2812_DMA_STREAM, WS2812_BIT_N);
